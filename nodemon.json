@@ -1,7 +1,12 @@
 {
-    "verbose": false,
+    "verbose": true,
     "watch": [
-        "./server"
+        "server",
+        "config"
     ],
-    "exec": "webpack --mode=development --config webpack.config.server.ts && node ./dist/server.bundle.js"
+    "ext": "js,ts",
+    "ignore": [
+        "node_modules"
+    ],
+    "exec": "webpack --mode=development --config webpack.config.server.js && node ./dist/server.bundle.js"
 }

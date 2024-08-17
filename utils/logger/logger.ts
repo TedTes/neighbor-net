@@ -10,5 +10,6 @@ export const logger = winston.createLogger({
     //
     new winston.transports.File({ filename: "error.log", level: "error" }),
     new winston.transports.File({ filename: "combined.log" }),
+    new winston.transports.Console(),
   ],
 });
