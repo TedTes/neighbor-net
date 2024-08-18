@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
-import { config } from "../config/index";
-import { logger } from "../utils/logger/index";
+import { config } from "../config";
+import { logger } from "../utils/logger";
 import app from "./app";
 
 app.listen(config.port, () => {

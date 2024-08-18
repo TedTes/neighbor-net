@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import helmet from "helmet";
 import cors from "cors";
-
+import { router } from "./routes";
 const app = express();
 
 app.use(bodyParser.json());
@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(compression());
 app.use(helmet());
 app.use(cors());
-
+///app.use("/", router);
 const test = `<!doctype html>
     <html lang="en">
     <head>
