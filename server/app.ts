@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(compression());
 app.use(helmet());
 app.use(cors());
-///app.use("/", router);
+app.use("/", router);
 const test = `<!doctype html>
     <html lang="en">
     <head>

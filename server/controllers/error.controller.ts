@@ -1,3 +1,3 @@
-export const getErrorMessage = (error: string) => {
+export const getErrorMessage = (error: any) => {
   console.log(error);
 };

@@ -1,7 +1,15 @@
+import { Request, Response, NextFunction } from "express";
 import { User } from "../models";
 import _ from "lodash";
 import { getErrorMessage } from "./error.controller";
-const create = async (req, res, next) => {
+interface CustomRequest extends Request {
+  profile?: typeof User.prototype;
+}
+const create = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<Response | void> => {
   const user = new User(req.body);
   try {
     await user.save();
@@ -14,37 +22,46 @@ const create = async (req, res, next) => {
     });
   }
 };
-const list = async (req, res) => {
+const list = async (req: Request, res: Response) => {
   try {
     let users = await User.find().select("name email updated created");
     res.json(users);
   } catch (err) {
     return res.status(400).json({
-      error: getErrorMessage(err.toString()),
+      error: getErrorMessage(err),
     });
   }
 };
-const userByID = async (req, res, next, id) => {
+const userByID = async (
+  req: CustomRequest,
+  res: Response,
+  next: NextFunction,
+  id: string
+): Promise<Response | void> => {
   try {
     let user = await User.findById(id);
     if (!user)
-      return res.status("400").json({
+      return res.status(400).json({
         error: "User not found",
       });
     req.profile = user;
     next();
   } catch (err) {
-    return res.status("400").json({
+    return res.status(400).json({
       error: "Could not retrieve user",
     });
   }
 };
-const read = (req, res) => {
+const read = (req: CustomRequest, res: Response) => {
   req.profile.hashed_password = undefined;
   req.profile.salt = undefined;
   return res.json(req.profile);
 };
-const update = async (req, res, next) => {
+const update = async (
+  req: CustomRequest,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     let user = req.profile;
     user = _.extend(user, req.body);
@@ -59,7 +76,11 @@ const update = async (req, res, next) => {
     });
   }
 };
-const remove = async (req, res, next) => {
+const remove = async (
+  req: CustomRequest,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     let user = req.profile;
     let deletedUser = await user.remove();
