@@ -2,9 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import { User } from "../models";
 import _ from "lodash";
 import { getErrorMessage } from "./error.controller";
-interface CustomRequest extends Request {
-  profile?: typeof User.prototype;
-}
+
 const create = async (
   req: Request,
   res: Response,
@@ -33,7 +31,7 @@ const list = async (req: Request, res: Response) => {
   }
 };
 const userByID = async (
-  req: CustomRequest,
+  req: Request,
   res: Response,
   next: NextFunction,
   id: string
@@ -52,16 +50,12 @@ const userByID = async (
     });
   }
 };
-const read = (req: CustomRequest, res: Response) => {
+const read = (req: Request, res: Response) => {
   req.profile.hashed_password = undefined;
   req.profile.salt = undefined;
   return res.json(req.profile);
 };
-const update = async (
-  req: CustomRequest,
-  res: Response,
-  next: NextFunction
-) => {
+const update = async (req: Request, res: Response, next: NextFunction) => {
   try {
     let user = req.profile;
     user = _.extend(user, req.body);
@@ -76,11 +70,7 @@ const update = async (
     });
   }
 };
-const remove = async (
-  req: CustomRequest,
-  res: Response,
-  next: NextFunction
-) => {
+const remove = async (req: Request, res: Response, next: NextFunction) => {
   try {
     let user = req.profile;
     let deletedUser = await user.remove();

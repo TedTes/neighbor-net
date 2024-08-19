@@ -4,7 +4,7 @@
         "server",
         "config"
     ],
-    "ext": "js,ts",
+    "ext": "js,ts,jsx,tsx",
     "ignore": [
         "node_modules"
     ],

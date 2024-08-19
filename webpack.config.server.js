@@ -1,8 +1,7 @@
 // import path from "path";
-// import { Configuration } from "webpack";
 // import nodeExternals from "webpack-node-externals";
 const path = require("path");
-
+const webpack = require("webpack");
 const CURRENT_WORKING_DIR = process.cwd();
 
 const config = {
@@ -17,6 +16,11 @@ const config = {
     //libraryTarget: "commonjs2",
   },
   // externals: [nodeExternals()],
+  externals: {
+    mongodb: "commonjs mongodb",
+    bcrypt: "commonjs bcrypt",
+    // add other modules if necessary
+  },
   module: {
     rules: [
       {
@@ -24,11 +28,20 @@ const config = {
         use: "ts-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.html$/,
+        use: "html-loader",
+      },
     ],
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
+  plugins: [
+    new webpack.IgnorePlugin({
+      resourceRegExp: /^node-gyp$|^aws-sdk$|^mock-aws-s3$|^nock$/,
+    }),
+  ],
 };
 
 module.exports = config;

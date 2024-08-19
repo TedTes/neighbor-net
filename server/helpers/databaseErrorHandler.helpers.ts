@@ -1,4 +1,4 @@
-const getErrorMessage = (err) => {
+const getErrorMessage = (err: any) => {
   let message = "";
   if (err.code) {
     switch (err.code) {
@@ -17,7 +17,7 @@ const getErrorMessage = (err) => {
   return message;
 };
 export default { getErrorMessage };
-const getUniqueErrorMessage = (err) => {
+const getUniqueErrorMessage = (err: any) => {
   let output;
   try {
     let fieldName = err.message.substring(

@@ -9,7 +9,9 @@ interface userTemplate extends Document {
   hashed_password: string;
   salt: string;
   _password: string | undefined;
+  password: string | undefined;
   passwordManager(password: string): Promise<string>;
+  authenticate(password: string): boolean;
 }
 const userSchema: Schema<userTemplate> = new Schema({
   name: {
@@ -28,7 +30,7 @@ const userSchema: Schema<userTemplate> = new Schema({
     type: Date,
     default: Date.now,
   },
-  hashed_password: {
+  password: {
     type: String,
     required: [true, "Password is required"],
   },
@@ -36,7 +38,7 @@ const userSchema: Schema<userTemplate> = new Schema({
   updated: Date,
 });
 userSchema
-  .virtual("password")
+  .virtual("_password")
   .set(async function (password: string) {
     this._password = password;
     this.hashed_password = await this.passwordManager(password);
@@ -59,8 +61,8 @@ userSchema.methods = {
     }
   },
 };
-userSchema.path("_password").validate(function () {
-  if (this._password && this._password.length < 6) {
+userSchema.path("password").validate(function () {
+  if (this.password && this.password.length < 6) {
     this.invalidate("password", "Password must be at least 6 characters.");
   }
   if (this.isNew && !this._password) {
