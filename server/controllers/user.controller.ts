@@ -8,9 +8,16 @@ const create = async (
   res: Response,
   next: NextFunction
 ): Promise<Response | void> => {
-  const user = new User(req.body);
   try {
-    await user.save();
+    const { name, email, password } = req.body;
+    const newUser = new User({
+      name,
+      email,
+      password, // This is the plain password
+    });
+    newUser._password = password;
+    // Save the user
+    await newUser.save();
     return res.status(200).json({
       message: "Successfully signed up!",
     });

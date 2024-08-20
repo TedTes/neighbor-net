@@ -3,8 +3,8 @@ import { User } from "../models";
 declare global {
   namespace Express {
     interface Request {
-      profile?: typeof User.prototype;
-      user?: typeof User.prototype;
+      profile?: InstanceType<typeof UserModel>; // Instance of User model
+      user?: InstanceType<typeof UserModel>;
     }
   }
 }

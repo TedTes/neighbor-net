@@ -11,10 +11,10 @@ import {
 } from "../controllers";
 
 const router = express.Router();
-router.route("/api/users").get(list).post(create);
+router.route("/").get(list).post(create);
 router
-  .route("/api/users/:userId")
-  .get(requireSignin, read)
+  .route("/:userId")
+  .get(requireSignin, hasAuthorization, read)
   .put(requireSignin, hasAuthorization, update)
   .delete(requireSignin, hasAuthorization, remove);
 router.param("userId", userByID);

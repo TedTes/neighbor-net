@@ -1,15 +1,15 @@
 import mongoose, { Schema, Document } from "mongoose";
 import bcrypt from "bcrypt";
-
+import { logger } from "../../utils/logger";
 interface userTemplate extends Document {
   name: string;
   email: string;
   created: Date;
   updated: Date;
   hashed_password: string;
-  salt: string;
-  _password: string | undefined;
-  password: string | undefined;
+  _plain_password: string;
+  _password: string;
+  password: string;
   passwordManager(password: string): Promise<string>;
   authenticate(password: string): boolean;
 }
@@ -30,26 +30,41 @@ const userSchema: Schema<userTemplate> = new Schema({
     type: Date,
     default: Date.now,
   },
-  password: {
+  hashed_password: {
     type: String,
-    required: [true, "Password is required"],
   },
-  salt: String,
   updated: Date,
 });
 userSchema
   .virtual("_password")
-  .set(async function (password: string) {
-    this._password = password;
-    this.hashed_password = await this.passwordManager(password);
-    this._password = undefined;
+  .set(function (this: userTemplate, password: string) {
+    if (password && password.length < 6) {
+      this.invalidate("password", "Password must be at least 6 characters.");
+    }
+    this._plain_password = password;
+    this.markModified("hashed_password");
   })
   .get(function () {
-    return this.hashed_password;
+    return this._plain_password;
   });
+
+userSchema.pre("save", async function (this: userTemplate, next) {
+  if (this.isModified("hashed_password")) {
+    try {
+      this.hashed_password = await this.passwordManager(this._password!);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        return next(err);
+      } else {
+        return next(new Error("unexpected error occured"));
+      }
+    }
+  }
+  next();
+});
 userSchema.methods = {
-  authenticate: function (password: string) {
-    return bcrypt.compare(password, this.hashed_password);
+  authenticate: async function (password: string) {
+    return await bcrypt.compare(password, this.hashed_password);
   },
   passwordManager: async function (password: string): Promise<string> {
     if (!password) return "";
@@ -57,16 +72,10 @@ userSchema.methods = {
       const saltRounds = 10;
       return bcrypt.hash(password, saltRounds);
     } catch (err) {
+      logger.info(err);
       return "";
     }
   },
 };
-userSchema.path("password").validate(function () {
-  if (this.password && this.password.length < 6) {
-    this.invalidate("password", "Password must be at least 6 characters.");
-  }
-  if (this.isNew && !this._password) {
-    this.invalidate("password", "Password is required");
-  }
-});
+
 export const User = mongoose.model("User", userSchema);
