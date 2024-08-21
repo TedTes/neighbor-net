@@ -1,21 +1,35 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-//import "./App.css";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { CssBaseline, Button } from "@mui/material";
 
-const App: React.FC = () => {
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#1976d2",
+    },
+    secondary: {
+      main: "#dc004e",
+    },
+  },
+  typography: {
+    fontFamily: "Roboto, Arial, sans-serif",
+    h1: {
+      fontSize: "2rem",
+    },
+  },
+});
+
+function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <p>hello</p>
-          {/* <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} /> */}
-        </Routes>
-      </div>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Router>
+        <Button color="primary">Primary Button</Button>
+      </Router>
+    </ThemeProvider>
   );
-};
+}
 
 export default App;

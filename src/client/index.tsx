@@ -1,17 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./app"; // Import the main App component
+import App from "./app";
 //import "./index.css"; // Import global styles if any
 
-// Find the root DOM node where the React app will be mounted
-const rootElement = document.getElementById("root");
+const renderApp = (Component: React.ComponentType) => {
+  const rootElement = document.getElementById("root");
 
-// Create a root for React
-const root = ReactDOM.createRoot(rootElement as HTMLElement);
+  if (!rootElement) {
+    throw new Error("Root element not found");
+  }
 
-// Render the App component to the root element
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  const root = ReactDOM.createRoot(rootElement as HTMLElement);
+
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+};
+
+const withHotReload = (
+  initialComponent: React.ComponentType,
+  module: NodeJS.Module
+) => {
+  renderApp(initialComponent);
+
+  if (module.hot) {
+    module.hot.accept("./app", async () => {
+      const { default: NextApp } = await import("./app");
+      renderApp(NextApp);
+    });
+  }
+};
+
+withHotReload(App, module);
