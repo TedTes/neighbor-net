@@ -1,5 +1,9 @@
 {
-  "include": ["server/**/*", "webpack.config.server.js"],
+  "include": [
+    "src/**/*",
+    "./config/webpack.config.server.js",
+    "./config/webpack.config.common.js"
+  ],
   "exclude": ["node_modules"],
   "outDir": "./dist",
   "rootDir": "./",
@@ -12,6 +16,6 @@
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
-    "typeRoots": ["./server/types"]
+    "typeRoots": ["./src/server/types"]
   }
 }
