@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./app";
+import App from "./App";
 //import "./index.css"; // Import global styles if any
 
 const renderApp = (Component: React.ComponentType) => {
@@ -26,8 +26,8 @@ const withHotReload = (
   renderApp(initialComponent);
 
   if (module.hot) {
-    module.hot.accept("./app", async () => {
-      const { default: NextApp } = await import("./app");
+    module.hot.accept("./App", async () => {
+      const { default: NextApp } = await import("./App");
       renderApp(NextApp);
     });
   }

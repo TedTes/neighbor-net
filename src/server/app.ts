@@ -4,8 +4,11 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import helmet from "helmet";
 import cors from "cors";
+import path from "path";
 import { router, authRouter } from "./routes";
 const app = express();
+
+app.use(express.static(path.resolve(__dirname)));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,12 +16,12 @@ app.use(cookieParser());
 app.use(compression());
 app.use(helmet());
 app.use(cors());
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "index.html"));
+});
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", router);
-
-app.get("/", (req: Request, res: Response) => {
-  res.status(200).send("OK");
-});
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err.name === "UnauthorizedError") {

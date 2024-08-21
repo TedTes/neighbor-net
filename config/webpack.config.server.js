@@ -7,9 +7,9 @@ const config = merge(common, {
   entry: path.resolve(__dirname, "../src/server/server.ts"),
   target: "node",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "../dist"),
     filename: "server.bundle.js",
-    publicPath: "/dist/",
+    //publicPath: "/dist/",
   },
   externals: {
     mongodb: "commonjs mongodb",

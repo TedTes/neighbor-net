@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { CssBaseline, Button } from "@mui/material";
 
+import { CssBaseline, Button } from "@mui/material";
+import { Page } from "./Routes";
 const theme = createTheme({
   palette: {
     primary: {
@@ -26,7 +27,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
-        <Button color="primary">Primary Button</Button>
+        <Page />
       </Router>
     </ThemeProvider>
   );
