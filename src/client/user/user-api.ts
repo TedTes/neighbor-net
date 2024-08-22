@@ -23,7 +23,7 @@ const createUser = async (user: User): Promise<ApiResponse | undefined> => {
   }
 };
 
-const listUsers = async (signal: AbortSignal): Promise<ApiResponse | []> => {
+const listUsers = async (signal: AbortSignal): Promise<User[]> => {
   try {
     let response = await axios.get("/api/v1/users/", {
       signal: signal,
