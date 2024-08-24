@@ -4,7 +4,7 @@ const path = require("path");
 
 const config = merge(common, {
   name: "server",
-  entry: path.resolve(__dirname, "../backend/server.ts"),
+  entry: path.resolve(__dirname, "../backend/src/server.ts"),
   target: "node",
   output: {
     path: path.resolve(__dirname, "../dist"),
