@@ -1,6 +1,7 @@
 {
   "include": [
-    "src/**/*",
+    "frontend/**/*",
+    "backend/**/*",
     "./config/webpack.config.server.js",
     "./config/webpack.config.common.js"
   ],
@@ -16,7 +17,7 @@
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
-    "typeRoots": ["./src/types"],
+    "typeRoots": ["./frontend/src/types", "./backend/types"],
     "jsx": "react-jsx"
   }
 }

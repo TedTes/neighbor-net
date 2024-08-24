@@ -1,8 +1,8 @@
 {
     "verbose": true,
     "watch": [
-        "./src/server",
-        "./src/client",
+        "./backend/*",
+        "./frontend/*",
         "./config"
     ],
     "ext": "js,ts,jsx,tsx",
