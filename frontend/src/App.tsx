@@ -2,9 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-import { CssBaseline, Button } from "@mui/material";
-//import { Page } from "./Routes";
+import { Dashboard } from "@mui/icons-material";
+import { Box, CssBaseline } from "@mui/material";
+import { Sidebar } from "./components/Sidebar";
+import { AppRoutes } from "./config";
+import { AuthProvider } from "./contexts/AuthContext";
 const theme = createTheme({
   palette: {
     primary: {
@@ -36,13 +38,29 @@ const theme = createTheme({
   },
 });
 
-function App() {
+const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router>{/* <Page /> */}</Router>
-    </ThemeProvider>
+    <AuthProvider>
+      <Router>
+        <Box sx={{ display: "flex" }}>
+          <CssBaseline />
+          <Sidebar />
+          <Box
+            component="main"
+            sx={{
+              flexGrow: 1,
+              bgcolor: "background.default",
+              p: 3,
+            }}
+          >
+            <main>
+              <AppRoutes />
+            </main>
+          </Box>
+        </Box>
+      </Router>
+    </AuthProvider>
   );
-}
+};
 
 export default App;

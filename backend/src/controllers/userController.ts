@@ -13,10 +13,10 @@ const create = async (
     const newUser = new User({
       name,
       email,
-      password, // This is the plain password
+      password,
     });
     newUser._password = password;
-    // Save the user
+
     await newUser.save();
     return res.status(200).json({
       message: "Successfully signed up!",

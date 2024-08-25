@@ -10,11 +10,7 @@ const logFormat = printf(({ level, message, timestamp, stack }) => {
 export const logger = createLogger({
   level: "info",
   // format: winston.format.json(),
-  format: combine(
-    timestamp(),
-    errors({ stack: true }), // to print stack trace for errors
-    logFormat
-  ),
+  format: combine(timestamp(), errors({ stack: true }), logFormat),
   defaultMeta: { service: "user-service" },
   transports: [
     //

@@ -7,7 +7,7 @@ const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin"
 //const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = merge(common, {
-  entry: path.resolve(__dirname, "../frontend/index.tsx"),
+  entry: path.resolve(__dirname, "../frontend/src/index.tsx"),
   output: {
     filename: "client.bundle.js",
   },
