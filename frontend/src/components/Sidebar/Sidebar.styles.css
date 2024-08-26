@@ -1,12 +1,15 @@
 .sidebar-container {
-  width: 250px;
+  width: 200px;
   background-color: #fff;
-  border-right: 1px solid #ddd;
+  /* border-right: 1px solid #ddd; */
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 20px;
+  /* padding-top: 10px; */
+  margin-top: 6.9em;
+  padding-left: 1.5em;
+  /* border: 2px red solid; */
 }
 
 .sidebar-nav {

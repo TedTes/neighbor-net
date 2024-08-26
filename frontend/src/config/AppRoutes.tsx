@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useAuth } from "../contexts";
+import { useAuth } from "../hooks";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "../components/Dashboard";
 import { Events } from "../components/Events";
 import { Messaging } from "../components/Messaging";
 import { PrivateRoute, SignIn, SignUp } from "../components/Authentication/";
-
+import { Explore } from "../components/Dashboard";
 const eventProps = {
   id: "1",
   title: "React Conference",
@@ -45,39 +45,42 @@ export const AppRoutes = () => {
     setMessages([...messages, newMessage]);
   };
   return (
-    <Routes>
-      {/* Public Routes */}
-      <Route path="/" element={<Home />} />
-      <Route
-        path="/signin"
-        element={<SignIn onSignIn={() => {}} errorMessage="test" />}
-      />
+    <div style={{ border: "2px" }}>
+      <Routes>
+        {/* Public Routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route
+          path="/signin"
+          element={<SignIn onSignIn={() => {}} errorMessage="test" />}
+        />
 
-      {/* Private Routes */}
-      <Route
-        path="/events"
-        element={
-          <PrivateRoute isAuthenticated={isAuthenticated}>
-            <Events {...eventProps} />
-          </PrivateRoute>
-        }
-      />
-      <Route
-        path="/messages"
-        element={
-          <PrivateRoute isAuthenticated={isAuthenticated}>
-            <Messaging
-              currentUser="You"
-              messages={messages}
-              onSendMessage={handleSendMessage}
-              typingIndicator={true}
-            />
-          </PrivateRoute>
-        }
-      />
+        {/* Private Routes */}
+        <Route
+          path="/events"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <Events {...eventProps} />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/messages"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <Messaging
+                currentUser="You"
+                messages={messages}
+                onSendMessage={handleSendMessage}
+                typingIndicator={true}
+              />
+            </PrivateRoute>
+          }
+        />
 
-      {/* 404 Route */}
-      <Route path="*" element={<div>Page Not Found</div>} />
-    </Routes>
+        {/* 404 Route */}
+        {/* <Route path="*" element={<div>Page Not Found</div>} /> */}
+      </Routes>
+    </div>
   );
 };

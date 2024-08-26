@@ -1,2 +1,4 @@
 node_modules
 project-structure.txt
+large_posts.json
+generate-posts.py

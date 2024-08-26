@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Dashboard } from "@mui/icons-material";
 import { Box, CssBaseline } from "@mui/material";
 import { Sidebar } from "./components/Sidebar";
+import { Header } from "./components/Header";
+import { Home as NewsFeed } from "./components/Dashboard";
+import { useAuth } from "./hooks";
 import { AppRoutes } from "./config";
-import { AuthProvider } from "./contexts/AuthContext";
+import Grid from "@mui/material/Grid";
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -15,23 +17,27 @@ const theme = createTheme({
     secondary: {
       main: "#dc004e",
     },
+    // background: {
+    //   default: "#f4f4f4",
+    //   paper: "#ffffff",
+    // },
   },
   typography: {
     fontFamily: "Roboto, Arial, sans-serif",
     h1: {
       fontSize: "2rem",
-      color: "#dc004e",
+      color: "#1976d2",
     },
   },
   components: {
     MuiCard: {
       defaultProps: {
-        elevation: 3, // Set default elevation for Card
+        elevation: 3,
       },
       styleOverrides: {
         root: {
-          borderRadius: "12px", // Override the default border radius
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Custom shadow
+          borderRadius: "12px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         },
       },
     },
@@ -39,27 +45,52 @@ const theme = createTheme({
 });
 
 const App: React.FC = () => {
+  const { isAuthenticated } = useAuth();
+
   return (
-    <AuthProvider>
+    <ThemeProvider theme={theme}>
       <Router>
-        <Box sx={{ display: "flex" }}>
-          <CssBaseline />
-          <Sidebar />
-          <Box
-            component="main"
+        <Grid container sx={{ marginTop: 0 }}>
+          <Grid
+            item
+            lg={12}
             sx={{
-              flexGrow: 1,
-              bgcolor: "background.default",
-              p: 3,
+              width: "100vw",
+              position: "sticky",
+              zIndex: 100000,
+              top: ".5em",
+              background: "#e8e8e8",
+              marginTop: 0,
             }}
           >
-            <main>
-              <AppRoutes />
-            </main>
-          </Box>
-        </Box>
+            <Header
+              isAuthenticated={isAuthenticated}
+              onSignIn={() => {}}
+              onSignOut={() => {}}
+            />
+          </Grid>
+          <Grid
+            item
+            lg={3}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              // border: 2,
+              // borderColor: "green",
+              height: "100vh",
+            }}
+          >
+            <Sidebar />
+          </Grid>
+          <Grid item lg={6} sx={{}}>
+            <AppRoutes />
+          </Grid>
+          <Grid item lg={3} sx={{}}>
+            <div>right side</div>
+          </Grid>
+        </Grid>
       </Router>
-    </AuthProvider>
+    </ThemeProvider>
   );
 };
 

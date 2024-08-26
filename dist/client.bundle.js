@@ -2897,98 +2897,6 @@ var _default = exports["default"] = (0, _createSvgIcon.default)( /*#__PURE__*/(0
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/Event.js":
-/*!***************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Event.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-"use client";
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
-var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _default = exports["default"] = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "M17 12h-5v5h5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1zm3 18H5V8h14z"
-}), 'Event');
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/Home.js":
-/*!**************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Home.js ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-"use client";
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
-var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _default = exports["default"] = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-}), 'Home');
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/Message.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Message.js ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-"use client";
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
-var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _default = exports["default"] = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-2 12H6v-2h12zm0-3H6V9h12zm0-3H6V6h12z"
-}), 'Message');
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/Notifications.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Notifications.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-"use client";
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
-var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _default = exports["default"] = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2m6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1z"
-}), 'Notifications');
-
-/***/ }),
-
 /***/ "./node_modules/@mui/icons-material/Search.js":
 /*!****************************************************!*\
   !*** ./node_modules/@mui/icons-material/Search.js ***!
@@ -3263,890 +3171,6 @@ function getAppBarUtilityClass(slot) {
 }
 const appBarClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiAppBar', ['root', 'positionFixed', 'positionAbsolute', 'positionSticky', 'positionStatic', 'positionRelative', 'colorDefault', 'colorPrimary', 'colorSecondary', 'colorInherit', 'colorTransparent', 'colorError', 'colorInfo', 'colorSuccess', 'colorWarning']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (appBarClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/Avatar/Avatar.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@mui/material/Avatar/Avatar.js ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _zero_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../zero-styled */ "./node_modules/@mui/material/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../DefaultPropsProvider */ "./node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _internal_svg_icons_Person__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../internal/svg-icons/Person */ "./node_modules/@mui/material/internal/svg-icons/Person.js");
-/* harmony import */ var _avatarClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./avatarClasses */ "./node_modules/@mui/material/Avatar/avatarClasses.js");
-/* harmony import */ var _utils_useSlot__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/useSlot */ "./node_modules/@mui/material/utils/useSlot.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-const _excluded = ["alt", "children", "className", "component", "slots", "slotProps", "imgProps", "sizes", "src", "srcSet", "variant"];
-
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    variant,
-    colorDefault
-  } = ownerState;
-  const slots = {
-    root: ['root', variant, colorDefault && 'colorDefault'],
-    img: ['img'],
-    fallback: ['fallback']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _avatarClasses__WEBPACK_IMPORTED_MODULE_6__.getAvatarUtilityClass, classes);
-};
-const AvatarRoot = (0,_zero_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('div', {
-  name: 'MuiAvatar',
-  slot: 'Root',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.root, styles[ownerState.variant], ownerState.colorDefault && styles.colorDefault];
-  }
-})(({
-  theme
-}) => ({
-  position: 'relative',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  flexShrink: 0,
-  width: 40,
-  height: 40,
-  fontFamily: theme.typography.fontFamily,
-  fontSize: theme.typography.pxToRem(20),
-  lineHeight: 1,
-  borderRadius: '50%',
-  overflow: 'hidden',
-  userSelect: 'none',
-  variants: [{
-    props: {
-      variant: 'rounded'
-    },
-    style: {
-      borderRadius: (theme.vars || theme).shape.borderRadius
-    }
-  }, {
-    props: {
-      variant: 'square'
-    },
-    style: {
-      borderRadius: 0
-    }
-  }, {
-    props: {
-      colorDefault: true
-    },
-    style: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-      color: (theme.vars || theme).palette.background.default
-    }, theme.vars ? {
-      backgroundColor: theme.vars.palette.Avatar.defaultBg
-    } : (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-      backgroundColor: theme.palette.grey[400]
-    }, theme.applyStyles('dark', {
-      backgroundColor: theme.palette.grey[600]
-    })))
-  }]
-}));
-const AvatarImg = (0,_zero_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('img', {
-  name: 'MuiAvatar',
-  slot: 'Img',
-  overridesResolver: (props, styles) => styles.img
-})({
-  width: '100%',
-  height: '100%',
-  textAlign: 'center',
-  // Handle non-square image. The property isn't supported by IE11.
-  objectFit: 'cover',
-  // Hide alt text.
-  color: 'transparent',
-  // Hide the image broken icon, only works on Chrome.
-  textIndent: 10000
-});
-const AvatarFallback = (0,_zero_styled__WEBPACK_IMPORTED_MODULE_7__["default"])(_internal_svg_icons_Person__WEBPACK_IMPORTED_MODULE_8__["default"], {
-  name: 'MuiAvatar',
-  slot: 'Fallback',
-  overridesResolver: (props, styles) => styles.fallback
-})({
-  width: '75%',
-  height: '75%'
-});
-function useLoaded({
-  crossOrigin,
-  referrerPolicy,
-  src,
-  srcSet
-}) {
-  const [loaded, setLoaded] = react__WEBPACK_IMPORTED_MODULE_2__.useState(false);
-  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
-    if (!src && !srcSet) {
-      return undefined;
-    }
-    setLoaded(false);
-    let active = true;
-    const image = new Image();
-    image.onload = () => {
-      if (!active) {
-        return;
-      }
-      setLoaded('loaded');
-    };
-    image.onerror = () => {
-      if (!active) {
-        return;
-      }
-      setLoaded('error');
-    };
-    image.crossOrigin = crossOrigin;
-    image.referrerPolicy = referrerPolicy;
-    image.src = src;
-    if (srcSet) {
-      image.srcset = srcSet;
-    }
-    return () => {
-      active = false;
-    };
-  }, [crossOrigin, referrerPolicy, src, srcSet]);
-  return loaded;
-}
-const Avatar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Avatar(inProps, ref) {
-  const props = (0,_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_9__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiAvatar'
-  });
-  const {
-      alt,
-      children: childrenProp,
-      className,
-      component = 'div',
-      slots = {},
-      slotProps = {},
-      imgProps,
-      sizes,
-      src,
-      srcSet,
-      variant = 'circular'
-    } = props,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
-  let children = null;
-
-  // Use a hook instead of onError on the img element to support server-side rendering.
-  const loaded = useLoaded((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, imgProps, {
-    src,
-    srcSet
-  }));
-  const hasImg = src || srcSet;
-  const hasImgNotFailing = hasImg && loaded !== 'error';
-  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
-    colorDefault: !hasImgNotFailing,
-    component,
-    variant
-  });
-  const classes = useUtilityClasses(ownerState);
-  const [ImgSlot, imgSlotProps] = (0,_utils_useSlot__WEBPACK_IMPORTED_MODULE_10__["default"])('img', {
-    className: classes.img,
-    elementType: AvatarImg,
-    externalForwardedProps: {
-      slots,
-      slotProps: {
-        img: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, imgProps, slotProps.img)
-      }
-    },
-    additionalProps: {
-      alt,
-      src,
-      srcSet,
-      sizes
-    },
-    ownerState
-  });
-  if (hasImgNotFailing) {
-    children = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(ImgSlot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, imgSlotProps));
-    // We only render valid children, non valid children are rendered with a fallback
-    // We consider that invalid children are all falsy values, except 0, which is valid.
-  } else if (!!childrenProp || childrenProp === 0) {
-    children = childrenProp;
-  } else if (hasImg && alt) {
-    children = alt[0];
-  } else {
-    children = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(AvatarFallback, {
-      ownerState: ownerState,
-      className: classes.fallback
-    });
-  }
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(AvatarRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    as: component,
-    ownerState: ownerState,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className),
-    ref: ref
-  }, other, {
-    children: children
-  }));
-});
- true ? Avatar.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * Used in combination with `src` or `srcSet` to
-   * provide an alt attribute for the rendered `img` element.
-   */
-  alt: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string),
-  /**
-   * Used to render icon or text elements inside the Avatar if `src` is not set.
-   * This can be an element, or just a string.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().node),
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object),
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string),
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().elementType),
-  /**
-   * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attributes) applied to the `img` element if the component is used to display an image.
-   * It can be used to listen for the loading error event.
-   * @deprecated Use `slotProps.img` instead. This prop will be removed in v7. [How to migrate](/material-ui/migration/migrating-from-deprecated-apis/).
-   */
-  imgProps: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object),
-  /**
-   * The `sizes` attribute for the `img` element.
-   */
-  sizes: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string),
-  /**
-   * The props used for each slot inside.
-   * @default {}
-   */
-  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_11___default().shape({
-    img: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object)])
-  }),
-  /**
-   * The components used for each slot inside.
-   * @default {}
-   */
-  slots: prop_types__WEBPACK_IMPORTED_MODULE_11___default().shape({
-    img: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().elementType)
-  }),
-  /**
-   * The `src` attribute for the `img` element.
-   */
-  src: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string),
-  /**
-   * The `srcSet` attribute for the `img` element.
-   * Use this attribute for responsive image display.
-   */
-  srcSet: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object)]),
-  /**
-   * The shape of the avatar.
-   * @default 'circular'
-   */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOf(['circular', 'rounded', 'square']), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string)])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Avatar);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/Avatar/avatarClasses.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@mui/material/Avatar/avatarClasses.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getAvatarUtilityClass: () => (/* binding */ getAvatarUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getAvatarUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiAvatar', slot);
-}
-const avatarClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiAvatar', ['root', 'colorDefault', 'circular', 'rounded', 'square', 'img', 'fallback']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (avatarClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/Badge/Badge.js":
-/*!***************************************************!*\
-  !*** ./node_modules/@mui/material/Badge/Badge.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_usePreviousProps__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/utils/usePreviousProps */ "./node_modules/@mui/utils/esm/usePreviousProps/usePreviousProps.js");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _mui_utils_useSlotProps__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils/useSlotProps */ "./node_modules/@mui/utils/esm/useSlotProps/useSlotProps.js");
-/* harmony import */ var _useBadge__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./useBadge */ "./node_modules/@mui/material/Badge/useBadge.js");
-/* harmony import */ var _zero_styled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../zero-styled */ "./node_modules/@mui/material/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../DefaultPropsProvider */ "./node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _utils_capitalize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/capitalize */ "./node_modules/@mui/material/utils/capitalize.js");
-/* harmony import */ var _badgeClasses__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./badgeClasses */ "./node_modules/@mui/material/Badge/badgeClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-const _excluded = ["anchorOrigin", "className", "classes", "component", "components", "componentsProps", "children", "overlap", "color", "invisible", "max", "badgeContent", "slots", "slotProps", "showZero", "variant"];
-
-
-
-
-
-
-
-
-
-
-
-
-
-const RADIUS_STANDARD = 10;
-const RADIUS_DOT = 4;
-const useUtilityClasses = ownerState => {
-  const {
-    color,
-    anchorOrigin,
-    invisible,
-    overlap,
-    variant,
-    classes = {}
-  } = ownerState;
-  const slots = {
-    root: ['root'],
-    badge: ['badge', variant, invisible && 'invisible', `anchorOrigin${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(anchorOrigin.vertical)}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(anchorOrigin.horizontal)}`, `anchorOrigin${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(anchorOrigin.vertical)}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(anchorOrigin.horizontal)}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(overlap)}`, `overlap${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(overlap)}`, color !== 'default' && `color${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color)}`]
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_6__["default"])(slots, _badgeClasses__WEBPACK_IMPORTED_MODULE_7__.getBadgeUtilityClass, classes);
-};
-const BadgeRoot = (0,_zero_styled__WEBPACK_IMPORTED_MODULE_8__["default"])('span', {
-  name: 'MuiBadge',
-  slot: 'Root',
-  overridesResolver: (props, styles) => styles.root
-})({
-  position: 'relative',
-  display: 'inline-flex',
-  // For correct alignment with the text.
-  verticalAlign: 'middle',
-  flexShrink: 0
-});
-const BadgeBadge = (0,_zero_styled__WEBPACK_IMPORTED_MODULE_8__["default"])('span', {
-  name: 'MuiBadge',
-  slot: 'Badge',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.badge, styles[ownerState.variant], styles[`anchorOrigin${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.anchorOrigin.vertical)}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.anchorOrigin.horizontal)}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.overlap)}`], ownerState.color !== 'default' && styles[`color${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.color)}`], ownerState.invisible && styles.invisible];
-  }
-})(({
-  theme
-}) => {
-  var _theme$vars;
-  return {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignContent: 'center',
-    alignItems: 'center',
-    position: 'absolute',
-    boxSizing: 'border-box',
-    fontFamily: theme.typography.fontFamily,
-    fontWeight: theme.typography.fontWeightMedium,
-    fontSize: theme.typography.pxToRem(12),
-    minWidth: RADIUS_STANDARD * 2,
-    lineHeight: 1,
-    padding: '0 6px',
-    height: RADIUS_STANDARD * 2,
-    borderRadius: RADIUS_STANDARD,
-    zIndex: 1,
-    // Render the badge on top of potential ripples.
-    transition: theme.transitions.create('transform', {
-      easing: theme.transitions.easing.easeInOut,
-      duration: theme.transitions.duration.enteringScreen
-    }),
-    variants: [...Object.keys(((_theme$vars = theme.vars) != null ? _theme$vars : theme).palette).filter(key => {
-      var _theme$vars2, _theme$vars3;
-      return ((_theme$vars2 = theme.vars) != null ? _theme$vars2 : theme).palette[key].main && ((_theme$vars3 = theme.vars) != null ? _theme$vars3 : theme).palette[key].contrastText;
-    }).map(color => ({
-      props: {
-        color
-      },
-      style: {
-        backgroundColor: (theme.vars || theme).palette[color].main,
-        color: (theme.vars || theme).palette[color].contrastText
-      }
-    })), {
-      props: {
-        variant: 'dot'
-      },
-      style: {
-        borderRadius: RADIUS_DOT,
-        height: RADIUS_DOT * 2,
-        minWidth: RADIUS_DOT * 2,
-        padding: 0
-      }
-    }, {
-      props: ({
-        ownerState
-      }) => ownerState.anchorOrigin.vertical === 'top' && ownerState.anchorOrigin.horizontal === 'right' && ownerState.overlap === 'rectangular',
-      style: {
-        top: 0,
-        right: 0,
-        transform: 'scale(1) translate(50%, -50%)',
-        transformOrigin: '100% 0%',
-        [`&.${_badgeClasses__WEBPACK_IMPORTED_MODULE_7__["default"].invisible}`]: {
-          transform: 'scale(0) translate(50%, -50%)'
-        }
-      }
-    }, {
-      props: ({
-        ownerState
-      }) => ownerState.anchorOrigin.vertical === 'bottom' && ownerState.anchorOrigin.horizontal === 'right' && ownerState.overlap === 'rectangular',
-      style: {
-        bottom: 0,
-        right: 0,
-        transform: 'scale(1) translate(50%, 50%)',
-        transformOrigin: '100% 100%',
-        [`&.${_badgeClasses__WEBPACK_IMPORTED_MODULE_7__["default"].invisible}`]: {
-          transform: 'scale(0) translate(50%, 50%)'
-        }
-      }
-    }, {
-      props: ({
-        ownerState
-      }) => ownerState.anchorOrigin.vertical === 'top' && ownerState.anchorOrigin.horizontal === 'left' && ownerState.overlap === 'rectangular',
-      style: {
-        top: 0,
-        left: 0,
-        transform: 'scale(1) translate(-50%, -50%)',
-        transformOrigin: '0% 0%',
-        [`&.${_badgeClasses__WEBPACK_IMPORTED_MODULE_7__["default"].invisible}`]: {
-          transform: 'scale(0) translate(-50%, -50%)'
-        }
-      }
-    }, {
-      props: ({
-        ownerState
-      }) => ownerState.anchorOrigin.vertical === 'bottom' && ownerState.anchorOrigin.horizontal === 'left' && ownerState.overlap === 'rectangular',
-      style: {
-        bottom: 0,
-        left: 0,
-        transform: 'scale(1) translate(-50%, 50%)',
-        transformOrigin: '0% 100%',
-        [`&.${_badgeClasses__WEBPACK_IMPORTED_MODULE_7__["default"].invisible}`]: {
-          transform: 'scale(0) translate(-50%, 50%)'
-        }
-      }
-    }, {
-      props: ({
-        ownerState
-      }) => ownerState.anchorOrigin.vertical === 'top' && ownerState.anchorOrigin.horizontal === 'right' && ownerState.overlap === 'circular',
-      style: {
-        top: '14%',
-        right: '14%',
-        transform: 'scale(1) translate(50%, -50%)',
-        transformOrigin: '100% 0%',
-        [`&.${_badgeClasses__WEBPACK_IMPORTED_MODULE_7__["default"].invisible}`]: {
-          transform: 'scale(0) translate(50%, -50%)'
-        }
-      }
-    }, {
-      props: ({
-        ownerState
-      }) => ownerState.anchorOrigin.vertical === 'bottom' && ownerState.anchorOrigin.horizontal === 'right' && ownerState.overlap === 'circular',
-      style: {
-        bottom: '14%',
-        right: '14%',
-        transform: 'scale(1) translate(50%, 50%)',
-        transformOrigin: '100% 100%',
-        [`&.${_badgeClasses__WEBPACK_IMPORTED_MODULE_7__["default"].invisible}`]: {
-          transform: 'scale(0) translate(50%, 50%)'
-        }
-      }
-    }, {
-      props: ({
-        ownerState
-      }) => ownerState.anchorOrigin.vertical === 'top' && ownerState.anchorOrigin.horizontal === 'left' && ownerState.overlap === 'circular',
-      style: {
-        top: '14%',
-        left: '14%',
-        transform: 'scale(1) translate(-50%, -50%)',
-        transformOrigin: '0% 0%',
-        [`&.${_badgeClasses__WEBPACK_IMPORTED_MODULE_7__["default"].invisible}`]: {
-          transform: 'scale(0) translate(-50%, -50%)'
-        }
-      }
-    }, {
-      props: ({
-        ownerState
-      }) => ownerState.anchorOrigin.vertical === 'bottom' && ownerState.anchorOrigin.horizontal === 'left' && ownerState.overlap === 'circular',
-      style: {
-        bottom: '14%',
-        left: '14%',
-        transform: 'scale(1) translate(-50%, 50%)',
-        transformOrigin: '0% 100%',
-        [`&.${_badgeClasses__WEBPACK_IMPORTED_MODULE_7__["default"].invisible}`]: {
-          transform: 'scale(0) translate(-50%, 50%)'
-        }
-      }
-    }, {
-      props: {
-        invisible: true
-      },
-      style: {
-        transition: theme.transitions.create('transform', {
-          easing: theme.transitions.easing.easeInOut,
-          duration: theme.transitions.duration.leavingScreen
-        })
-      }
-    }]
-  };
-});
-const Badge = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Badge(inProps, ref) {
-  var _ref, _slots$root, _ref2, _slots$badge, _slotProps$root, _slotProps$badge;
-  const props = (0,_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_9__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiBadge'
-  });
-  const {
-      anchorOrigin: anchorOriginProp = {
-        vertical: 'top',
-        horizontal: 'right'
-      },
-      className,
-      component,
-      components = {},
-      componentsProps = {},
-      children,
-      overlap: overlapProp = 'rectangular',
-      color: colorProp = 'default',
-      invisible: invisibleProp = false,
-      max: maxProp = 99,
-      badgeContent: badgeContentProp,
-      slots,
-      slotProps,
-      showZero = false,
-      variant: variantProp = 'standard'
-    } = props,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, _excluded);
-  const {
-    badgeContent,
-    invisible: invisibleFromHook,
-    max,
-    displayValue: displayValueFromHook
-  } = (0,_useBadge__WEBPACK_IMPORTED_MODULE_10__["default"])({
-    max: maxProp,
-    invisible: invisibleProp,
-    badgeContent: badgeContentProp,
-    showZero
-  });
-  const prevProps = (0,_mui_utils_usePreviousProps__WEBPACK_IMPORTED_MODULE_11__["default"])({
-    anchorOrigin: anchorOriginProp,
-    color: colorProp,
-    overlap: overlapProp,
-    variant: variantProp,
-    badgeContent: badgeContentProp
-  });
-  const invisible = invisibleFromHook || badgeContent == null && variantProp !== 'dot';
-  const {
-    color = colorProp,
-    overlap = overlapProp,
-    anchorOrigin = anchorOriginProp,
-    variant = variantProp
-  } = invisible ? prevProps : props;
-  const displayValue = variant !== 'dot' ? displayValueFromHook : undefined;
-  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    badgeContent,
-    invisible,
-    max,
-    displayValue,
-    showZero,
-    anchorOrigin,
-    color,
-    overlap,
-    variant
-  });
-  const classes = useUtilityClasses(ownerState);
-
-  // support both `slots` and `components` for backward compatibility
-  const RootSlot = (_ref = (_slots$root = slots == null ? void 0 : slots.root) != null ? _slots$root : components.Root) != null ? _ref : BadgeRoot;
-  const BadgeSlot = (_ref2 = (_slots$badge = slots == null ? void 0 : slots.badge) != null ? _slots$badge : components.Badge) != null ? _ref2 : BadgeBadge;
-  const rootSlotProps = (_slotProps$root = slotProps == null ? void 0 : slotProps.root) != null ? _slotProps$root : componentsProps.root;
-  const badgeSlotProps = (_slotProps$badge = slotProps == null ? void 0 : slotProps.badge) != null ? _slotProps$badge : componentsProps.badge;
-  const rootProps = (0,_mui_utils_useSlotProps__WEBPACK_IMPORTED_MODULE_12__["default"])({
-    elementType: RootSlot,
-    externalSlotProps: rootSlotProps,
-    externalForwardedProps: other,
-    additionalProps: {
-      ref,
-      as: component
-    },
-    ownerState,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(rootSlotProps == null ? void 0 : rootSlotProps.className, classes.root, className)
-  });
-  const badgeProps = (0,_mui_utils_useSlotProps__WEBPACK_IMPORTED_MODULE_12__["default"])({
-    elementType: BadgeSlot,
-    externalSlotProps: badgeSlotProps,
-    ownerState,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.badge, badgeSlotProps == null ? void 0 : badgeSlotProps.className)
-  });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(RootSlot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, rootProps, {
-    children: [children, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(BadgeSlot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, badgeProps, {
-      children: displayValue
-    }))]
-  }));
-});
- true ? Badge.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The anchor of the badge.
-   * @default {
-   *   vertical: 'top',
-   *   horizontal: 'right',
-   * }
-   */
-  anchorOrigin: prop_types__WEBPACK_IMPORTED_MODULE_13___default().shape({
-    horizontal: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOf(['left', 'right']).isRequired,
-    vertical: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOf(['bottom', 'top']).isRequired
-  }),
-  /**
-   * The content rendered within the badge.
-   */
-  badgeContent: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().node),
-  /**
-   * The badge will be added relative to this node.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().node),
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object),
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().string),
-  /**
-   * The color of the component.
-   * It supports both default and custom theme colors, which can be added as shown in the
-   * [palette customization guide](https://mui.com/material-ui/customization/palette/#custom-colors).
-   * @default 'default'
-   */
-  color: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOf(['default', 'primary', 'secondary', 'error', 'info', 'success', 'warning']), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().string)]),
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().elementType),
-  /**
-   * The components used for each slot inside.
-   *
-   * This prop is an alias for the `slots` prop.
-   * It's recommended to use the `slots` prop instead.
-   *
-   * @default {}
-   */
-  components: prop_types__WEBPACK_IMPORTED_MODULE_13___default().shape({
-    Badge: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().elementType),
-    Root: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().elementType)
-  }),
-  /**
-   * The extra props for the slot components.
-   * You can override the existing props or add new ones.
-   *
-   * This prop is an alias for the `slotProps` prop.
-   * It's recommended to use the `slotProps` prop instead, as `componentsProps` will be deprecated in the future.
-   *
-   * @default {}
-   */
-  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_13___default().shape({
-    badge: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_13___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object)]),
-    root: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_13___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object)])
-  }),
-  /**
-   * If `true`, the badge is invisible.
-   * @default false
-   */
-  invisible: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().bool),
-  /**
-   * Max count to show.
-   * @default 99
-   */
-  max: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().number),
-  /**
-   * Wrapped shape the badge should overlap.
-   * @default 'rectangular'
-   */
-  overlap: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOf(['circular', 'rectangular']),
-  /**
-   * Controls whether the badge is hidden when `badgeContent` is zero.
-   * @default false
-   */
-  showZero: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().bool),
-  /**
-   * The props used for each slot inside the Badge.
-   * @default {}
-   */
-  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_13___default().shape({
-    badge: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_13___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object)]),
-    root: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_13___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object)])
-  }),
-  /**
-   * The components used for each slot inside the Badge.
-   * Either a string to use a HTML element or a component.
-   * @default {}
-   */
-  slots: prop_types__WEBPACK_IMPORTED_MODULE_13___default().shape({
-    badge: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().elementType),
-    root: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().elementType)
-  }),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_13___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_13___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object)]),
-  /**
-   * The variant to use.
-   * @default 'standard'
-   */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOf(['dot', 'standard']), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().string)])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Badge);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/Badge/badgeClasses.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@mui/material/Badge/badgeClasses.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getBadgeUtilityClass: () => (/* binding */ getBadgeUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getBadgeUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiBadge', slot);
-}
-const badgeClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiBadge', ['root', 'badge', 'dot', 'standard', 'anchorOriginTopRight', 'anchorOriginBottomRight', 'anchorOriginTopLeft', 'anchorOriginBottomLeft', 'invisible', 'colorError', 'colorInfo', 'colorPrimary', 'colorSecondary', 'colorSuccess', 'colorWarning', 'overlapRectangular', 'overlapCircular',
-// TODO: v6 remove the overlap value from these class keys
-'anchorOriginTopLeftCircular', 'anchorOriginTopLeftRectangular', 'anchorOriginTopRightCircular', 'anchorOriginTopRightRectangular', 'anchorOriginBottomLeftCircular', 'anchorOriginBottomLeftRectangular', 'anchorOriginBottomRightCircular', 'anchorOriginBottomRightRectangular']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (badgeClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/Badge/useBadge.js":
-/*!******************************************************!*\
-  !*** ./node_modules/@mui/material/Badge/useBadge.js ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/usePreviousProps/usePreviousProps.js");
-'use client';
-
-
-/**
- *
- * Demos:
- *
- * - [Badge](https://next.mui.com/base-ui/react-badge/#hook)
- *
- * API:
- *
- * - [useBadge API](https://next.mui.com/base-ui/react-badge/hooks-api/#use-badge)
- */
-function useBadge(parameters) {
-  const {
-    badgeContent: badgeContentProp,
-    invisible: invisibleProp = false,
-    max: maxProp = 99,
-    showZero = false
-  } = parameters;
-  const prevProps = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    badgeContent: badgeContentProp,
-    max: maxProp
-  });
-  let invisible = invisibleProp;
-  if (invisibleProp === false && badgeContentProp === 0 && !showZero) {
-    invisible = true;
-  }
-  const {
-    badgeContent,
-    max = maxProp
-  } = invisible ? prevProps : parameters;
-  const displayValue = badgeContent && Number(badgeContent) > max ? `${max}+` : badgeContent;
-  return {
-    badgeContent,
-    invisible,
-    max,
-    displayValue
-  };
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useBadge);
 
 /***/ }),
 
@@ -5252,6 +4276,492 @@ function getTouchRippleUtilityClass(slot) {
 }
 const touchRippleClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiTouchRipple', ['root', 'ripple', 'rippleVisible', 'ripplePulsate', 'child', 'childLeaving', 'childPulsate']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (touchRippleClasses);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/ButtonGroup/ButtonGroupButtonContext.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@mui/material/ButtonGroup/ButtonGroupButtonContext.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * @ignore - internal component.
+ */
+const ButtonGroupButtonContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(undefined);
+if (true) {
+  ButtonGroupButtonContext.displayName = 'ButtonGroupButtonContext';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ButtonGroupButtonContext);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/ButtonGroup/ButtonGroupContext.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@mui/material/ButtonGroup/ButtonGroupContext.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * @ignore - internal component.
+ */
+const ButtonGroupContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext({});
+if (true) {
+  ButtonGroupContext.displayName = 'ButtonGroupContext';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ButtonGroupContext);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Button/Button.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@mui/material/Button/Button.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
+/* harmony import */ var _mui_utils_resolveProps__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/utils/resolveProps */ "./node_modules/@mui/utils/esm/resolveProps/resolveProps.js");
+/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
+/* harmony import */ var _mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/system/colorManipulator */ "./node_modules/@mui/system/colorManipulator.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/rootShouldForwardProp.js");
+/* harmony import */ var _DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../DefaultPropsProvider */ "./node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.js");
+/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ButtonBase */ "./node_modules/@mui/material/ButtonBase/ButtonBase.js");
+/* harmony import */ var _utils_capitalize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/capitalize */ "./node_modules/@mui/material/utils/capitalize.js");
+/* harmony import */ var _buttonClasses__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./buttonClasses */ "./node_modules/@mui/material/Button/buttonClasses.js");
+/* harmony import */ var _ButtonGroup_ButtonGroupContext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../ButtonGroup/ButtonGroupContext */ "./node_modules/@mui/material/ButtonGroup/ButtonGroupContext.js");
+/* harmony import */ var _ButtonGroup_ButtonGroupButtonContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../ButtonGroup/ButtonGroupButtonContext */ "./node_modules/@mui/material/ButtonGroup/ButtonGroupButtonContext.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+'use client';
+
+
+
+const _excluded = ["children", "color", "component", "className", "disabled", "disableElevation", "disableFocusRipple", "endIcon", "focusVisibleClassName", "fullWidth", "size", "startIcon", "type", "variant"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const useUtilityClasses = ownerState => {
+  const {
+    color,
+    disableElevation,
+    fullWidth,
+    size,
+    variant,
+    classes
+  } = ownerState;
+  const slots = {
+    root: ['root', variant, `${variant}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color)}`, `size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(size)}`, `${variant}Size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(size)}`, `color${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color)}`, disableElevation && 'disableElevation', fullWidth && 'fullWidth'],
+    label: ['label'],
+    startIcon: ['icon', 'startIcon', `iconSize${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(size)}`],
+    endIcon: ['icon', 'endIcon', `iconSize${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(size)}`]
+  };
+  const composedClasses = (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_6__["default"])(slots, _buttonClasses__WEBPACK_IMPORTED_MODULE_7__.getButtonUtilityClass, classes);
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, classes, composedClasses);
+};
+const commonIconStyles = ownerState => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.size === 'small' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 18
+  }
+}, ownerState.size === 'medium' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 20
+  }
+}, ownerState.size === 'large' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 22
+  }
+});
+const ButtonRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_8__["default"])(_ButtonBase__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  shouldForwardProp: prop => (0,_styles_styled__WEBPACK_IMPORTED_MODULE_10__["default"])(prop) || prop === 'classes',
+  name: 'MuiButton',
+  slot: 'Root',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.root, styles[ownerState.variant], styles[`${ownerState.variant}${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.color)}`], styles[`size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.size)}`], styles[`${ownerState.variant}Size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.size)}`], ownerState.color === 'inherit' && styles.colorInherit, ownerState.disableElevation && styles.disableElevation, ownerState.fullWidth && styles.fullWidth];
+  }
+})(({
+  theme,
+  ownerState
+}) => {
+  var _theme$palette$getCon, _theme$palette;
+  const inheritContainedBackgroundColor = theme.palette.mode === 'light' ? theme.palette.grey[300] : theme.palette.grey[800];
+  const inheritContainedHoverBackgroundColor = theme.palette.mode === 'light' ? theme.palette.grey.A100 : theme.palette.grey[700];
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, theme.typography.button, {
+    minWidth: 64,
+    padding: '6px 16px',
+    borderRadius: (theme.vars || theme).shape.borderRadius,
+    transition: theme.transitions.create(['background-color', 'box-shadow', 'border-color', 'color'], {
+      duration: theme.transitions.duration.short
+    }),
+    '&:hover': (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      textDecoration: 'none',
+      backgroundColor: theme.vars ? `rgba(${theme.vars.palette.text.primaryChannel} / ${theme.vars.palette.action.hoverOpacity})` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_11__.alpha)(theme.palette.text.primary, theme.palette.action.hoverOpacity),
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        backgroundColor: 'transparent'
+      }
+    }, ownerState.variant === 'text' && ownerState.color !== 'inherit' && {
+      backgroundColor: theme.vars ? `rgba(${theme.vars.palette[ownerState.color].mainChannel} / ${theme.vars.palette.action.hoverOpacity})` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_11__.alpha)(theme.palette[ownerState.color].main, theme.palette.action.hoverOpacity),
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        backgroundColor: 'transparent'
+      }
+    }, ownerState.variant === 'outlined' && ownerState.color !== 'inherit' && {
+      border: `1px solid ${(theme.vars || theme).palette[ownerState.color].main}`,
+      backgroundColor: theme.vars ? `rgba(${theme.vars.palette[ownerState.color].mainChannel} / ${theme.vars.palette.action.hoverOpacity})` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_11__.alpha)(theme.palette[ownerState.color].main, theme.palette.action.hoverOpacity),
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        backgroundColor: 'transparent'
+      }
+    }, ownerState.variant === 'contained' && {
+      backgroundColor: theme.vars ? theme.vars.palette.Button.inheritContainedHoverBg : inheritContainedHoverBackgroundColor,
+      boxShadow: (theme.vars || theme).shadows[4],
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        boxShadow: (theme.vars || theme).shadows[2],
+        backgroundColor: (theme.vars || theme).palette.grey[300]
+      }
+    }, ownerState.variant === 'contained' && ownerState.color !== 'inherit' && {
+      backgroundColor: (theme.vars || theme).palette[ownerState.color].dark,
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        backgroundColor: (theme.vars || theme).palette[ownerState.color].main
+      }
+    }),
+    '&:active': (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.variant === 'contained' && {
+      boxShadow: (theme.vars || theme).shadows[8]
+    }),
+    [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_7__["default"].focusVisible}`]: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.variant === 'contained' && {
+      boxShadow: (theme.vars || theme).shadows[6]
+    }),
+    [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_7__["default"].disabled}`]: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      color: (theme.vars || theme).palette.action.disabled
+    }, ownerState.variant === 'outlined' && {
+      border: `1px solid ${(theme.vars || theme).palette.action.disabledBackground}`
+    }, ownerState.variant === 'contained' && {
+      color: (theme.vars || theme).palette.action.disabled,
+      boxShadow: (theme.vars || theme).shadows[0],
+      backgroundColor: (theme.vars || theme).palette.action.disabledBackground
+    })
+  }, ownerState.variant === 'text' && {
+    padding: '6px 8px'
+  }, ownerState.variant === 'text' && ownerState.color !== 'inherit' && {
+    color: (theme.vars || theme).palette[ownerState.color].main
+  }, ownerState.variant === 'outlined' && {
+    padding: '5px 15px',
+    border: '1px solid currentColor'
+  }, ownerState.variant === 'outlined' && ownerState.color !== 'inherit' && {
+    color: (theme.vars || theme).palette[ownerState.color].main,
+    border: theme.vars ? `1px solid rgba(${theme.vars.palette[ownerState.color].mainChannel} / 0.5)` : `1px solid ${(0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_11__.alpha)(theme.palette[ownerState.color].main, 0.5)}`
+  }, ownerState.variant === 'contained' && {
+    color: theme.vars ?
+    // this is safe because grey does not change between default light/dark mode
+    theme.vars.palette.text.primary : (_theme$palette$getCon = (_theme$palette = theme.palette).getContrastText) == null ? void 0 : _theme$palette$getCon.call(_theme$palette, theme.palette.grey[300]),
+    backgroundColor: theme.vars ? theme.vars.palette.Button.inheritContainedBg : inheritContainedBackgroundColor,
+    boxShadow: (theme.vars || theme).shadows[2]
+  }, ownerState.variant === 'contained' && ownerState.color !== 'inherit' && {
+    color: (theme.vars || theme).palette[ownerState.color].contrastText,
+    backgroundColor: (theme.vars || theme).palette[ownerState.color].main
+  }, ownerState.color === 'inherit' && {
+    color: 'inherit',
+    borderColor: 'currentColor'
+  }, ownerState.size === 'small' && ownerState.variant === 'text' && {
+    padding: '4px 5px',
+    fontSize: theme.typography.pxToRem(13)
+  }, ownerState.size === 'large' && ownerState.variant === 'text' && {
+    padding: '8px 11px',
+    fontSize: theme.typography.pxToRem(15)
+  }, ownerState.size === 'small' && ownerState.variant === 'outlined' && {
+    padding: '3px 9px',
+    fontSize: theme.typography.pxToRem(13)
+  }, ownerState.size === 'large' && ownerState.variant === 'outlined' && {
+    padding: '7px 21px',
+    fontSize: theme.typography.pxToRem(15)
+  }, ownerState.size === 'small' && ownerState.variant === 'contained' && {
+    padding: '4px 10px',
+    fontSize: theme.typography.pxToRem(13)
+  }, ownerState.size === 'large' && ownerState.variant === 'contained' && {
+    padding: '8px 22px',
+    fontSize: theme.typography.pxToRem(15)
+  }, ownerState.fullWidth && {
+    width: '100%'
+  });
+}, ({
+  ownerState
+}) => ownerState.disableElevation && {
+  boxShadow: 'none',
+  '&:hover': {
+    boxShadow: 'none'
+  },
+  [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_7__["default"].focusVisible}`]: {
+    boxShadow: 'none'
+  },
+  '&:active': {
+    boxShadow: 'none'
+  },
+  [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_7__["default"].disabled}`]: {
+    boxShadow: 'none'
+  }
+});
+const ButtonStartIcon = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_8__["default"])('span', {
+  name: 'MuiButton',
+  slot: 'StartIcon',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.startIcon, styles[`iconSize${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.size)}`]];
+  }
+})(({
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  display: 'inherit',
+  marginRight: 8,
+  marginLeft: -4
+}, ownerState.size === 'small' && {
+  marginLeft: -2
+}, commonIconStyles(ownerState)));
+const ButtonEndIcon = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_8__["default"])('span', {
+  name: 'MuiButton',
+  slot: 'EndIcon',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.endIcon, styles[`iconSize${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.size)}`]];
+  }
+})(({
+  ownerState
+}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  display: 'inherit',
+  marginRight: -4,
+  marginLeft: 8
+}, ownerState.size === 'small' && {
+  marginRight: -2
+}, commonIconStyles(ownerState)));
+const Button = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Button(inProps, ref) {
+  // props priority: `inProps` > `contextProps` > `themeDefaultProps`
+  const contextProps = react__WEBPACK_IMPORTED_MODULE_2__.useContext(_ButtonGroup_ButtonGroupContext__WEBPACK_IMPORTED_MODULE_12__["default"]);
+  const buttonGroupButtonContextPositionClassName = react__WEBPACK_IMPORTED_MODULE_2__.useContext(_ButtonGroup_ButtonGroupButtonContext__WEBPACK_IMPORTED_MODULE_13__["default"]);
+  const resolvedProps = (0,_mui_utils_resolveProps__WEBPACK_IMPORTED_MODULE_14__["default"])(contextProps, inProps);
+  const props = (0,_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_15__.useDefaultProps)({
+    props: resolvedProps,
+    name: 'MuiButton'
+  });
+  const {
+      children,
+      color = 'primary',
+      component = 'button',
+      className,
+      disabled = false,
+      disableElevation = false,
+      disableFocusRipple = false,
+      endIcon: endIconProp,
+      focusVisibleClassName,
+      fullWidth = false,
+      size = 'medium',
+      startIcon: startIconProp,
+      type,
+      variant = 'text'
+    } = props,
+    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
+  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
+    color,
+    component,
+    disabled,
+    disableElevation,
+    disableFocusRipple,
+    fullWidth,
+    size,
+    type,
+    variant
+  });
+  const classes = useUtilityClasses(ownerState);
+  const startIcon = startIconProp && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(ButtonStartIcon, {
+    className: classes.startIcon,
+    ownerState: ownerState,
+    children: startIconProp
+  });
+  const endIcon = endIconProp && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(ButtonEndIcon, {
+    className: classes.endIcon,
+    ownerState: ownerState,
+    children: endIconProp
+  });
+  const positionClassName = buttonGroupButtonContextPositionClassName || '';
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(ButtonRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    ownerState: ownerState,
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(contextProps.className, classes.root, className, positionClassName),
+    component: component,
+    disabled: disabled,
+    focusRipple: !disableFocusRipple,
+    focusVisibleClassName: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.focusVisible, focusVisibleClassName),
+    ref: ref,
+    type: type
+  }, other, {
+    classes: classes,
+    children: [startIcon, children, endIcon]
+  }));
+});
+ true ? Button.propTypes /* remove-proptypes */ = {
+  // ┌────────────────────────────── Warning ──────────────────────────────┐
+  // │ These PropTypes are generated from the TypeScript type definitions. │
+  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
+  // └─────────────────────────────────────────────────────────────────────┘
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().node),
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().object),
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().string),
+  /**
+   * The color of the component.
+   * It supports both default and custom theme colors, which can be added as shown in the
+   * [palette customization guide](https://mui.com/material-ui/customization/palette/#custom-colors).
+   * @default 'primary'
+   */
+  color: prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOf(['inherit', 'primary', 'secondary', 'success', 'error', 'info', 'warning']), (prop_types__WEBPACK_IMPORTED_MODULE_16___default().string)]),
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().elementType),
+  /**
+   * If `true`, the component is disabled.
+   * @default false
+   */
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  /**
+   * If `true`, no elevation is used.
+   * @default false
+   */
+  disableElevation: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  /**
+   * If `true`, the  keyboard focus ripple is disabled.
+   * @default false
+   */
+  disableFocusRipple: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  /**
+   * If `true`, the ripple effect is disabled.
+   *
+   * ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
+   * to highlight the element by applying separate styles with the `.Mui-focusVisible` class.
+   * @default false
+   */
+  disableRipple: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  /**
+   * Element placed after the children.
+   */
+  endIcon: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().node),
+  /**
+   * @ignore
+   */
+  focusVisibleClassName: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().string),
+  /**
+   * If `true`, the button will take up the full width of its container.
+   * @default false
+   */
+  fullWidth: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  /**
+   * The URL to link to when the button is clicked.
+   * If defined, an `a` element will be used as the root node.
+   */
+  href: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().string),
+  /**
+   * The size of the component.
+   * `small` is equivalent to the dense button styling.
+   * @default 'medium'
+   */
+  size: prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOf(['small', 'medium', 'large']), (prop_types__WEBPACK_IMPORTED_MODULE_16___default().string)]),
+  /**
+   * Element placed before the children.
+   */
+  startIcon: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().node),
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_16___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_16___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_16___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_16___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_16___default().object)]),
+  /**
+   * @ignore
+   */
+  type: prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOf(['button', 'reset', 'submit']), (prop_types__WEBPACK_IMPORTED_MODULE_16___default().string)]),
+  /**
+   * The variant to use.
+   * @default 'text'
+   */
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOf(['contained', 'outlined', 'text']), (prop_types__WEBPACK_IMPORTED_MODULE_16___default().string)])
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/Button/buttonClasses.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@mui/material/Button/buttonClasses.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   getButtonUtilityClass: () => (/* binding */ getButtonUtilityClass)
+/* harmony export */ });
+/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
+/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
+
+
+function getButtonUtilityClass(slot) {
+  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiButton', slot);
+}
+const buttonClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiButton', ['root', 'text', 'textInherit', 'textPrimary', 'textSecondary', 'textSuccess', 'textError', 'textInfo', 'textWarning', 'outlined', 'outlinedInherit', 'outlinedPrimary', 'outlinedSecondary', 'outlinedSuccess', 'outlinedError', 'outlinedInfo', 'outlinedWarning', 'contained', 'containedInherit', 'containedPrimary', 'containedSecondary', 'containedSuccess', 'containedError', 'containedInfo', 'containedWarning', 'disableElevation', 'focusVisible', 'disabled', 'colorInherit', 'colorPrimary', 'colorSecondary', 'colorSuccess', 'colorError', 'colorInfo', 'colorWarning', 'textSizeSmall', 'textSizeMedium', 'textSizeLarge', 'outlinedSizeSmall', 'outlinedSizeMedium', 'outlinedSizeLarge', 'containedSizeSmall', 'containedSizeMedium', 'containedSizeLarge', 'sizeMedium', 'sizeSmall', 'sizeLarge', 'fullWidth', 'startIcon', 'endIcon', 'icon', 'iconSizeSmall', 'iconSizeMedium', 'iconSizeLarge']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (buttonClasses);
 
 /***/ }),
 
@@ -7768,265 +7278,6 @@ const gridClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/IconButton/IconButton.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/@mui/material/IconButton/IconButton.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils/chainPropTypes */ "./node_modules/@mui/utils/esm/chainPropTypes/chainPropTypes.js");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/system/colorManipulator */ "./node_modules/@mui/system/colorManipulator.js");
-/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../DefaultPropsProvider */ "./node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ButtonBase */ "./node_modules/@mui/material/ButtonBase/ButtonBase.js");
-/* harmony import */ var _utils_capitalize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/capitalize */ "./node_modules/@mui/material/utils/capitalize.js");
-/* harmony import */ var _iconButtonClasses__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./iconButtonClasses */ "./node_modules/@mui/material/IconButton/iconButtonClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-const _excluded = ["edge", "children", "className", "color", "disabled", "disableFocusRipple", "size"];
-
-
-
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    disabled,
-    color,
-    edge,
-    size
-  } = ownerState;
-  const slots = {
-    root: ['root', disabled && 'disabled', color !== 'default' && `color${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color)}`, edge && `edge${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(edge)}`, `size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(size)}`]
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_6__["default"])(slots, _iconButtonClasses__WEBPACK_IMPORTED_MODULE_7__.getIconButtonUtilityClass, classes);
-};
-const IconButtonRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_8__["default"])(_ButtonBase__WEBPACK_IMPORTED_MODULE_9__["default"], {
-  name: 'MuiIconButton',
-  slot: 'Root',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.root, ownerState.color !== 'default' && styles[`color${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.color)}`], ownerState.edge && styles[`edge${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.edge)}`], styles[`size${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.size)}`]];
-  }
-})(({
-  theme,
-  ownerState
-}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-  textAlign: 'center',
-  flex: '0 0 auto',
-  fontSize: theme.typography.pxToRem(24),
-  padding: 8,
-  borderRadius: '50%',
-  overflow: 'visible',
-  // Explicitly set the default value to solve a bug on IE11.
-  color: (theme.vars || theme).palette.action.active,
-  transition: theme.transitions.create('background-color', {
-    duration: theme.transitions.duration.shortest
-  })
-}, !ownerState.disableRipple && {
-  '&:hover': {
-    backgroundColor: theme.vars ? `rgba(${theme.vars.palette.action.activeChannel} / ${theme.vars.palette.action.hoverOpacity})` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_10__.alpha)(theme.palette.action.active, theme.palette.action.hoverOpacity),
-    // Reset on touch devices, it doesn't add specificity
-    '@media (hover: none)': {
-      backgroundColor: 'transparent'
-    }
-  }
-}, ownerState.edge === 'start' && {
-  marginLeft: ownerState.size === 'small' ? -3 : -12
-}, ownerState.edge === 'end' && {
-  marginRight: ownerState.size === 'small' ? -3 : -12
-}), ({
-  theme,
-  ownerState
-}) => {
-  var _palette;
-  const palette = (_palette = (theme.vars || theme).palette) == null ? void 0 : _palette[ownerState.color];
-  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.color === 'inherit' && {
-    color: 'inherit'
-  }, ownerState.color !== 'inherit' && ownerState.color !== 'default' && (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    color: palette == null ? void 0 : palette.main
-  }, !ownerState.disableRipple && {
-    '&:hover': (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, palette && {
-      backgroundColor: theme.vars ? `rgba(${palette.mainChannel} / ${theme.vars.palette.action.hoverOpacity})` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_10__.alpha)(palette.main, theme.palette.action.hoverOpacity)
-    }, {
-      // Reset on touch devices, it doesn't add specificity
-      '@media (hover: none)': {
-        backgroundColor: 'transparent'
-      }
-    })
-  }), ownerState.size === 'small' && {
-    padding: 5,
-    fontSize: theme.typography.pxToRem(18)
-  }, ownerState.size === 'large' && {
-    padding: 12,
-    fontSize: theme.typography.pxToRem(28)
-  }, {
-    [`&.${_iconButtonClasses__WEBPACK_IMPORTED_MODULE_7__["default"].disabled}`]: {
-      backgroundColor: 'transparent',
-      color: (theme.vars || theme).palette.action.disabled
-    }
-  });
-});
-
-/**
- * Refer to the [Icons](/material-ui/icons/) section of the documentation
- * regarding the available icon options.
- */
-const IconButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function IconButton(inProps, ref) {
-  const props = (0,_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_11__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiIconButton'
-  });
-  const {
-      edge = false,
-      children,
-      className,
-      color = 'default',
-      disabled = false,
-      disableFocusRipple = false,
-      size = 'medium'
-    } = props,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
-  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
-    edge,
-    color,
-    disabled,
-    disableFocusRipple,
-    size
-  });
-  const classes = useUtilityClasses(ownerState);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(IconButtonRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className),
-    centerRipple: true,
-    focusRipple: !disableFocusRipple,
-    disabled: disabled,
-    ref: ref
-  }, other, {
-    ownerState: ownerState,
-    children: children
-  }));
-});
- true ? IconButton.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The icon to display.
-   */
-  children: (0,_mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_12__["default"])((prop_types__WEBPACK_IMPORTED_MODULE_13___default().node), props => {
-    const found = react__WEBPACK_IMPORTED_MODULE_2__.Children.toArray(props.children).some(child => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.isValidElement(child) && child.props.onClick);
-    if (found) {
-      return new Error(['MUI: You are providing an onClick event listener to a child of a button element.', 'Prefer applying it to the IconButton directly.', 'This guarantees that the whole <button> will be responsive to click events.'].join('\n'));
-    }
-    return null;
-  }),
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object),
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().string),
-  /**
-   * The color of the component.
-   * It supports both default and custom theme colors, which can be added as shown in the
-   * [palette customization guide](https://mui.com/material-ui/customization/palette/#custom-colors).
-   * @default 'default'
-   */
-  color: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOf(['inherit', 'default', 'primary', 'secondary', 'error', 'info', 'success', 'warning']), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().string)]),
-  /**
-   * If `true`, the component is disabled.
-   * @default false
-   */
-  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().bool),
-  /**
-   * If `true`, the  keyboard focus ripple is disabled.
-   * @default false
-   */
-  disableFocusRipple: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().bool),
-  /**
-   * If `true`, the ripple effect is disabled.
-   *
-   * ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
-   * to highlight the element by applying separate styles with the `.Mui-focusVisible` class.
-   * @default false
-   */
-  disableRipple: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().bool),
-  /**
-   * If given, uses a negative margin to counteract the padding on one
-   * side (this is often helpful for aligning the left or right
-   * side of the icon with content above or below, without ruining the border
-   * size and shape).
-   * @default false
-   */
-  edge: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOf(['end', 'start', false]),
-  /**
-   * The size of the component.
-   * `small` is equivalent to the dense button styling.
-   * @default 'medium'
-   */
-  size: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOf(['small', 'medium', 'large']), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().string)]),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_13___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_13___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_13___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object)])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconButton);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/IconButton/iconButtonClasses.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@mui/material/IconButton/iconButtonClasses.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getIconButtonUtilityClass: () => (/* binding */ getIconButtonUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getIconButtonUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiIconButton', slot);
-}
-const iconButtonClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiIconButton', ['root', 'disabled', 'colorInherit', 'colorPrimary', 'colorSecondary', 'colorError', 'colorInfo', 'colorSuccess', 'colorWarning', 'edgeStart', 'edgeEnd', 'sizeSmall', 'sizeMedium', 'sizeLarge']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (iconButtonClasses);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/material/InputBase/InputBase.js":
 /*!***********************************************************!*\
   !*** ./node_modules/@mui/material/InputBase/InputBase.js ***!
@@ -8849,1085 +8100,6 @@ function isAdornedStart(obj) {
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/ListItemButton/listItemButtonClasses.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/@mui/material/ListItemButton/listItemButtonClasses.js ***!
-  \****************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getListItemButtonUtilityClass: () => (/* binding */ getListItemButtonUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getListItemButtonUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiListItemButton', slot);
-}
-const listItemButtonClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiListItemButton', ['root', 'focusVisible', 'dense', 'alignItemsFlexStart', 'disabled', 'divider', 'gutters', 'selected']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listItemButtonClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/ListItemSecondaryAction/ListItemSecondaryAction.js":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/@mui/material/ListItemSecondaryAction/ListItemSecondaryAction.js ***!
-  \***************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../DefaultPropsProvider */ "./node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _List_ListContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../List/ListContext */ "./node_modules/@mui/material/List/ListContext.js");
-/* harmony import */ var _listItemSecondaryActionClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./listItemSecondaryActionClasses */ "./node_modules/@mui/material/ListItemSecondaryAction/listItemSecondaryActionClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-const _excluded = ["className"];
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    disableGutters,
-    classes
-  } = ownerState;
-  const slots = {
-    root: ['root', disableGutters && 'disableGutters']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _listItemSecondaryActionClasses__WEBPACK_IMPORTED_MODULE_6__.getListItemSecondaryActionClassesUtilityClass, classes);
-};
-const ListItemSecondaryActionRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('div', {
-  name: 'MuiListItemSecondaryAction',
-  slot: 'Root',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.root, ownerState.disableGutters && styles.disableGutters];
-  }
-})(({
-  ownerState
-}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-  position: 'absolute',
-  right: 16,
-  top: '50%',
-  transform: 'translateY(-50%)'
-}, ownerState.disableGutters && {
-  right: 0
-}));
-
-/**
- * Must be used as the last child of ListItem to function properly.
- */
-const ListItemSecondaryAction = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function ListItemSecondaryAction(inProps, ref) {
-  const props = (0,_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_8__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiListItemSecondaryAction'
-  });
-  const {
-      className
-    } = props,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
-  const context = react__WEBPACK_IMPORTED_MODULE_2__.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_9__["default"]);
-  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
-    disableGutters: context.disableGutters
-  });
-  const classes = useUtilityClasses(ownerState);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(ListItemSecondaryActionRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className),
-    ownerState: ownerState,
-    ref: ref
-  }, other));
-});
- true ? ListItemSecondaryAction.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The content of the component, normally an `IconButton` or selection control.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().node),
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object),
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_10___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_10___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object)])
-} : 0;
-ListItemSecondaryAction.muiName = 'ListItemSecondaryAction';
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItemSecondaryAction);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/ListItemSecondaryAction/listItemSecondaryActionClasses.js":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/@mui/material/ListItemSecondaryAction/listItemSecondaryActionClasses.js ***!
-  \**********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getListItemSecondaryActionClassesUtilityClass: () => (/* binding */ getListItemSecondaryActionClassesUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getListItemSecondaryActionClassesUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiListItemSecondaryAction', slot);
-}
-const listItemSecondaryActionClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiListItemSecondaryAction', ['root', 'disableGutters']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listItemSecondaryActionClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/ListItemText/ListItemText.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@mui/material/ListItemText/ListItemText.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _Typography__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../Typography */ "./node_modules/@mui/material/Typography/Typography.js");
-/* harmony import */ var _List_ListContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../List/ListContext */ "./node_modules/@mui/material/List/ListContext.js");
-/* harmony import */ var _DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../DefaultPropsProvider */ "./node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
-/* harmony import */ var _listItemTextClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./listItemTextClasses */ "./node_modules/@mui/material/ListItemText/listItemTextClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-const _excluded = ["children", "className", "disableTypography", "inset", "primary", "primaryTypographyProps", "secondary", "secondaryTypographyProps"];
-
-
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    inset,
-    primary,
-    secondary,
-    dense
-  } = ownerState;
-  const slots = {
-    root: ['root', inset && 'inset', dense && 'dense', primary && secondary && 'multiline'],
-    primary: ['primary'],
-    secondary: ['secondary']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _listItemTextClasses__WEBPACK_IMPORTED_MODULE_6__.getListItemTextUtilityClass, classes);
-};
-const ListItemTextRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('div', {
-  name: 'MuiListItemText',
-  slot: 'Root',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [{
-      [`& .${_listItemTextClasses__WEBPACK_IMPORTED_MODULE_6__["default"].primary}`]: styles.primary
-    }, {
-      [`& .${_listItemTextClasses__WEBPACK_IMPORTED_MODULE_6__["default"].secondary}`]: styles.secondary
-    }, styles.root, ownerState.inset && styles.inset, ownerState.primary && ownerState.secondary && styles.multiline, ownerState.dense && styles.dense];
-  }
-})(({
-  ownerState
-}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-  flex: '1 1 auto',
-  minWidth: 0,
-  marginTop: 4,
-  marginBottom: 4
-}, ownerState.primary && ownerState.secondary && {
-  marginTop: 6,
-  marginBottom: 6
-}, ownerState.inset && {
-  paddingLeft: 56
-}));
-const ListItemText = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function ListItemText(inProps, ref) {
-  const props = (0,_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_8__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiListItemText'
-  });
-  const {
-      children,
-      className,
-      disableTypography = false,
-      inset = false,
-      primary: primaryProp,
-      primaryTypographyProps,
-      secondary: secondaryProp,
-      secondaryTypographyProps
-    } = props,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
-  const {
-    dense
-  } = react__WEBPACK_IMPORTED_MODULE_2__.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_9__["default"]);
-  let primary = primaryProp != null ? primaryProp : children;
-  let secondary = secondaryProp;
-  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
-    disableTypography,
-    inset,
-    primary: !!primary,
-    secondary: !!secondary,
-    dense
-  });
-  const classes = useUtilityClasses(ownerState);
-  if (primary != null && primary.type !== _Typography__WEBPACK_IMPORTED_MODULE_10__["default"] && !disableTypography) {
-    primary = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-      variant: dense ? 'body2' : 'body1',
-      className: classes.primary,
-      component: primaryTypographyProps != null && primaryTypographyProps.variant ? undefined : 'span',
-      display: "block"
-    }, primaryTypographyProps, {
-      children: primary
-    }));
-  }
-  if (secondary != null && secondary.type !== _Typography__WEBPACK_IMPORTED_MODULE_10__["default"] && !disableTypography) {
-    secondary = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-      variant: "body2",
-      className: classes.secondary,
-      color: "text.secondary",
-      display: "block"
-    }, secondaryTypographyProps, {
-      children: secondary
-    }));
-  }
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(ListItemTextRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className),
-    ownerState: ownerState,
-    ref: ref
-  }, other, {
-    children: [primary, secondary]
-  }));
-});
- true ? ListItemText.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * Alias for the `primary` prop.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().node),
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object),
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().string),
-  /**
-   * If `true`, the children won't be wrapped by a Typography component.
-   * This can be useful to render an alternative Typography variant by wrapping
-   * the `children` (or `primary`) text, and optional `secondary` text
-   * with the Typography component.
-   * @default false
-   */
-  disableTypography: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
-  /**
-   * If `true`, the children are indented.
-   * This should be used if there is no left avatar or left icon.
-   * @default false
-   */
-  inset: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
-  /**
-   * The main content element.
-   */
-  primary: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().node),
-  /**
-   * These props will be forwarded to the primary typography component
-   * (as long as disableTypography is not `true`).
-   */
-  primaryTypographyProps: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object),
-  /**
-   * The secondary content element.
-   */
-  secondary: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().node),
-  /**
-   * These props will be forwarded to the secondary typography component
-   * (as long as disableTypography is not `true`).
-   */
-  secondaryTypographyProps: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object)])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItemText);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/ListItemText/listItemTextClasses.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@mui/material/ListItemText/listItemTextClasses.js ***!
-  \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getListItemTextUtilityClass: () => (/* binding */ getListItemTextUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getListItemTextUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiListItemText', slot);
-}
-const listItemTextClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiListItemText', ['root', 'multiline', 'dense', 'inset', 'primary', 'secondary']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listItemTextClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/ListItem/ListItem.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@mui/material/ListItem/ListItem.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ListItemRoot: () => (/* binding */ ListItemRoot),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   overridesResolver: () => (/* binding */ overridesResolver)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _mui_utils_elementTypeAcceptingRef__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @mui/utils/elementTypeAcceptingRef */ "./node_modules/@mui/utils/esm/elementTypeAcceptingRef/elementTypeAcceptingRef.js");
-/* harmony import */ var _mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @mui/utils/chainPropTypes */ "./node_modules/@mui/utils/esm/chainPropTypes/chainPropTypes.js");
-/* harmony import */ var _mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/system/colorManipulator */ "./node_modules/@mui/system/colorManipulator.js");
-/* harmony import */ var _mui_utils_isHostComponent__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/utils/isHostComponent */ "./node_modules/@mui/utils/esm/isHostComponent/isHostComponent.js");
-/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../DefaultPropsProvider */ "./node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../ButtonBase */ "./node_modules/@mui/material/ButtonBase/ButtonBase.js");
-/* harmony import */ var _utils_isMuiElement__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/isMuiElement */ "./node_modules/@mui/material/utils/isMuiElement.js");
-/* harmony import */ var _utils_useEnhancedEffect__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/useEnhancedEffect */ "./node_modules/@mui/material/utils/useEnhancedEffect.js");
-/* harmony import */ var _utils_useForkRef__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utils/useForkRef */ "./node_modules/@mui/material/utils/useForkRef.js");
-/* harmony import */ var _List_ListContext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../List/ListContext */ "./node_modules/@mui/material/List/ListContext.js");
-/* harmony import */ var _listItemClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./listItemClasses */ "./node_modules/@mui/material/ListItem/listItemClasses.js");
-/* harmony import */ var _ListItemButton__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ListItemButton */ "./node_modules/@mui/material/ListItemButton/listItemButtonClasses.js");
-/* harmony import */ var _ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../ListItemSecondaryAction */ "./node_modules/@mui/material/ListItemSecondaryAction/ListItemSecondaryAction.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-const _excluded = ["className"],
-  _excluded2 = ["alignItems", "autoFocus", "button", "children", "className", "component", "components", "componentsProps", "ContainerComponent", "ContainerProps", "dense", "disabled", "disableGutters", "disablePadding", "divider", "focusVisibleClassName", "secondaryAction", "selected", "slotProps", "slots"];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const overridesResolver = (props, styles) => {
-  const {
-    ownerState
-  } = props;
-  return [styles.root, ownerState.dense && styles.dense, ownerState.alignItems === 'flex-start' && styles.alignItemsFlexStart, ownerState.divider && styles.divider, !ownerState.disableGutters && styles.gutters, !ownerState.disablePadding && styles.padding, ownerState.button && styles.button, ownerState.hasSecondaryAction && styles.secondaryAction];
-};
-const useUtilityClasses = ownerState => {
-  const {
-    alignItems,
-    button,
-    classes,
-    dense,
-    disabled,
-    disableGutters,
-    disablePadding,
-    divider,
-    hasSecondaryAction,
-    selected
-  } = ownerState;
-  const slots = {
-    root: ['root', dense && 'dense', !disableGutters && 'gutters', !disablePadding && 'padding', divider && 'divider', disabled && 'disabled', button && 'button', alignItems === 'flex-start' && 'alignItemsFlexStart', hasSecondaryAction && 'secondaryAction', selected && 'selected'],
-    container: ['container']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _listItemClasses__WEBPACK_IMPORTED_MODULE_6__.getListItemUtilityClass, classes);
-};
-const ListItemRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('div', {
-  name: 'MuiListItem',
-  slot: 'Root',
-  overridesResolver
-})(({
-  theme,
-  ownerState
-}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-  display: 'flex',
-  justifyContent: 'flex-start',
-  alignItems: 'center',
-  position: 'relative',
-  textDecoration: 'none',
-  width: '100%',
-  boxSizing: 'border-box',
-  textAlign: 'left'
-}, !ownerState.disablePadding && (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-  paddingTop: 8,
-  paddingBottom: 8
-}, ownerState.dense && {
-  paddingTop: 4,
-  paddingBottom: 4
-}, !ownerState.disableGutters && {
-  paddingLeft: 16,
-  paddingRight: 16
-}, !!ownerState.secondaryAction && {
-  // Add some space to avoid collision as `ListItemSecondaryAction`
-  // is absolutely positioned.
-  paddingRight: 48
-}), !!ownerState.secondaryAction && {
-  [`& > .${_ListItemButton__WEBPACK_IMPORTED_MODULE_8__["default"].root}`]: {
-    paddingRight: 48
-  }
-}, {
-  [`&.${_listItemClasses__WEBPACK_IMPORTED_MODULE_6__["default"].focusVisible}`]: {
-    backgroundColor: (theme.vars || theme).palette.action.focus
-  },
-  [`&.${_listItemClasses__WEBPACK_IMPORTED_MODULE_6__["default"].selected}`]: {
-    backgroundColor: theme.vars ? `rgba(${theme.vars.palette.primary.mainChannel} / ${theme.vars.palette.action.selectedOpacity})` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette.primary.main, theme.palette.action.selectedOpacity),
-    [`&.${_listItemClasses__WEBPACK_IMPORTED_MODULE_6__["default"].focusVisible}`]: {
-      backgroundColor: theme.vars ? `rgba(${theme.vars.palette.primary.mainChannel} / calc(${theme.vars.palette.action.selectedOpacity} + ${theme.vars.palette.action.focusOpacity}))` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette.primary.main, theme.palette.action.selectedOpacity + theme.palette.action.focusOpacity)
-    }
-  },
-  [`&.${_listItemClasses__WEBPACK_IMPORTED_MODULE_6__["default"].disabled}`]: {
-    opacity: (theme.vars || theme).palette.action.disabledOpacity
-  }
-}, ownerState.alignItems === 'flex-start' && {
-  alignItems: 'flex-start'
-}, ownerState.divider && {
-  borderBottom: `1px solid ${(theme.vars || theme).palette.divider}`,
-  backgroundClip: 'padding-box'
-}, ownerState.button && {
-  transition: theme.transitions.create('background-color', {
-    duration: theme.transitions.duration.shortest
-  }),
-  '&:hover': {
-    textDecoration: 'none',
-    backgroundColor: (theme.vars || theme).palette.action.hover,
-    // Reset on touch devices, it doesn't add specificity
-    '@media (hover: none)': {
-      backgroundColor: 'transparent'
-    }
-  },
-  [`&.${_listItemClasses__WEBPACK_IMPORTED_MODULE_6__["default"].selected}:hover`]: {
-    backgroundColor: theme.vars ? `rgba(${theme.vars.palette.primary.mainChannel} / calc(${theme.vars.palette.action.selectedOpacity} + ${theme.vars.palette.action.hoverOpacity}))` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette.primary.main, theme.palette.action.selectedOpacity + theme.palette.action.hoverOpacity),
-    // Reset on touch devices, it doesn't add specificity
-    '@media (hover: none)': {
-      backgroundColor: theme.vars ? `rgba(${theme.vars.palette.primary.mainChannel} / ${theme.vars.palette.action.selectedOpacity})` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette.primary.main, theme.palette.action.selectedOpacity)
-    }
-  }
-}, ownerState.hasSecondaryAction && {
-  // Add some space to avoid collision as `ListItemSecondaryAction`
-  // is absolutely positioned.
-  paddingRight: 48
-}));
-const ListItemContainer = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('li', {
-  name: 'MuiListItem',
-  slot: 'Container',
-  overridesResolver: (props, styles) => styles.container
-})({
-  position: 'relative'
-});
-
-/**
- * Uses an additional container component if `ListItemSecondaryAction` is the last child.
- */
-const ListItem = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function ListItem(inProps, ref) {
-  const props = (0,_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_10__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiListItem'
-  });
-  const {
-      alignItems = 'center',
-      autoFocus = false,
-      button = false,
-      children: childrenProp,
-      className,
-      component: componentProp,
-      components = {},
-      componentsProps = {},
-      ContainerComponent = 'li',
-      ContainerProps: {
-        className: ContainerClassName
-      } = {},
-      dense = false,
-      disabled = false,
-      disableGutters = false,
-      disablePadding = false,
-      divider = false,
-      focusVisibleClassName,
-      secondaryAction,
-      selected = false,
-      slotProps = {},
-      slots = {}
-    } = props,
-    ContainerProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props.ContainerProps, _excluded),
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded2);
-  const context = react__WEBPACK_IMPORTED_MODULE_2__.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_11__["default"]);
-  const childContext = react__WEBPACK_IMPORTED_MODULE_2__.useMemo(() => ({
-    dense: dense || context.dense || false,
-    alignItems,
-    disableGutters
-  }), [alignItems, context.dense, dense, disableGutters]);
-  const listItemRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
-  (0,_utils_useEnhancedEffect__WEBPACK_IMPORTED_MODULE_12__["default"])(() => {
-    if (autoFocus) {
-      if (listItemRef.current) {
-        listItemRef.current.focus();
-      } else if (true) {
-        console.error('MUI: Unable to set focus to a ListItem whose component has not been rendered.');
-      }
-    }
-  }, [autoFocus]);
-  const children = react__WEBPACK_IMPORTED_MODULE_2__.Children.toArray(childrenProp);
-
-  // v4 implementation, deprecated in v5, will be removed in v6
-  const hasSecondaryAction = children.length && (0,_utils_isMuiElement__WEBPACK_IMPORTED_MODULE_13__["default"])(children[children.length - 1], ['ListItemSecondaryAction']);
-  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
-    alignItems,
-    autoFocus,
-    button,
-    dense: childContext.dense,
-    disabled,
-    disableGutters,
-    disablePadding,
-    divider,
-    hasSecondaryAction,
-    selected
-  });
-  const classes = useUtilityClasses(ownerState);
-  const handleRef = (0,_utils_useForkRef__WEBPACK_IMPORTED_MODULE_14__["default"])(listItemRef, ref);
-  const Root = slots.root || components.Root || ListItemRoot;
-  const rootProps = slotProps.root || componentsProps.root || {};
-  const componentProps = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, rootProps.className, className),
-    disabled
-  }, other);
-  let Component = componentProp || 'li';
-  if (button) {
-    componentProps.component = componentProp || 'div';
-    componentProps.focusVisibleClassName = (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(_listItemClasses__WEBPACK_IMPORTED_MODULE_6__["default"].focusVisible, focusVisibleClassName);
-    Component = _ButtonBase__WEBPACK_IMPORTED_MODULE_15__["default"];
-  }
-
-  // v4 implementation, deprecated in v5, will be removed in v6
-  if (hasSecondaryAction) {
-    // Use div by default.
-    Component = !componentProps.component && !componentProp ? 'div' : Component;
-
-    // Avoid nesting of li > li.
-    if (ContainerComponent === 'li') {
-      if (Component === 'li') {
-        Component = 'div';
-      } else if (componentProps.component === 'li') {
-        componentProps.component = 'div';
-      }
-    }
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_List_ListContext__WEBPACK_IMPORTED_MODULE_11__["default"].Provider, {
-      value: childContext,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(ListItemContainer, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-        as: ContainerComponent,
-        className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.container, ContainerClassName),
-        ref: handleRef,
-        ownerState: ownerState
-      }, ContainerProps, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Root, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, rootProps, !(0,_mui_utils_isHostComponent__WEBPACK_IMPORTED_MODULE_16__["default"])(Root) && {
-          as: Component,
-          ownerState: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState, rootProps.ownerState)
-        }, componentProps, {
-          children: children
-        })), children.pop()]
-      }))
-    });
-  }
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_List_ListContext__WEBPACK_IMPORTED_MODULE_11__["default"].Provider, {
-    value: childContext,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(Root, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, rootProps, {
-      as: Component,
-      ref: handleRef
-    }, !(0,_mui_utils_isHostComponent__WEBPACK_IMPORTED_MODULE_16__["default"])(Root) && {
-      ownerState: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState, rootProps.ownerState)
-    }, componentProps, {
-      children: [children, secondaryAction && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_17__["default"], {
-        children: secondaryAction
-      })]
-    }))
-  });
-});
- true ? ListItem.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * Defines the `align-items` style property.
-   * @default 'center'
-   */
-  alignItems: prop_types__WEBPACK_IMPORTED_MODULE_18___default().oneOf(['center', 'flex-start']),
-  /**
-   * If `true`, the list item is focused during the first mount.
-   * Focus will also be triggered if the value changes from false to true.
-   * @default false
-   * @deprecated checkout [ListItemButton](/material-ui/api/list-item-button/) instead
-   */
-  autoFocus: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool),
-  /**
-   * If `true`, the list item is a button (using `ButtonBase`). Props intended
-   * for `ButtonBase` can then be applied to `ListItem`.
-   * @default false
-   * @deprecated checkout [ListItemButton](/material-ui/api/list-item-button/) instead
-   */
-  button: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool),
-  /**
-   * The content of the component if a `ListItemSecondaryAction` is used it must
-   * be the last child.
-   */
-  children: (0,_mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_19__["default"])((prop_types__WEBPACK_IMPORTED_MODULE_18___default().node), props => {
-    const children = react__WEBPACK_IMPORTED_MODULE_2__.Children.toArray(props.children);
-
-    // React.Children.toArray(props.children).findLastIndex(isListItemSecondaryAction)
-    let secondaryActionIndex = -1;
-    for (let i = children.length - 1; i >= 0; i -= 1) {
-      const child = children[i];
-      if ((0,_utils_isMuiElement__WEBPACK_IMPORTED_MODULE_13__["default"])(child, ['ListItemSecondaryAction'])) {
-        secondaryActionIndex = i;
-        break;
-      }
-    }
-
-    //  is ListItemSecondaryAction the last child of ListItem
-    if (secondaryActionIndex !== -1 && secondaryActionIndex !== children.length - 1) {
-      return new Error('MUI: You used an element after ListItemSecondaryAction. ' + 'For ListItem to detect that it has a secondary action ' + 'you must pass it as the last child to ListItem.');
-    }
-    return null;
-  }),
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().object),
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().string),
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().elementType),
-  /**
-   * The components used for each slot inside.
-   *
-   * This prop is an alias for the `slots` prop.
-   * It's recommended to use the `slots` prop instead.
-   *
-   * @default {}
-   */
-  components: prop_types__WEBPACK_IMPORTED_MODULE_18___default().shape({
-    Root: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().elementType)
-  }),
-  /**
-   * The extra props for the slot components.
-   * You can override the existing props or add new ones.
-   *
-   * This prop is an alias for the `slotProps` prop.
-   * It's recommended to use the `slotProps` prop instead, as `componentsProps` will be deprecated in the future.
-   *
-   * @default {}
-   */
-  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_18___default().shape({
-    root: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().object)
-  }),
-  /**
-   * The container component used when a `ListItemSecondaryAction` is the last child.
-   * @default 'li'
-   * @deprecated
-   */
-  ContainerComponent: _mui_utils_elementTypeAcceptingRef__WEBPACK_IMPORTED_MODULE_20__["default"],
-  /**
-   * Props applied to the container component if used.
-   * @default {}
-   * @deprecated
-   */
-  ContainerProps: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().object),
-  /**
-   * If `true`, compact vertical padding designed for keyboard and mouse input is used.
-   * The prop defaults to the value inherited from the parent List component.
-   * @default false
-   */
-  dense: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool),
-  /**
-   * If `true`, the component is disabled.
-   * @default false
-   * @deprecated checkout [ListItemButton](/material-ui/api/list-item-button/) instead
-   */
-  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool),
-  /**
-   * If `true`, the left and right padding is removed.
-   * @default false
-   */
-  disableGutters: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool),
-  /**
-   * If `true`, all padding is removed.
-   * @default false
-   */
-  disablePadding: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool),
-  /**
-   * If `true`, a 1px light border is added to the bottom of the list item.
-   * @default false
-   */
-  divider: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool),
-  /**
-   * @ignore
-   */
-  focusVisibleClassName: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().string),
-  /**
-   * The element to display at the end of ListItem.
-   */
-  secondaryAction: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().node),
-  /**
-   * Use to apply selected styling.
-   * @default false
-   * @deprecated checkout [ListItemButton](/material-ui/api/list-item-button/) instead
-   */
-  selected: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool),
-  /**
-   * The extra props for the slot components.
-   * You can override the existing props or add new ones.
-   *
-   * This prop is an alias for the `componentsProps` prop, which will be deprecated in the future.
-   *
-   * @default {}
-   */
-  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_18___default().shape({
-    root: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().object)
-  }),
-  /**
-   * The components used for each slot inside.
-   *
-   * This prop is an alias for the `components` prop, which will be deprecated in the future.
-   *
-   * @default {}
-   */
-  slots: prop_types__WEBPACK_IMPORTED_MODULE_18___default().shape({
-    root: (prop_types__WEBPACK_IMPORTED_MODULE_18___default().elementType)
-  }),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_18___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_18___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_18___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_18___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_18___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_18___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_18___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_18___default().object)])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItem);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/ListItem/listItemClasses.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@mui/material/ListItem/listItemClasses.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getListItemUtilityClass: () => (/* binding */ getListItemUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getListItemUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiListItem', slot);
-}
-const listItemClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiListItem', ['root', 'container', 'focusVisible', 'dense', 'alignItemsFlexStart', 'disabled', 'divider', 'gutters', 'padding', 'button', 'secondaryAction', 'selected']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listItemClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/List/List.js":
-/*!*************************************************!*\
-  !*** ./node_modules/@mui/material/List/List.js ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../DefaultPropsProvider */ "./node_modules/@mui/material/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _ListContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ListContext */ "./node_modules/@mui/material/List/ListContext.js");
-/* harmony import */ var _listClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./listClasses */ "./node_modules/@mui/material/List/listClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-const _excluded = ["children", "className", "component", "dense", "disablePadding", "subheader"];
-
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    disablePadding,
-    dense,
-    subheader
-  } = ownerState;
-  const slots = {
-    root: ['root', !disablePadding && 'padding', dense && 'dense', subheader && 'subheader']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _listClasses__WEBPACK_IMPORTED_MODULE_6__.getListUtilityClass, classes);
-};
-const ListRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('ul', {
-  name: 'MuiList',
-  slot: 'Root',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.root, !ownerState.disablePadding && styles.padding, ownerState.dense && styles.dense, ownerState.subheader && styles.subheader];
-  }
-})(({
-  ownerState
-}) => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-  listStyle: 'none',
-  margin: 0,
-  padding: 0,
-  position: 'relative'
-}, !ownerState.disablePadding && {
-  paddingTop: 8,
-  paddingBottom: 8
-}, ownerState.subheader && {
-  paddingTop: 0
-}));
-const List = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function List(inProps, ref) {
-  const props = (0,_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_8__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiList'
-  });
-  const {
-      children,
-      className,
-      component = 'ul',
-      dense = false,
-      disablePadding = false,
-      subheader
-    } = props,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
-  const context = react__WEBPACK_IMPORTED_MODULE_2__.useMemo(() => ({
-    dense
-  }), [dense]);
-  const ownerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
-    component,
-    dense,
-    disablePadding
-  });
-  const classes = useUtilityClasses(ownerState);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_ListContext__WEBPACK_IMPORTED_MODULE_9__["default"].Provider, {
-    value: context,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(ListRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-      as: component,
-      className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className),
-      ref: ref,
-      ownerState: ownerState
-    }, other, {
-      children: [subheader, children]
-    }))
-  });
-});
- true ? List.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The content of the component.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().node),
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object),
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string),
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().elementType),
-  /**
-   * If `true`, compact vertical padding designed for keyboard and mouse input is used for
-   * the list and list items.
-   * The prop is available to descendant components as the `dense` context.
-   * @default false
-   */
-  dense: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
-  /**
-   * If `true`, vertical padding is removed from the list.
-   * @default false
-   */
-  disablePadding: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
-  /**
-   * The content of the subheader, normally `ListSubheader`.
-   */
-  subheader: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().node),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_10___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_10___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object)])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (List);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/List/ListContext.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@mui/material/List/ListContext.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-'use client';
-
-
-
-/**
- * @ignore - internal component.
- */
-const ListContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext({});
-if (true) {
-  ListContext.displayName = 'ListContext';
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListContext);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/List/listClasses.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@mui/material/List/listClasses.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getListUtilityClass: () => (/* binding */ getListUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getListUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiList', slot);
-}
-const listClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiList', ['root', 'padding', 'dense', 'subheader']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listClasses);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/material/Paper/Paper.js":
 /*!***************************************************!*\
   !*** ./node_modules/@mui/material/Paper/Paper.js ***!
@@ -10127,367 +8299,6 @@ function getPaperUtilityClass(slot) {
 }
 const paperClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiPaper', ['root', 'rounded', 'outlined', 'elevation', 'elevation0', 'elevation1', 'elevation2', 'elevation3', 'elevation4', 'elevation5', 'elevation6', 'elevation7', 'elevation8', 'elevation9', 'elevation10', 'elevation11', 'elevation12', 'elevation13', 'elevation14', 'elevation15', 'elevation16', 'elevation17', 'elevation18', 'elevation19', 'elevation20', 'elevation21', 'elevation22', 'elevation23', 'elevation24']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (paperClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/Slide/Slide.js":
-/*!***************************************************!*\
-  !*** ./node_modules/@mui/material/Slide/Slide.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   setTranslateValue: () => (/* binding */ setTranslateValue)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/esm/Transition.js");
-/* harmony import */ var _mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils/chainPropTypes */ "./node_modules/@mui/utils/esm/chainPropTypes/chainPropTypes.js");
-/* harmony import */ var _mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/utils/HTMLElementType */ "./node_modules/@mui/utils/esm/HTMLElementType/HTMLElementType.js");
-/* harmony import */ var _mui_utils_elementAcceptingRef__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/utils/elementAcceptingRef */ "./node_modules/@mui/utils/esm/elementAcceptingRef/elementAcceptingRef.js");
-/* harmony import */ var _utils_debounce__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/debounce */ "./node_modules/@mui/material/utils/debounce.js");
-/* harmony import */ var _utils_useForkRef__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/useForkRef */ "./node_modules/@mui/material/utils/useForkRef.js");
-/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@mui/material/styles/useTheme.js");
-/* harmony import */ var _transitions_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../transitions/utils */ "./node_modules/@mui/material/transitions/utils.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils */ "./node_modules/@mui/material/utils/ownerWindow.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-const _excluded = ["addEndListener", "appear", "children", "container", "direction", "easing", "in", "onEnter", "onEntered", "onEntering", "onExit", "onExited", "onExiting", "style", "timeout", "TransitionComponent"];
-
-
-
-
-
-
-
-
-
-
-
-
-// Translate the node so it can't be seen on the screen.
-// Later, we're going to translate the node back to its original location with `none`.
-
-function getTranslateValue(direction, node, resolvedContainer) {
-  const rect = node.getBoundingClientRect();
-  const containerRect = resolvedContainer && resolvedContainer.getBoundingClientRect();
-  const containerWindow = (0,_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(node);
-  let transform;
-  if (node.fakeTransform) {
-    transform = node.fakeTransform;
-  } else {
-    const computedStyle = containerWindow.getComputedStyle(node);
-    transform = computedStyle.getPropertyValue('-webkit-transform') || computedStyle.getPropertyValue('transform');
-  }
-  let offsetX = 0;
-  let offsetY = 0;
-  if (transform && transform !== 'none' && typeof transform === 'string') {
-    const transformValues = transform.split('(')[1].split(')')[0].split(',');
-    offsetX = parseInt(transformValues[4], 10);
-    offsetY = parseInt(transformValues[5], 10);
-  }
-  if (direction === 'left') {
-    if (containerRect) {
-      return `translateX(${containerRect.right + offsetX - rect.left}px)`;
-    }
-    return `translateX(${containerWindow.innerWidth + offsetX - rect.left}px)`;
-  }
-  if (direction === 'right') {
-    if (containerRect) {
-      return `translateX(-${rect.right - containerRect.left - offsetX}px)`;
-    }
-    return `translateX(-${rect.left + rect.width - offsetX}px)`;
-  }
-  if (direction === 'up') {
-    if (containerRect) {
-      return `translateY(${containerRect.bottom + offsetY - rect.top}px)`;
-    }
-    return `translateY(${containerWindow.innerHeight + offsetY - rect.top}px)`;
-  }
-
-  // direction === 'down'
-  if (containerRect) {
-    return `translateY(-${rect.top - containerRect.top + rect.height - offsetY}px)`;
-  }
-  return `translateY(-${rect.top + rect.height - offsetY}px)`;
-}
-function resolveContainer(containerPropProp) {
-  return typeof containerPropProp === 'function' ? containerPropProp() : containerPropProp;
-}
-function setTranslateValue(direction, node, containerProp) {
-  const resolvedContainer = resolveContainer(containerProp);
-  const transform = getTranslateValue(direction, node, resolvedContainer);
-  if (transform) {
-    node.style.webkitTransform = transform;
-    node.style.transform = transform;
-  }
-}
-
-/**
- * The Slide transition is used by the [Drawer](/material-ui/react-drawer/) component.
- * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
- */
-const Slide = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Slide(props, ref) {
-  const theme = (0,_styles_useTheme__WEBPACK_IMPORTED_MODULE_5__["default"])();
-  const defaultEasing = {
-    enter: theme.transitions.easing.easeOut,
-    exit: theme.transitions.easing.sharp
-  };
-  const defaultTimeout = {
-    enter: theme.transitions.duration.enteringScreen,
-    exit: theme.transitions.duration.leavingScreen
-  };
-  const {
-      addEndListener,
-      appear = true,
-      children,
-      container: containerProp,
-      direction = 'down',
-      easing: easingProp = defaultEasing,
-      in: inProp,
-      onEnter,
-      onEntered,
-      onEntering,
-      onExit,
-      onExited,
-      onExiting,
-      style,
-      timeout = defaultTimeout,
-      // eslint-disable-next-line react/prop-types
-      TransitionComponent = react_transition_group__WEBPACK_IMPORTED_MODULE_6__["default"]
-    } = props,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, _excluded);
-  const childrenRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
-  const handleRef = (0,_utils_useForkRef__WEBPACK_IMPORTED_MODULE_7__["default"])(children.ref, childrenRef, ref);
-  const normalizedTransitionCallback = callback => isAppearing => {
-    if (callback) {
-      // onEnterXxx and onExitXxx callbacks have a different arguments.length value.
-      if (isAppearing === undefined) {
-        callback(childrenRef.current);
-      } else {
-        callback(childrenRef.current, isAppearing);
-      }
-    }
-  };
-  const handleEnter = normalizedTransitionCallback((node, isAppearing) => {
-    setTranslateValue(direction, node, containerProp);
-    (0,_transitions_utils__WEBPACK_IMPORTED_MODULE_8__.reflow)(node);
-    if (onEnter) {
-      onEnter(node, isAppearing);
-    }
-  });
-  const handleEntering = normalizedTransitionCallback((node, isAppearing) => {
-    const transitionProps = (0,_transitions_utils__WEBPACK_IMPORTED_MODULE_8__.getTransitionProps)({
-      timeout,
-      style,
-      easing: easingProp
-    }, {
-      mode: 'enter'
-    });
-    node.style.webkitTransition = theme.transitions.create('-webkit-transform', (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, transitionProps));
-    node.style.transition = theme.transitions.create('transform', (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, transitionProps));
-    node.style.webkitTransform = 'none';
-    node.style.transform = 'none';
-    if (onEntering) {
-      onEntering(node, isAppearing);
-    }
-  });
-  const handleEntered = normalizedTransitionCallback(onEntered);
-  const handleExiting = normalizedTransitionCallback(onExiting);
-  const handleExit = normalizedTransitionCallback(node => {
-    const transitionProps = (0,_transitions_utils__WEBPACK_IMPORTED_MODULE_8__.getTransitionProps)({
-      timeout,
-      style,
-      easing: easingProp
-    }, {
-      mode: 'exit'
-    });
-    node.style.webkitTransition = theme.transitions.create('-webkit-transform', transitionProps);
-    node.style.transition = theme.transitions.create('transform', transitionProps);
-    setTranslateValue(direction, node, containerProp);
-    if (onExit) {
-      onExit(node);
-    }
-  });
-  const handleExited = normalizedTransitionCallback(node => {
-    // No need for transitions when the component is hidden
-    node.style.webkitTransition = '';
-    node.style.transition = '';
-    if (onExited) {
-      onExited(node);
-    }
-  });
-  const handleAddEndListener = next => {
-    if (addEndListener) {
-      // Old call signature before `react-transition-group` implemented `nodeRef`
-      addEndListener(childrenRef.current, next);
-    }
-  };
-  const updatePosition = react__WEBPACK_IMPORTED_MODULE_2__.useCallback(() => {
-    if (childrenRef.current) {
-      setTranslateValue(direction, childrenRef.current, containerProp);
-    }
-  }, [direction, containerProp]);
-  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
-    // Skip configuration where the position is screen size invariant.
-    if (inProp || direction === 'down' || direction === 'right') {
-      return undefined;
-    }
-    const handleResize = (0,_utils_debounce__WEBPACK_IMPORTED_MODULE_9__["default"])(() => {
-      if (childrenRef.current) {
-        setTranslateValue(direction, childrenRef.current, containerProp);
-      }
-    });
-    const containerWindow = (0,_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(childrenRef.current);
-    containerWindow.addEventListener('resize', handleResize);
-    return () => {
-      handleResize.clear();
-      containerWindow.removeEventListener('resize', handleResize);
-    };
-  }, [direction, inProp, containerProp]);
-  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
-    if (!inProp) {
-      // We need to update the position of the drawer when the direction change and
-      // when it's hidden.
-      updatePosition();
-    }
-  }, [inProp, updatePosition]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(TransitionComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    nodeRef: childrenRef,
-    onEnter: handleEnter,
-    onEntered: handleEntered,
-    onEntering: handleEntering,
-    onExit: handleExit,
-    onExited: handleExited,
-    onExiting: handleExiting,
-    addEndListener: handleAddEndListener,
-    appear: appear,
-    in: inProp,
-    timeout: timeout
-  }, other, {
-    children: (state, childProps) => {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.cloneElement(children, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-        ref: handleRef,
-        style: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-          visibility: state === 'exited' && !inProp ? 'hidden' : undefined
-        }, style, children.props.style)
-      }, childProps));
-    }
-  }));
-});
- true ? Slide.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * Add a custom transition end trigger. Called with the transitioning DOM
-   * node and a done callback. Allows for more fine grained transition end
-   * logic. Note: Timeouts are still used as a fallback if provided.
-   */
-  addEndListener: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
-  /**
-   * Perform the enter transition when it first mounts if `in` is also `true`.
-   * Set this to `false` to disable this behavior.
-   * @default true
-   */
-  appear: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
-  /**
-   * A single child content element.
-   */
-  children: _mui_utils_elementAcceptingRef__WEBPACK_IMPORTED_MODULE_11__["default"].isRequired,
-  /**
-   * An HTML element, or a function that returns one.
-   * It's used to set the container the Slide is transitioning from.
-   */
-  container: (0,_mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_12__["default"])(prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([_mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_13__["default"], (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func)]), props => {
-    if (props.open) {
-      const resolvedContainer = resolveContainer(props.container);
-      if (resolvedContainer && resolvedContainer.nodeType === 1) {
-        const box = resolvedContainer.getBoundingClientRect();
-        if ( true && box.top === 0 && box.left === 0 && box.right === 0 && box.bottom === 0) {
-          return new Error(['MUI: The `container` prop provided to the component is invalid.', 'The anchor element should be part of the document layout.', "Make sure the element is present in the document or that it's not display none."].join('\n'));
-        }
-      } else if (!resolvedContainer || typeof resolvedContainer.getBoundingClientRect !== 'function' || resolvedContainer.contextElement != null && resolvedContainer.contextElement.nodeType !== 1) {
-        return new Error(['MUI: The `container` prop provided to the component is invalid.', 'It should be an HTML element instance.'].join('\n'));
-      }
-    }
-    return null;
-  }),
-  /**
-   * Direction the child node will enter from.
-   * @default 'down'
-   */
-  direction: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOf(['down', 'left', 'right', 'up']),
-  /**
-   * The transition timing function.
-   * You may specify a single easing or a object containing enter and exit values.
-   * @default {
-   *   enter: theme.transitions.easing.easeOut,
-   *   exit: theme.transitions.easing.sharp,
-   * }
-   */
-  easing: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_10___default().shape({
-    enter: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string),
-    exit: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string)
-  }), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().string)]),
-  /**
-   * If `true`, the component will transition in.
-   */
-  in: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
-  /**
-   * @ignore
-   */
-  onEnter: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
-  /**
-   * @ignore
-   */
-  onEntered: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
-  /**
-   * @ignore
-   */
-  onEntering: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
-  /**
-   * @ignore
-   */
-  onExit: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
-  /**
-   * @ignore
-   */
-  onExited: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
-  /**
-   * @ignore
-   */
-  onExiting: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
-  /**
-   * @ignore
-   */
-  style: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object),
-  /**
-   * The duration for the transition, in milliseconds.
-   * You may specify a single timeout for all transitions, or individually with an object.
-   * @default {
-   *   enter: theme.transitions.duration.enteringScreen,
-   *   exit: theme.transitions.duration.leavingScreen,
-   * }
-   */
-  timeout: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_10___default().number), prop_types__WEBPACK_IMPORTED_MODULE_10___default().shape({
-    appear: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number),
-    enter: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number),
-    exit: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().number)
-  })])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Slide);
 
 /***/ }),
 
@@ -11631,36 +9442,6 @@ const red = {
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/internal/svg-icons/Person.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@mui/material/internal/svg-icons/Person.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utils_createSvgIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/createSvgIcon */ "./node_modules/@mui/material/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-/**
- * @ignore - internal component.
- */
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-  d: "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-}), 'Person'));
-
-/***/ }),
-
 /***/ "./node_modules/@mui/material/styles/ThemeProvider.js":
 /*!************************************************************!*\
   !*** ./node_modules/@mui/material/styles/ThemeProvider.js ***!
@@ -12654,77 +10435,6 @@ function getTransitionProps(props, options) {
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/useScrollTrigger/useScrollTrigger.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@mui/material/useScrollTrigger/useScrollTrigger.js ***!
-  \*************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ useScrollTrigger)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-'use client';
-
-
-
-const _excluded = ["getTrigger", "target"];
-
-function defaultTrigger(store, options) {
-  const {
-    disableHysteresis = false,
-    threshold = 100,
-    target
-  } = options;
-  const previous = store.current;
-  if (target) {
-    // Get vertical scroll
-    store.current = target.pageYOffset !== undefined ? target.pageYOffset : target.scrollTop;
-  }
-  if (!disableHysteresis && previous !== undefined) {
-    if (store.current < previous) {
-      return false;
-    }
-  }
-  return store.current > threshold;
-}
-const defaultTarget = typeof window !== 'undefined' ? window : null;
-function useScrollTrigger(options = {}) {
-  const {
-      getTrigger = defaultTrigger,
-      target = defaultTarget
-    } = options,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(options, _excluded);
-  const store = react__WEBPACK_IMPORTED_MODULE_2__.useRef();
-  const [trigger, setTrigger] = react__WEBPACK_IMPORTED_MODULE_2__.useState(() => getTrigger(store, other));
-  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
-    const handleScroll = () => {
-      setTrigger(getTrigger(store, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-        target
-      }, other)));
-    };
-    handleScroll(); // Re-evaluate trigger when dependencies change
-    target.addEventListener('scroll', handleScroll, {
-      passive: true
-    });
-    return () => {
-      target.removeEventListener('scroll', handleScroll, {
-        passive: true
-      });
-    };
-    // See Option 3. https://github.com/facebook/react/issues/14476#issuecomment-471199055
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [target, getTrigger, JSON.stringify(other)]);
-  return trigger;
-}
-
-/***/ }),
-
 /***/ "./node_modules/@mui/material/utils/capitalize.js":
 /*!********************************************************!*\
   !*** ./node_modules/@mui/material/utils/capitalize.js ***!
@@ -13131,110 +10841,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_mui_utils_useIsFocusVisible__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/utils/useSlot.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@mui/material/utils/useSlot.js ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ useSlot)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _mui_utils_useForkRef__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/utils/useForkRef */ "./node_modules/@mui/utils/esm/useForkRef/useForkRef.js");
-/* harmony import */ var _mui_utils_appendOwnerState__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils/appendOwnerState */ "./node_modules/@mui/utils/esm/appendOwnerState/appendOwnerState.js");
-/* harmony import */ var _mui_utils_resolveComponentProps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/utils/resolveComponentProps */ "./node_modules/@mui/utils/esm/resolveComponentProps/resolveComponentProps.js");
-/* harmony import */ var _mui_utils_mergeSlotProps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/utils/mergeSlotProps */ "./node_modules/@mui/utils/esm/mergeSlotProps/mergeSlotProps.js");
-'use client';
-
-
-
-const _excluded = ["className", "elementType", "ownerState", "externalForwardedProps", "getSlotOwnerState", "internalForwardedProps"],
-  _excluded2 = ["component", "slots", "slotProps"],
-  _excluded3 = ["component"];
-
-
-
-
-/**
- * An internal function to create a Material UI slot.
- *
- * This is an advanced version of Base UI `useSlotProps` because Material UI allows leaf component to be customized via `component` prop
- * while Base UI does not need to support leaf component customization.
- *
- * @param {string} name: name of the slot
- * @param {object} parameters
- * @returns {[Slot, slotProps]} The slot's React component and the slot's props
- *
- * Note: the returned slot's props
- * - will never contain `component` prop.
- * - might contain `as` prop.
- */
-function useSlot(
-/**
- * The slot's name. All Material UI components should have `root` slot.
- *
- * If the name is `root`, the logic behaves differently from other slots,
- * e.g. the `externalForwardedProps` are spread to `root` slot but not other slots.
- */
-name, parameters) {
-  const {
-      className,
-      elementType: initialElementType,
-      ownerState,
-      externalForwardedProps,
-      getSlotOwnerState,
-      internalForwardedProps
-    } = parameters,
-    useSlotPropsParams = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(parameters, _excluded);
-  const {
-      component: rootComponent,
-      slots = {
-        [name]: undefined
-      },
-      slotProps = {
-        [name]: undefined
-      }
-    } = externalForwardedProps,
-    other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(externalForwardedProps, _excluded2);
-  const elementType = slots[name] || initialElementType;
-
-  // `slotProps[name]` can be a callback that receives the component's ownerState.
-  // `resolvedComponentsProps` is always a plain object.
-  const resolvedComponentsProps = (0,_mui_utils_resolveComponentProps__WEBPACK_IMPORTED_MODULE_2__["default"])(slotProps[name], ownerState);
-  const _mergeSlotProps = (0,_mui_utils_mergeSlotProps__WEBPACK_IMPORTED_MODULE_3__["default"])((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      className
-    }, useSlotPropsParams, {
-      externalForwardedProps: name === 'root' ? other : undefined,
-      externalSlotProps: resolvedComponentsProps
-    })),
-    {
-      props: {
-        component: slotComponent
-      },
-      internalRef
-    } = _mergeSlotProps,
-    mergedProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_mergeSlotProps.props, _excluded3);
-  const ref = (0,_mui_utils_useForkRef__WEBPACK_IMPORTED_MODULE_4__["default"])(internalRef, resolvedComponentsProps == null ? void 0 : resolvedComponentsProps.ref, parameters.ref);
-  const slotOwnerState = getSlotOwnerState ? getSlotOwnerState(mergedProps) : {};
-  const finalOwnerState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, ownerState, slotOwnerState);
-  const LeafComponent = name === 'root' ? slotComponent || rootComponent : slotComponent;
-  const props = (0,_mui_utils_appendOwnerState__WEBPACK_IMPORTED_MODULE_5__["default"])(elementType, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, name === 'root' && !rootComponent && !slots[name] && internalForwardedProps, name !== 'root' && !slots[name] && internalForwardedProps, mergedProps, LeafComponent && {
-    as: LeafComponent
-  }, {
-    ref
-  }), finalOwnerState);
-  Object.keys(slotOwnerState).forEach(propName => {
-    delete props[propName];
-  });
-  return [elementType, props];
-}
 
 /***/ }),
 
@@ -16951,73 +14557,6 @@ const ClassNameGenerator = createClassNameGenerator();
 
 /***/ }),
 
-/***/ "./node_modules/@mui/utils/esm/HTMLElementType/HTMLElementType.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/HTMLElementType/HTMLElementType.js ***!
-  \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ HTMLElementType)
-/* harmony export */ });
-function HTMLElementType(props, propName, componentName, location, propFullName) {
-  if (false) {}
-  const propValue = props[propName];
-  const safePropName = propFullName || propName;
-  if (propValue == null) {
-    return null;
-  }
-  if (propValue && propValue.nodeType !== 1) {
-    return new Error(`Invalid ${location} \`${safePropName}\` supplied to \`${componentName}\`. ` + `Expected an HTMLElement.`);
-  }
-  return null;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@mui/utils/esm/appendOwnerState/appendOwnerState.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/appendOwnerState/appendOwnerState.js ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _isHostComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../isHostComponent */ "./node_modules/@mui/utils/esm/isHostComponent/isHostComponent.js");
-
-
-
-/**
- * Type of the ownerState based on the type of an element it applies to.
- * This resolves to the provided OwnerState for React components and `undefined` for host components.
- * Falls back to `OwnerState | undefined` when the exact type can't be determined in development time.
- */
-
-/**
- * Appends the ownerState object to the props, merging with the existing one if necessary.
- *
- * @param elementType Type of the element that owns the `existingProps`. If the element is a DOM node or undefined, `ownerState` is not applied.
- * @param otherProps Props of the element.
- * @param ownerState
- */
-function appendOwnerState(elementType, otherProps, ownerState) {
-  if (elementType === undefined || (0,_isHostComponent__WEBPACK_IMPORTED_MODULE_1__["default"])(elementType)) {
-    return otherProps;
-  }
-  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, otherProps, {
-    ownerState: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, otherProps.ownerState, ownerState)
-  });
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (appendOwnerState);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/utils/esm/capitalize/capitalize.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@mui/utils/esm/capitalize/capitalize.js ***!
@@ -17457,38 +14996,6 @@ function exactProp(propTypes) {
 
 /***/ }),
 
-/***/ "./node_modules/@mui/utils/esm/extractEventHandlers/extractEventHandlers.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/extractEventHandlers/extractEventHandlers.js ***!
-  \**********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/**
- * Extracts event handlers from a given object.
- * A prop is considered an event handler if it is a function and its name starts with `on`.
- *
- * @param object An object to extract event handlers from.
- * @param excludeKeys An array of keys to exclude from the returned object.
- */
-function extractEventHandlers(object, excludeKeys = []) {
-  if (object === undefined) {
-    return {};
-  }
-  const result = {};
-  Object.keys(object).filter(prop => prop.match(/^on[A-Z]/) && typeof object[prop] === 'function' && !excludeKeys.includes(prop)).forEach(prop => {
-    result[prop] = object[prop];
-  });
-  return result;
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (extractEventHandlers);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/utils/esm/formatMuiErrorMessage/formatMuiErrorMessage.js":
 /*!************************************************************************************!*\
   !*** ./node_modules/@mui/utils/esm/formatMuiErrorMessage/formatMuiErrorMessage.js ***!
@@ -17792,126 +15299,6 @@ function isMuiElement(element, muiNames) {
 
 /***/ }),
 
-/***/ "./node_modules/@mui/utils/esm/mergeSlotProps/mergeSlotProps.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/mergeSlotProps/mergeSlotProps.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _extractEventHandlers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../extractEventHandlers */ "./node_modules/@mui/utils/esm/extractEventHandlers/extractEventHandlers.js");
-/* harmony import */ var _omitEventHandlers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../omitEventHandlers */ "./node_modules/@mui/utils/esm/omitEventHandlers/omitEventHandlers.js");
-
-
-
-
-/**
- * Merges the slot component internal props (usually coming from a hook)
- * with the externally provided ones.
- *
- * The merge order is (the latter overrides the former):
- * 1. The internal props (specified as a getter function to work with get*Props hook result)
- * 2. Additional props (specified internally on a Base UI component)
- * 3. External props specified on the owner component. These should only be used on a root slot.
- * 4. External props specified in the `slotProps.*` prop.
- * 5. The `className` prop - combined from all the above.
- * @param parameters
- * @returns
- */
-function mergeSlotProps(parameters) {
-  const {
-    getSlotProps,
-    additionalProps,
-    externalSlotProps,
-    externalForwardedProps,
-    className
-  } = parameters;
-  if (!getSlotProps) {
-    // The simpler case - getSlotProps is not defined, so no internal event handlers are defined,
-    // so we can simply merge all the props without having to worry about extracting event handlers.
-    const joinedClasses = (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(additionalProps == null ? void 0 : additionalProps.className, className, externalForwardedProps == null ? void 0 : externalForwardedProps.className, externalSlotProps == null ? void 0 : externalSlotProps.className);
-    const mergedStyle = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, additionalProps == null ? void 0 : additionalProps.style, externalForwardedProps == null ? void 0 : externalForwardedProps.style, externalSlotProps == null ? void 0 : externalSlotProps.style);
-    const props = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, additionalProps, externalForwardedProps, externalSlotProps);
-    if (joinedClasses.length > 0) {
-      props.className = joinedClasses;
-    }
-    if (Object.keys(mergedStyle).length > 0) {
-      props.style = mergedStyle;
-    }
-    return {
-      props,
-      internalRef: undefined
-    };
-  }
-
-  // In this case, getSlotProps is responsible for calling the external event handlers.
-  // We don't need to include them in the merged props because of this.
-
-  const eventHandlers = (0,_extractEventHandlers__WEBPACK_IMPORTED_MODULE_2__["default"])((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, externalForwardedProps, externalSlotProps));
-  const componentsPropsWithoutEventHandlers = (0,_omitEventHandlers__WEBPACK_IMPORTED_MODULE_3__["default"])(externalSlotProps);
-  const otherPropsWithoutEventHandlers = (0,_omitEventHandlers__WEBPACK_IMPORTED_MODULE_3__["default"])(externalForwardedProps);
-  const internalSlotProps = getSlotProps(eventHandlers);
-
-  // The order of classes is important here.
-  // Emotion (that we use in libraries consuming Base UI) depends on this order
-  // to properly override style. It requires the most important classes to be last
-  // (see https://github.com/mui/material-ui/pull/33205) for the related discussion.
-  const joinedClasses = (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(internalSlotProps == null ? void 0 : internalSlotProps.className, additionalProps == null ? void 0 : additionalProps.className, className, externalForwardedProps == null ? void 0 : externalForwardedProps.className, externalSlotProps == null ? void 0 : externalSlotProps.className);
-  const mergedStyle = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, internalSlotProps == null ? void 0 : internalSlotProps.style, additionalProps == null ? void 0 : additionalProps.style, externalForwardedProps == null ? void 0 : externalForwardedProps.style, externalSlotProps == null ? void 0 : externalSlotProps.style);
-  const props = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, internalSlotProps, additionalProps, otherPropsWithoutEventHandlers, componentsPropsWithoutEventHandlers);
-  if (joinedClasses.length > 0) {
-    props.className = joinedClasses;
-  }
-  if (Object.keys(mergedStyle).length > 0) {
-    props.style = mergedStyle;
-  }
-  return {
-    props,
-    internalRef: internalSlotProps.ref
-  };
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mergeSlotProps);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/utils/esm/omitEventHandlers/omitEventHandlers.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/omitEventHandlers/omitEventHandlers.js ***!
-  \****************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/**
- * Removes event handlers from the given object.
- * A field is considered an event handler if it is a function with a name beginning with `on`.
- *
- * @param object Object to remove event handlers from.
- * @returns Object with event handlers removed.
- */
-function omitEventHandlers(object) {
-  if (object === undefined) {
-    return {};
-  }
-  const result = {};
-  Object.keys(object).filter(prop => !(prop.match(/^on[A-Z]/) && typeof object[prop] === 'function')).forEach(prop => {
-    result[prop] = object[prop];
-  });
-  return result;
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (omitEventHandlers);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/utils/esm/ownerDocument/ownerDocument.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@mui/utils/esm/ownerDocument/ownerDocument.js ***!
@@ -18002,31 +15389,6 @@ function requirePropFactory(componentNameInError, Component) {
   };
   return requireProp;
 }
-
-/***/ }),
-
-/***/ "./node_modules/@mui/utils/esm/resolveComponentProps/resolveComponentProps.js":
-/*!************************************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/resolveComponentProps/resolveComponentProps.js ***!
-  \************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/**
- * If `componentProps` is a function, calls it with the provided `ownerState`.
- * Otherwise, just returns `componentProps`.
- */
-function resolveComponentProps(componentProps, ownerState, slotState) {
-  if (typeof componentProps === 'function') {
-    return componentProps(ownerState, slotState);
-  }
-  return componentProps;
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (resolveComponentProps);
 
 /***/ }),
 
@@ -18588,93 +15950,6 @@ function useOnMount(fn) {
   react__WEBPACK_IMPORTED_MODULE_0__.useEffect(fn, EMPTY);
   /* eslint-enable react-hooks/exhaustive-deps */
 }
-
-/***/ }),
-
-/***/ "./node_modules/@mui/utils/esm/usePreviousProps/usePreviousProps.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/usePreviousProps/usePreviousProps.js ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-'use client';
-
-
-const usePreviousProps = value => {
-  const ref = react__WEBPACK_IMPORTED_MODULE_0__.useRef({});
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (usePreviousProps);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/utils/esm/useSlotProps/useSlotProps.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/useSlotProps/useSlotProps.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _useForkRef__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../useForkRef */ "./node_modules/@mui/utils/esm/useForkRef/useForkRef.js");
-/* harmony import */ var _appendOwnerState__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../appendOwnerState */ "./node_modules/@mui/utils/esm/appendOwnerState/appendOwnerState.js");
-/* harmony import */ var _mergeSlotProps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../mergeSlotProps */ "./node_modules/@mui/utils/esm/mergeSlotProps/mergeSlotProps.js");
-/* harmony import */ var _resolveComponentProps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../resolveComponentProps */ "./node_modules/@mui/utils/esm/resolveComponentProps/resolveComponentProps.js");
-'use client';
-
-
-
-const _excluded = ["elementType", "externalSlotProps", "ownerState", "skipResolvingSlotProps"];
-
-
-
-
-/**
- * @ignore - do not document.
- * Builds the props to be passed into the slot of an unstyled component.
- * It merges the internal props of the component with the ones supplied by the user, allowing to customize the behavior.
- * If the slot component is not a host component, it also merges in the `ownerState`.
- *
- * @param parameters.getSlotProps - A function that returns the props to be passed to the slot component.
- */
-function useSlotProps(parameters) {
-  var _parameters$additiona;
-  const {
-      elementType,
-      externalSlotProps,
-      ownerState,
-      skipResolvingSlotProps = false
-    } = parameters,
-    rest = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(parameters, _excluded);
-  const resolvedComponentsProps = skipResolvingSlotProps ? {} : (0,_resolveComponentProps__WEBPACK_IMPORTED_MODULE_2__["default"])(externalSlotProps, ownerState);
-  const {
-    props: mergedProps,
-    internalRef
-  } = (0,_mergeSlotProps__WEBPACK_IMPORTED_MODULE_3__["default"])((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, rest, {
-    externalSlotProps: resolvedComponentsProps
-  }));
-  const ref = (0,_useForkRef__WEBPACK_IMPORTED_MODULE_4__["default"])(internalRef, resolvedComponentsProps == null ? void 0 : resolvedComponentsProps.ref, (_parameters$additiona = parameters.additionalProps) == null ? void 0 : _parameters$additiona.ref);
-  const props = (0,_appendOwnerState__WEBPACK_IMPORTED_MODULE_5__["default"])(elementType, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, mergedProps, {
-    ref
-  }), ownerState);
-  return props;
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useSlotProps);
 
 /***/ }),
 
@@ -66520,13 +63795,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/createTheme.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CssBaseline/CssBaseline.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/createTheme.js");
+/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/ThemeProvider.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CssBaseline/CssBaseline.js");
 /* harmony import */ var _components_Sidebar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Sidebar */ "./frontend/src/components/Sidebar/index.ts");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./config */ "./frontend/src/config/index.ts");
-/* harmony import */ var _contexts_AuthContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contexts/AuthContext */ "./frontend/src/contexts/AuthContext.tsx");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ "./frontend/src/components/Header/index.ts");
+/* harmony import */ var _components_Dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Dashboard */ "./frontend/src/components/Dashboard/index.ts");
+/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hooks */ "./frontend/src/hooks/index.ts");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -66537,7 +63815,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/r
 
 
 
-const theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_4__["default"])({
+
+const theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_5__["default"])({
     palette: {
         primary: {
             main: "#1976d2",
@@ -66545,210 +63824,46 @@ const theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_4__["default"])({
         secondary: {
             main: "#dc004e",
         },
+        // background: {
+        //   default: "#f4f4f4",
+        //   paper: "#ffffff",
+        // },
     },
     typography: {
         fontFamily: "Roboto, Arial, sans-serif",
         h1: {
             fontSize: "2rem",
-            color: "#dc004e",
+            color: "#1976d2",
         },
     },
     components: {
         MuiCard: {
             defaultProps: {
-                elevation: 3, // Set default elevation for Card
+                elevation: 3,
             },
             styleOverrides: {
                 root: {
-                    borderRadius: "12px", // Override the default border radius
-                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Custom shadow
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                 },
             },
         },
     },
 });
 const App = () => {
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_contexts_AuthContext__WEBPACK_IMPORTED_MODULE_3__.AuthProvider, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], { sx: { display: "flex" }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Sidebar__WEBPACK_IMPORTED_MODULE_1__.Sidebar, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], { component: "main", sx: {
-                            flexGrow: 1,
-                            bgcolor: "background.default",
-                            p: 3,
-                        }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("main", { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_config__WEBPACK_IMPORTED_MODULE_2__.AppRoutes, {}) }) })] }) }) }));
+    const { isAuthenticated } = (0,_hooks__WEBPACK_IMPORTED_MODULE_4__.useAuth)();
+    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material_styles__WEBPACK_IMPORTED_MODULE_6__["default"], { theme: theme, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.BrowserRouter, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { sx: {
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "100vh",
+                }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Header__WEBPACK_IMPORTED_MODULE_2__.Header, { isAuthenticated: isAuthenticated, onSignIn: () => { }, onSignOut: () => { } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_9__["default"], {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { sx: { display: "flex", flex: 1 }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Sidebar__WEBPACK_IMPORTED_MODULE_1__.Sidebar, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { component: "main", sx: {
+                                    flexGrow: 1,
+                                    bgcolor: "background.default",
+                                    p: 3,
+                                    overflowY: "auto",
+                                }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Routes, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, { path: "/", element: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Dashboard__WEBPACK_IMPORTED_MODULE_3__.Home, {}) }) }) })] })] }) }) }));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
-
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (false) {}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ }),
-
-/***/ "./frontend/src/components/Authentication/PrivateRoute.tsx":
-/*!*****************************************************************!*\
-  !*** ./frontend/src/components/Authentication/PrivateRoute.tsx ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   PrivateRoute: () => (/* binding */ PrivateRoute)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _contexts_AuthContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../contexts/AuthContext */ "./frontend/src/contexts/AuthContext.tsx");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-
-
-
-//redirectPath = "/signin",
-const PrivateRoute = ({ children }) => {
-    const { isAuthenticated } = (0,_contexts_AuthContext__WEBPACK_IMPORTED_MODULE_1__.useAuth)();
-    if (!isAuthenticated) {
-        return !isAuthenticated ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, { to: "/", replace: true }) : (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: children });
-    }
-    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Outlet, {});
-};
-
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (false) {}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ }),
-
-/***/ "./frontend/src/components/Authentication/SignIn.tsx":
-/*!***********************************************************!*\
-  !*** ./frontend/src/components/Authentication/SignIn.tsx ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   SignIn: () => (/* binding */ SignIn)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-
-
-const SignIn = ({ onSignIn, errorMessage }) => {
-    const [email, setEmail] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
-    const [password, setPassword] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
-    const [error, setError] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
-    const handleSignIn = () => {
-        if (email.trim() === "" || password.trim() === "") {
-            setError("Please enter both email and password.");
-            return;
-        }
-        setError("");
-        onSignIn(email, password);
-    };
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "sign-in-container", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", { children: "Sign In" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "sign-in-form", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", { type: "email", placeholder: "Email", value: email, onChange: (e) => setEmail(e.target.value) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", { type: "password", placeholder: "Password", value: password, onChange: (e) => setPassword(e.target.value) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", { onClick: handleSignIn, children: "Sign In" }), error && (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: "error-message", children: error }), errorMessage && (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: "error-message", children: errorMessage })] })] }));
-};
-
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (false) {}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ }),
-
-/***/ "./frontend/src/components/Authentication/SignUp.tsx":
-/*!***********************************************************!*\
-  !*** ./frontend/src/components/Authentication/SignUp.tsx ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   SignUp: () => (/* binding */ SignUp)
-/* harmony export */ });
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-const SignUp = () => { };
-
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (false) {}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ }),
-
-/***/ "./frontend/src/components/Authentication/index.tsx":
-/*!**********************************************************!*\
-  !*** ./frontend/src/components/Authentication/index.tsx ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   PrivateRoute: () => (/* reexport safe */ _PrivateRoute__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute),
-/* harmony export */   SignIn: () => (/* reexport safe */ _SignIn__WEBPACK_IMPORTED_MODULE_0__.SignIn),
-/* harmony export */   SignUp: () => (/* reexport safe */ _SignUp__WEBPACK_IMPORTED_MODULE_1__.SignUp)
-/* harmony export */ });
-/* harmony import */ var _SignIn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SignIn */ "./frontend/src/components/Authentication/SignIn.tsx");
-/* harmony import */ var _SignUp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignUp */ "./frontend/src/components/Authentication/SignUp.tsx");
-/* harmony import */ var _PrivateRoute__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PrivateRoute */ "./frontend/src/components/Authentication/PrivateRoute.tsx");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-
-
-
 
 
 const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
@@ -66780,46 +63895,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   Home: () => (/* binding */ Home)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/useScrollTrigger/useScrollTrigger.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Slide/Slide.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/AppBar/AppBar.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Toolbar/Toolbar.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Typography/Typography.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/InputBase/InputBase.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/IconButton/IconButton.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Badge/Badge.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Container/Container.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Grid/Grid.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Paper/Paper.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/List/List.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/ListItem/ListItem.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/ListItemText/ListItemText.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Fade/Fade.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Divider/Divider.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Card/Card.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CardActionArea/CardActionArea.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CardMedia/CardMedia.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CardContent/CardContent.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Avatar/Avatar.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Fab/Fab.js");
-/* harmony import */ var _mui_icons_material_Notifications__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/icons-material/Notifications */ "./node_modules/@mui/icons-material/Notifications.js");
-/* harmony import */ var _mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material/Search */ "./node_modules/@mui/icons-material/Search.js");
-/* harmony import */ var _mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/icons-material/AccountCircle */ "./node_modules/@mui/icons-material/AccountCircle.js");
-/* harmony import */ var _mui_icons_material_Home__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @mui/icons-material/Home */ "./node_modules/@mui/icons-material/Home.js");
-/* harmony import */ var _mui_icons_material_Event__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @mui/icons-material/Event */ "./node_modules/@mui/icons-material/Event.js");
-/* harmony import */ var _mui_icons_material_Message__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @mui/icons-material/Message */ "./node_modules/@mui/icons-material/Message.js");
-/* harmony import */ var _mui_icons_material_Add__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @mui/icons-material/Add */ "./node_modules/@mui/icons-material/Add.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Container/Container.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Grid/Grid.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Fade/Fade.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Typography/Typography.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Divider/Divider.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Card/Card.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CardActionArea/CardActionArea.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CardMedia/CardMedia.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CardContent/CardContent.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Fab/Fab.js");
+/* harmony import */ var _mui_icons_material_Add__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/icons-material/Add */ "./node_modules/@mui/icons-material/Add.js");
 /* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/createTheme.js");
-/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/ThemeProvider.js");
+/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/ThemeProvider.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-
-
-
-
-
 
 
 
@@ -66853,14 +63944,6 @@ const theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["default"])({
         },
     },
     components: {
-        MuiAppBar: {
-            styleOverrides: {
-                root: {
-                    backgroundColor: "#2C2F33",
-                    boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.1)",
-                },
-            },
-        },
         MuiPaper: {
             styleOverrides: {
                 root: {
@@ -66876,29 +63959,12 @@ const theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["default"])({
         },
     },
 });
-function HideOnScroll(props) {
-    const { children } = props;
-    const trigger = (0,_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"])();
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], { appear: false, direction: "down", in: !trigger, children: children }));
-}
 const Home = () => {
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material_styles__WEBPACK_IMPORTED_MODULE_4__["default"], { theme: theme, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { sx: {
+    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material_styles__WEBPACK_IMPORTED_MODULE_2__["default"], { theme: theme, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], { sx: {
                 bgcolor: "background.default",
                 minHeight: "100vh",
                 color: "text.primary",
-            }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(HideOnScroll, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], { position: "sticky", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { variant: "h6", noWrap: true, sx: { flexGrow: 1 }, children: "Neighbor-Net" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { sx: { position: "relative", mr: 2 }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_9__["default"], { sx: {
-                                                position: "absolute",
-                                                top: "50%",
-                                                left: 8,
-                                                transform: "translateY(-50%)",
-                                                color: "#aaa",
-                                            } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], { placeholder: "Search\u2026", sx: {
-                                                color: "text.primary",
-                                                pl: 5,
-                                                pr: 1,
-                                                borderRadius: 1,
-                                                bgcolor: "background.paper",
-                                            } })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], { color: "inherit", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_12__["default"], { badgeContent: 4, color: "secondary", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_Notifications__WEBPACK_IMPORTED_MODULE_13__["default"], {}) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], { color: "inherit", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_14__["default"], {}) })] }) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_15__["default"], { maxWidth: "lg", sx: { mt: 4 }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_16__["default"], { container: true, spacing: 3, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_16__["default"], { item: true, xs: 2, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_17__["default"], { sx: { position: "sticky", top: 80 }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_18__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_19__["default"], { button: true, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_Home__WEBPACK_IMPORTED_MODULE_20__["default"], { sx: { mr: 2 } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_21__["default"], { primary: "Home" })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_19__["default"], { button: true, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_Event__WEBPACK_IMPORTED_MODULE_22__["default"], { sx: { mr: 2 } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_21__["default"], { primary: "Events" })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_19__["default"], { button: true, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_Message__WEBPACK_IMPORTED_MODULE_23__["default"], { sx: { mr: 2 } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_21__["default"], { primary: "Messages" })] })] }) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_16__["default"], { item: true, xs: 8, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_24__["default"], { in: true, timeout: 1000, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { variant: "h4", gutterBottom: true, children: "Community Feed" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_25__["default"], { sx: { mb: 2 } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_16__["default"], { container: true, spacing: 2, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_16__["default"], { item: true, xs: 12, md: 6, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_26__["default"], { sx: { bgcolor: "background.paper" }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_27__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_28__["default"], { component: "img", height: "140", image: "/static/images/cards/community-event.jpg", alt: "Community Event" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_29__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { gutterBottom: true, variant: "h5", component: "div", children: "Community Event" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { variant: "body2", color: "text.secondary", children: "Join us for a community gathering this Saturday at the central park." })] })] }) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_16__["default"], { item: true, xs: 12, md: 6, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_26__["default"], { sx: { bgcolor: "background.paper" }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_27__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_28__["default"], { component: "img", height: "140", image: "/static/images/cards/maintenance.jpg", alt: "Maintenance Alert" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_29__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { gutterBottom: true, variant: "h5", component: "div", children: "Maintenance Alert" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { variant: "body2", color: "text.secondary", children: "The elevator will be under maintenance from 10 AM to 2 PM tomorrow." })] })] }) }) })] })] }) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_16__["default"], { item: true, xs: 2, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_24__["default"], { in: true, timeout: 1000, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_17__["default"], { sx: { position: "sticky", top: 80 }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { variant: "h6", gutterBottom: true, children: "Upcoming Events" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_18__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_19__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_30__["default"], { sx: { bgcolor: "secondary.main", mr: 2 }, children: "E" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_21__["default"], { primary: "Event 1", secondary: "Tomorrow at 5pm" })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_19__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_30__["default"], { sx: { bgcolor: "primary.main", mr: 2 }, children: "E" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_21__["default"], { primary: "Event 2", secondary: "Friday at 6pm" })] })] })] }) }) })] }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_31__["default"], { color: "secondary", "aria-label": "add", sx: { position: "fixed", bottom: 16, right: 16 }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_Add__WEBPACK_IMPORTED_MODULE_32__["default"], {}) })] }) }));
+            }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], { maxWidth: "sm", sx: { mt: 4 }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { container: true, spacing: 3, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { item: true, xs: 10, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], { in: true, timeout: 1000, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], { variant: "h4", gutterBottom: true, children: "Community Feed" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { sx: { mb: 2 } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { container: true, spacing: 2, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { item: true, xs: 12, md: 6, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_9__["default"], { sx: { bgcolor: "background.paper" }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], { component: "img", height: "140", image: "/static/images/cards/community-event.jpg", alt: "Community Event" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_12__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], { gutterBottom: true, variant: "h5", component: "div", children: "Community Event" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], { variant: "body2", color: "text.secondary", children: "Join us for a community gathering this Saturday at the central park." })] })] }) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { item: true, xs: 12, md: 6, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_9__["default"], { sx: { bgcolor: "background.paper" }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], { component: "img", height: "140", image: "/static/images/cards/maintenance.jpg", alt: "Maintenance Alert" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_12__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], { gutterBottom: true, variant: "h5", component: "div", children: "Maintenance Alert" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], { variant: "body2", color: "text.secondary", children: "The elevator will be under maintenance from 10 AM to 2 PM tomorrow." })] })] }) }) })] })] }) }) }) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_13__["default"], { color: "secondary", "aria-label": "add", sx: { position: "fixed", bottom: 16, right: 16 }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_Add__WEBPACK_IMPORTED_MODULE_14__["default"], {}) })] }) }));
 };
 
 
@@ -66954,37 +64020,83 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 
 /***/ }),
 
-/***/ "./frontend/src/components/Events/Events.tsx":
+/***/ "./frontend/src/components/Header/Header.tsx":
 /*!***************************************************!*\
-  !*** ./frontend/src/components/Events/Events.tsx ***!
+  !*** ./frontend/src/components/Header/Header.tsx ***!
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Events: () => (/* binding */ Events),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Header: () => (/* binding */ Header)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/AppBar/AppBar.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Toolbar/Toolbar.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Typography/Typography.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/InputBase/InputBase.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Button/Button.js");
+/* harmony import */ var _mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/Search */ "./node_modules/@mui/icons-material/Search.js");
+/* harmony import */ var _mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/icons-material/AccountCircle */ "./node_modules/@mui/icons-material/AccountCircle.js");
+/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/createTheme.js");
+/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/styles */ "./node_modules/@mui/material/styles/ThemeProvider.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
 
-const Events = ({ id, title, date, time, location, description, attendees = [], onRSVP, onCancelRSVP, }) => {
-    const handleRSVP = () => {
-        if (onRSVP) {
-            onRSVP(id);
-        }
-    };
-    const handleCancelRSVP = () => {
-        if (onCancelRSVP) {
-            onCancelRSVP(id);
-        }
-    };
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "event-card", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", { children: title }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("strong", { children: "Date:" }), " ", date] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("strong", { children: "Time:" }), " ", time] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("strong", { children: "Location:" }), " ", location] }), description && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("strong", { children: "Description:" }), " ", description] })), attendees.length > 0 && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("strong", { children: "Attendees:" }), " ", attendees.join(", ")] })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "event-actions", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", { onClick: handleRSVP, children: "RSVP" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", { onClick: handleCancelRSVP, children: "Cancel RSVP" })] })] }));
+
+
+
+
+const theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    palette: {
+        primary: {
+            main: "#1976d2",
+        },
+        secondary: {
+            main: "#dc004e",
+        },
+        background: {
+            default: "#1E201E",
+            paper: "#2C2F33",
+        },
+        text: {
+            primary: "#ffffff",
+            secondary: "#B0BEC5",
+        },
+    },
+    typography: {
+        fontFamily: "Poppins, Arial, sans-serif",
+    },
+    components: {
+        MuiAppBar: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: "#2C2F33",
+                    boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.1)",
+                },
+            },
+        },
+    },
+});
+const Header = ({ isAuthenticated, onSignOut, onSignIn, }) => {
+    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material_styles__WEBPACK_IMPORTED_MODULE_2__["default"], { theme: theme, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], { position: "sticky", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { variant: "h6", noWrap: true, sx: { flexGrow: 1 }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", { src: "/static/images/logo.png", alt: "Neighbor-Net", style: { height: 40, verticalAlign: "middle" } }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], { sx: { position: "relative", mr: 2, flexGrow: 1, maxWidth: 400 }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_7__["default"], { sx: {
+                                    position: "absolute",
+                                    top: "50%",
+                                    left: 8,
+                                    transform: "translateY(-50%)",
+                                    color: "#aaa",
+                                } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], { placeholder: "Search\u2026", sx: {
+                                    color: "text.primary",
+                                    pl: 5,
+                                    pr: 1,
+                                    borderRadius: 1,
+                                    bgcolor: "background.paper",
+                                    width: "100%",
+                                } })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], { children: isAuthenticated ? ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_9__["default"], { color: "inherit", startIcon: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_10__["default"], {}), onClick: onSignOut, children: "Sign Out" })) : ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_9__["default"], { color: "inherit", startIcon: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_10__["default"], {}), onClick: onSignIn, children: "Sign In" })) })] }) }) }));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Event);
 
 
 const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
@@ -67004,115 +64116,18 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 
 /***/ }),
 
-/***/ "./frontend/src/components/Events/index.ts":
+/***/ "./frontend/src/components/Header/index.ts":
 /*!*************************************************!*\
-  !*** ./frontend/src/components/Events/index.ts ***!
+  !*** ./frontend/src/components/Header/index.ts ***!
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Events: () => (/* reexport safe */ _Events__WEBPACK_IMPORTED_MODULE_0__.Events)
+/* harmony export */   Header: () => (/* reexport safe */ _Header__WEBPACK_IMPORTED_MODULE_0__.Header)
 /* harmony export */ });
-/* harmony import */ var _Events__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Events */ "./frontend/src/components/Events/Events.tsx");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-
-
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (false) {}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ }),
-
-/***/ "./frontend/src/components/Messaging/Messaging.tsx":
-/*!*********************************************************!*\
-  !*** ./frontend/src/components/Messaging/Messaging.tsx ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Messaging: () => (/* binding */ Messaging)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-
-
-const Messaging = ({ currentUser, messages, onSendMessage, typingIndicator = false, }) => {
-    const [newMessage, setNewMessage] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
-    const messagesEndRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(null);
-    const handleSendMessage = () => {
-        if (newMessage.trim() !== "") {
-            onSendMessage(newMessage);
-            setNewMessage("");
-        }
-    };
-    const handleKeyPress = (e) => {
-        if (e.key === "Enter" && !e.shiftKey) {
-            e.preventDefault();
-            handleSendMessage();
-        }
-    };
-    const scrollToBottom = () => {
-        var _a;
-        (_a = messagesEndRef.current) === null || _a === void 0 ? void 0 : _a.scrollIntoView({ behavior: "smooth" });
-    };
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
-        scrollToBottom();
-    }, [messages]);
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "messaging-container", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "message-list", children: [messages.map((msg) => ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: `message ${msg.sender === currentUser ? "my-message" : "their-message"}`, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "message-sender", children: msg.sender }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "message-content", children: msg.content }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "message-timestamp", children: msg.timestamp.toLocaleTimeString() })] }, msg.id))), typingIndicator && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "typing-indicator", children: "Someone is typing..." })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { ref: messagesEndRef })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "message-input", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("textarea", { value: newMessage, onChange: (e) => setNewMessage(e.target.value), onKeyPress: handleKeyPress, placeholder: "Type a message...", rows: 2 }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", { onClick: handleSendMessage, children: "Send" })] })] }));
-};
-
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (false) {}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ }),
-
-/***/ "./frontend/src/components/Messaging/index.ts":
-/*!****************************************************!*\
-  !*** ./frontend/src/components/Messaging/index.ts ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Messaging: () => (/* reexport safe */ _Messaging__WEBPACK_IMPORTED_MODULE_0__.Messaging)
-/* harmony export */ });
-/* harmony import */ var _Messaging__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Messaging */ "./frontend/src/components/Messaging/Messaging.tsx");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./frontend/src/components/Header/Header.tsx");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -67232,125 +64247,6 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 
 /***/ }),
 
-/***/ "./frontend/src/config/AppRoutes.tsx":
-/*!*******************************************!*\
-  !*** ./frontend/src/config/AppRoutes.tsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   AppRoutes: () => (/* binding */ AppRoutes)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _contexts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contexts */ "./frontend/src/contexts/index.ts");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _components_Dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Dashboard */ "./frontend/src/components/Dashboard/index.ts");
-/* harmony import */ var _components_Events__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Events */ "./frontend/src/components/Events/index.ts");
-/* harmony import */ var _components_Messaging__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Messaging */ "./frontend/src/components/Messaging/index.ts");
-/* harmony import */ var _components_Authentication___WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Authentication/ */ "./frontend/src/components/Authentication/index.tsx");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-
-
-
-
-
-
-
-
-const eventProps = {
-    id: "1",
-    title: "React Conference",
-    date: "2024-08-24",
-    time: "10:00 AM",
-    location: "Online",
-};
-const AppRoutes = () => {
-    const { isAuthenticated } = (0,_contexts__WEBPACK_IMPORTED_MODULE_2__.useAuth)();
-    const [messages, setMessages] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([
-        {
-            id: "1",
-            sender: "Alice",
-            content: "Hey, are you going to the BBQ tonight?",
-            timestamp: new Date("2024-08-30T16:00:00"),
-        },
-        {
-            id: "2",
-            sender: "You",
-            content: "Yes! I’ll be there.",
-            timestamp: new Date("2024-08-30T16:05:00"),
-        },
-    ]);
-    const handleSendMessage = (content) => {
-        const newMessage = {
-            id: String(messages.length + 1),
-            sender: "You",
-            content,
-            timestamp: new Date(),
-        };
-        setMessages([...messages, newMessage]);
-    };
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, { path: "/", element: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Dashboard__WEBPACK_IMPORTED_MODULE_3__.Home, {}) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, { path: "/signin", element: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Authentication___WEBPACK_IMPORTED_MODULE_6__.SignIn, { onSignIn: () => { }, errorMessage: "test" }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, { path: "/events", element: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Authentication___WEBPACK_IMPORTED_MODULE_6__.PrivateRoute, { isAuthenticated: isAuthenticated, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Events__WEBPACK_IMPORTED_MODULE_4__.Events, Object.assign({}, eventProps)) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, { path: "/messages", element: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Authentication___WEBPACK_IMPORTED_MODULE_6__.PrivateRoute, { isAuthenticated: isAuthenticated, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_Messaging__WEBPACK_IMPORTED_MODULE_5__.Messaging, { currentUser: "You", messages: messages, onSendMessage: handleSendMessage, typingIndicator: true }) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, { path: "*", element: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { children: "Page Not Found" }) })] }));
-};
-
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (false) {}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ }),
-
-/***/ "./frontend/src/config/index.ts":
-/*!**************************************!*\
-  !*** ./frontend/src/config/index.ts ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   AppRoutes: () => (/* reexport safe */ _AppRoutes__WEBPACK_IMPORTED_MODULE_0__.AppRoutes)
-/* harmony export */ });
-/* harmony import */ var _AppRoutes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppRoutes */ "./frontend/src/config/AppRoutes.tsx");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-
-
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (false) {}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ }),
-
 /***/ "./frontend/src/contexts/AuthContext.tsx":
 /*!***********************************************!*\
   !*** ./frontend/src/contexts/AuthContext.tsx ***!
@@ -67360,8 +64256,8 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   AuthProvider: () => (/* binding */ AuthProvider),
-/* harmony export */   useAuth: () => (/* binding */ useAuth)
+/* harmony export */   AuthContext: () => (/* binding */ AuthContext),
+/* harmony export */   AuthProvider: () => (/* binding */ AuthProvider)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -67380,13 +64276,6 @@ const AuthProvider = ({ children }) => {
         return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { children: "Loading..." });
     }
     return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(AuthContext.Provider, { value: { isAuthenticated, login, logout }, children: children }));
-};
-const useAuth = () => {
-    const context = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(AuthContext);
-    if (!context) {
-        throw new Error("useAuth must be used within an AuthProvider");
-    }
-    return context;
 };
 
 
@@ -67416,14 +64305,168 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   AuthProvider: () => (/* reexport safe */ _AuthContext__WEBPACK_IMPORTED_MODULE_0__.AuthProvider),
-/* harmony export */   useAuth: () => (/* reexport safe */ _AuthContext__WEBPACK_IMPORTED_MODULE_0__.useAuth)
+/* harmony export */   AuthContext: () => (/* reexport safe */ _AuthContext__WEBPACK_IMPORTED_MODULE_0__.AuthContext),
+/* harmony export */   AuthProvider: () => (/* reexport safe */ _AuthContext__WEBPACK_IMPORTED_MODULE_0__.AuthProvider)
 /* harmony export */ });
 /* harmony import */ var _AuthContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AuthContext */ "./frontend/src/contexts/AuthContext.tsx");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
 
+
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (false) {}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ }),
+
+/***/ "./frontend/src/hooks/index.ts":
+/*!*************************************!*\
+  !*** ./frontend/src/hooks/index.ts ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useAuth: () => (/* reexport safe */ _useAuth__WEBPACK_IMPORTED_MODULE_0__.useAuth),
+/* harmony export */   useFetch: () => (/* reexport safe */ _useFetch__WEBPACK_IMPORTED_MODULE_1__.useFetch),
+/* harmony export */   useWebsocket: () => (/* reexport safe */ _useWebSocket__WEBPACK_IMPORTED_MODULE_2__.useWebsocket)
+/* harmony export */ });
+/* harmony import */ var _useAuth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./useAuth */ "./frontend/src/hooks/useAuth.ts");
+/* harmony import */ var _useFetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useFetch */ "./frontend/src/hooks/useFetch.ts");
+/* harmony import */ var _useWebSocket__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useWebSocket */ "./frontend/src/hooks/useWebSocket.ts");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+
+
+
+
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (false) {}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ }),
+
+/***/ "./frontend/src/hooks/useAuth.ts":
+/*!***************************************!*\
+  !*** ./frontend/src/hooks/useAuth.ts ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useAuth: () => (/* binding */ useAuth)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _contexts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../contexts */ "./frontend/src/contexts/index.ts");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+
+
+const useAuth = () => {
+    const context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_contexts__WEBPACK_IMPORTED_MODULE_1__.AuthContext);
+    if (!context) {
+        throw new Error("useAuth must be used within an AuthProvider");
+    }
+    return context;
+};
+
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (false) {}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ }),
+
+/***/ "./frontend/src/hooks/useFetch.ts":
+/*!****************************************!*\
+  !*** ./frontend/src/hooks/useFetch.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useFetch: () => (/* binding */ useFetch)
+/* harmony export */ });
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+const useFetch = () => { };
+
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (false) {}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ }),
+
+/***/ "./frontend/src/hooks/useWebSocket.ts":
+/*!********************************************!*\
+  !*** ./frontend/src/hooks/useWebSocket.ts ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useWebsocket: () => (/* binding */ useWebsocket)
+/* harmony export */ });
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+const useWebsocket = () => { };
 
 
 const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
@@ -67456,6 +64499,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./frontend/src/App.tsx");
+/* harmony import */ var _contexts_AuthContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contexts/AuthContext */ "./frontend/src/contexts/AuthContext.tsx");
 /* module decorator */ module = __webpack_require__.hmd(module);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
@@ -67473,6 +64517,7 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 
 
+
 //import "./index.css";
 const renderApp = (Component) => {
     const rootElement = document.getElementById("root");
@@ -67480,7 +64525,7 @@ const renderApp = (Component) => {
         throw new Error("Root element not found");
     }
     const root = react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot(rootElement);
-    root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {}) }));
+    root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)((react__WEBPACK_IMPORTED_MODULE_1___default().StrictMode), { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_contexts_AuthContext__WEBPACK_IMPORTED_MODULE_4__.AuthProvider, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {}) }) }));
 };
 const withHotReload = (initialComponent, module) => {
     renderApp(initialComponent);

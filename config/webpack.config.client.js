@@ -12,9 +12,10 @@ module.exports = merge(common, {
     filename: "client.bundle.js",
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "../dist"),
+    static: { directory: path.resolve(__dirname, "../dist") },
     hot: true,
     historyApiFallback: true,
+    port: 3001,
   },
   module: {
     rules: [

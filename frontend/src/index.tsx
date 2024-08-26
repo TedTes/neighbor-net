@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import { AuthProvider } from "./contexts/AuthContext";
 //import "./index.css";
 
 const renderApp = (Component: React.ComponentType) => {
@@ -14,7 +15,9 @@ const renderApp = (Component: React.ComponentType) => {
 
   root.render(
     <React.StrictMode>
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </React.StrictMode>
   );
 };

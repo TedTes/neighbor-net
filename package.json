@@ -9,7 +9,7 @@
         "build:frontend": "webpack --config config/webpack.frontend.js",
         "build:backend": "webpack --config config/webpack.backend.js",
         "build": "npm run build:frontend && npm run build:backend",
-        "start:frontend": "webpack serve --mode development --config config/webpack.frontend.js",
+        "start:frontend": "webpack serve --mode development --config ./config/webpack.config.client.js",
         "start:backend": "node dist/server.bundle.js"
     },
     "author": "Tedros Tesfu",
@@ -69,6 +69,7 @@
         "nodemon": "^3.1.4",
         "react-refresh": "^0.14.2",
         "style-loader": "^4.0.0",
+        "webpack-dev-server": "^5.0.4",
         "webpack-merge": "^6.0.1",
         "webpack-node-externals": "^3.0.0"
     }
