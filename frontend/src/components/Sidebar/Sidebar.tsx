@@ -13,7 +13,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import ForumIcon from "@mui/icons-material/Forum";
 import "./Sidebar.styles.css";
-
+import { Button } from "@mui/material";
 type SidebarItem = {
   name: string;
   icon: React.ReactNode;
@@ -24,7 +24,7 @@ const sidebarItems: SidebarItem[] = [
   {
     name: "Home",
     icon: <HomeIcon sx={{ color: "black", fontSize: 25 }} />,
-    path: "/",
+    path: "/feed",
   },
   {
     name: "Explore",
@@ -32,7 +32,7 @@ const sidebarItems: SidebarItem[] = [
     path: "/explore",
   },
   {
-    name: "Marketplace",
+    name: "Free,Buy & Sale",
     icon: (
       <LocalOfferIcon color="action" sx={{ color: "black", fontSize: 25 }} />
     ),
@@ -43,11 +43,11 @@ const sidebarItems: SidebarItem[] = [
     icon: <ForumIcon color="action" sx={{ color: "black", fontSize: 25 }} />,
     path: "/chat",
   },
-  {
-    name: "Add Neighbor",
-    icon: <PersonAddIcon sx={{ color: "black", fontSize: 25 }} />,
-    path: "/add-neighbour",
-  },
+  // {
+  //   name: "Add Neighbor",
+  //   icon: <PersonAddIcon sx={{ color: "black", fontSize: 25 }} />,
+  //   path: "/add-neighbour",
+  // },
 ];
 
 export const Sidebar: React.FC = () => {
@@ -61,6 +61,13 @@ export const Sidebar: React.FC = () => {
           </NavLink>
         ))}
       </nav>
+      <button className="add-neighbor">
+        <PersonAddIcon
+          className="add-neighbor-icon"
+          sx={{ color: "white", fontSize: 25 }}
+        />
+        <span className="add-neighbor-text">Add Neighbor</span>
+      </button>
     </div>
   );
 };

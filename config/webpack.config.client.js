@@ -54,6 +54,7 @@ module.exports = merge(common, {
       template: path.resolve(__dirname, "../frontend/public", "index.html"),
       filename: "index.html",
     }),
+
     // new webpack.ProvidePlugin({
     //   process: "process/browser", // Automatically provide the process object
     // }),

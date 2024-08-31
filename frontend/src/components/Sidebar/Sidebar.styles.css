@@ -1,15 +1,10 @@
 .sidebar-container {
-  width: 200px;
-  background-color: #fff;
-  /* border-right: 1px solid #ddd; */
   height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
-  /* padding-top: 10px; */
-  margin-top: 6.9em;
-  padding-left: 1.5em;
-  /* border: 2px red solid; */
+  top: 80px;
+  z-index: 100000000;
+  width: 16%;
+  /* border: solid 2px black; */
 }
 
 .sidebar-nav {
@@ -43,6 +38,38 @@
 
 .sidebar-text {
   font-size: 16px;
+}
+.add-neighbor {
+  border: solid 2px black;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  width: 162px;
+  margin-top: 4em;
+  text-transform: none;
+  text-decoration: black;
+  color: white;
+  background: #333333;
+  border-radius: 5px;
+  align-items: center;
+  width: 155px;
+  padding: 0.4em;
+}
+/* ButtonStyles.css */
+
+.add-neighbor-button:hover {
+  background-color: #0056b3;
+}
+
+.add-neighbor-icon {
+  color: white;
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.add-neighbor-text {
+  font-size: 16px;
+  color: inherit;
 }
 
 /* Optional: Styling for responsiveness */

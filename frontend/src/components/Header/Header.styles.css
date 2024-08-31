@@ -1,5 +1,51 @@
 .header-container {
-  background-color: #fff;
+  display: flex;
+  position: fixed;
   z-index: 1000000;
-  background: red;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbfbfb;
+  padding: 0 1em;
+  overflow: hidden;
+}
+
+.header-container .logo {
+  border: solid 1.6px black;
+  position: relative;
+  left: 62px;
+}
+.header-container .search-post {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 52%;
+  margin: auto;
+  margin-left: 10%;
+  height: 3em;
+  border-radius: 5;
+  padding: 0.7em;
+}
+
+.search-post .MuiInputBase-root {
+  border: solid 1px #ccc;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 1em;
+  width: 80%;
+}
+.search-post .MuiButton-root {
+  background-color: #333333;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-transform: none;
+}
+.search-post .MuiButton-root:hover {
+  background-color: #155a9f; /* Darker shade on hover */
+}
+.header-container .signInOut {
 }

@@ -1,2 +1,2 @@
-export { Home } from "./Home";
+export { NewsFeed } from "./NewsFeed";
 export { Explore } from "./Explore";
