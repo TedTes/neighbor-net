@@ -23,3 +23,13 @@
 .MuiCardHeader-avatar {
   margin-right: 6px !important;
 }
+.explore {
+  width: 70%;
+  height: 98vh;
+  position: relative;
+  top: 6px;
+  left: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
