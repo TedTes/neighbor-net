@@ -98,7 +98,6 @@ export const NewsFeed: React.FC = () => {
     <ThemeProvider theme={theme}>
       <List className="news-feed">
         {posts?.map((post) => {
-          console.log(post.user.name);
           return (
             <ListItem>
               <Card className="news-feed-card" sx={{ padding: 1 }}>

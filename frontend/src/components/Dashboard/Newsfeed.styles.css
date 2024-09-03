@@ -24,7 +24,7 @@
   margin-right: 6px !important;
 }
 .explore {
-  width: 70%;
+  width: 60%;
   height: 98vh;
   position: relative;
   top: 6px;
@@ -32,4 +32,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 9%;
 }
+
+/* @media screen {
+  
+} */
