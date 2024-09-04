@@ -6,6 +6,7 @@ import { Events } from "../components/Events";
 import { Messaging } from "../components/Messaging";
 import { PrivateRoute, SignIn, SignUp } from "../components/Authentication/";
 import { Explore } from "../components/Dashboard";
+import { Marketplace } from "../components/Marketplace";
 const eventProps = {
   id: "1",
   title: "React Conference",
@@ -50,6 +51,7 @@ export const AppRoutes = () => {
       <Route path="/" element={<NewsFeed />} />
       <Route path="/feed" element={<NewsFeed />} />
       <Route path="/explore" element={<Explore />} />
+      <Route path="/marketplace" element={<Marketplace />} />
       <Route
         path="/signin"
         element={<SignIn onSignIn={() => {}} errorMessage="test" />}

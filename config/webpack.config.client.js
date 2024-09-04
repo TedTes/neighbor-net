@@ -16,6 +16,14 @@ module.exports = merge(common, {
     hot: true,
     historyApiFallback: true,
     port: 3001,
+    proxy: [
+      {
+        context: ["/places/search"],
+        target: "https://api.foursquare.com",
+        changeOrigin: true,
+        pathRewrite: { "^/places/search": "" },
+      },
+    ],
   },
   module: {
     rules: [

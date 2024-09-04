@@ -1,54 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import HomeIcon from "@mui/icons-material/Home";
-import EventIcon from "@mui/icons-material/Event";
-import GroupsIcon from "@mui/icons-material/Groups";
-import MailIcon from "@mui/icons-material/Mail"; // Messages icon
-import NotificationsIcon from "@mui/icons-material/Notifications"; // Notifications icon
-import SettingsIcon from "@mui/icons-material/Settings";
-import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
-import LocalOfferIcon from "@mui/icons-material/LocalOffer";
-import ExploreIcon from "@mui/icons-material/Explore";
-import ChatIcon from "@mui/icons-material/Chat";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import ForumIcon from "@mui/icons-material/Forum";
 import "./Sidebar.styles.css";
-import { Button } from "@mui/material";
-type SidebarItem = {
-  name: string;
-  icon: React.ReactNode;
-  path: string;
-};
-
-const sidebarItems: SidebarItem[] = [
-  {
-    name: "Home",
-    icon: <HomeIcon sx={{ color: "black", fontSize: 25 }} />,
-    path: "/feed",
-  },
-  {
-    name: "Explore",
-    icon: <ExploreIcon sx={{ color: "black", fontSize: 25 }} />,
-    path: "/explore",
-  },
-  {
-    name: "Free,Buy & Sale",
-    icon: (
-      <LocalOfferIcon color="action" sx={{ color: "black", fontSize: 25 }} />
-    ),
-    path: "/marketplace",
-  },
-  {
-    name: "Chats",
-    icon: <ForumIcon color="action" sx={{ color: "black", fontSize: 25 }} />,
-    path: "/chat",
-  },
-  // {
-  //   name: "Add Neighbor",
-  //   icon: <PersonAddIcon sx={{ color: "black", fontSize: 25 }} />,
-  //   path: "/add-neighbour",
-  // },
-];
+import { sidebarItems } from "../../utils";
 
 export const Sidebar: React.FC = () => {
   return (
@@ -61,13 +14,6 @@ export const Sidebar: React.FC = () => {
           </NavLink>
         ))}
       </nav>
-      <button className="add-neighbor">
-        <PersonAddIcon
-          className="add-neighbor-icon"
-          sx={{ color: "white", fontSize: 25 }}
-        />
-        <span className="add-neighbor-text">Add Neighbor</span>
-      </button>
     </div>
   );
 };

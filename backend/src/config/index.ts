@@ -1,3 +1,3 @@
 export * from "./jwt";
-export * from "./env";
+export * from "./env-variables";
 export * from "./db";

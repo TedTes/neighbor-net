@@ -39,19 +39,14 @@ const fetchPlaces = async (
   setLoading(true);
   try {
     const response = await axios.get(environmentVariables.fourSquareAPI, {
-      headers: {
-        Authorization: environmentVariables.fourSquareAPIkey,
-        accept: "application/json",
-      },
       params: {
         ll: `${location.lat},${location.lng}`,
-        radius: 5000,
         query: category,
-        limit: 50,
       },
     });
+    const placesWithData = response.data;
 
-    setPlaces(response.data.results);
+    setPlaces(placesWithData);
   } catch (error) {
     console.error("Error fetching data from Foursquare API:", error);
   }
