@@ -8,7 +8,6 @@ import { useAuth } from "./hooks";
 import { AppRoutes } from "./config";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import { Events } from "./components/Events";
 import "./App.styles.css";
 const App: React.FC = () => {
   const { isAuthenticated } = useAuth();
@@ -24,9 +23,6 @@ const App: React.FC = () => {
         <div className="main-container">
           <Sidebar />
           <AppRoutes />
-          <div className="right-side">
-            <Events />
-          </div>
         </div>
       </Container>
     </Router>

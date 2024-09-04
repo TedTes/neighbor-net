@@ -11,4 +11,5 @@ export interface Place {
   location: {
     formatted_address: string;
   };
+  website: string;
 }

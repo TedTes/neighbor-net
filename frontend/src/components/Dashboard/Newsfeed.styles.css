@@ -34,7 +34,16 @@
   align-items: center;
   margin-left: 9%;
 }
-
+.right-side {
+  height: 100vh;
+  position: fixed;
+  top: 80px;
+  /* z-index: 100000000; */
+  width: 25%;
+  /* border: solid 2px black; */
+  /* margin-top: 60px; */
+  right: 0;
+}
 /* @media screen {
   
 } */

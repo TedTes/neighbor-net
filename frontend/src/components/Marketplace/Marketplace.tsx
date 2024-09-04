@@ -1,4 +1,3 @@
-// src/components/Marketplace.js
 import React, { useState } from "react";
 import {
   Tabs,
@@ -9,7 +8,7 @@ import {
   Typography,
   Button,
 } from "@mui/material";
-
+import "./Marketplace.styles.css";
 export const Marketplace: React.FC = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
@@ -18,17 +17,18 @@ export const Marketplace: React.FC = () => {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box className="marketplace">
       <Tabs
         value={tabIndex}
         onChange={handleTabChange}
         aria-label="Marketplace Tabs"
+        sx={{ marginTop: 2, textColor: "black", position: "fixed" }}
       >
+        <Tab label="All" />
         <Tab label="Free Items" />
         <Tab label="Buy Items" />
-        <Tab label="Sell Items" />
       </Tabs>
-      <Box sx={{ padding: 2 }}>
+      <Box sx={{ padding: 2, marginTop: 8 }}>
         {tabIndex === 0 && (
           <Card>
             <CardContent>

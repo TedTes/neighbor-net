@@ -20,6 +20,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "index.html"));
 });
+
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", router);
 app.use("/api/v1/places", mapRouter);

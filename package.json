@@ -11,7 +11,7 @@
     "build:backend": "webpack --config config/webpack.backend.js",
     "build": "npm run build:frontend && npm run build:backend",
     "start:frontend": "webpack serve --mode development --config ./config/webpack.config.client.js",
-    "start:backend": "node dist/server.bundle.js"
+    "start:backend": "nodemon dist/server.bundle.js"
   },
   "author": "Tedros Tesfu",
   "license": "ISC",

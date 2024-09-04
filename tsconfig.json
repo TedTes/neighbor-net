@@ -18,7 +18,7 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
     // "typeRoots": ["./frontend/src/types", "./backend/types"],
-    "jsx": "react-jsx",
-    "types": ["jest"]
+    "jsx": "react-jsx"
+    // "types": ["jest"]
   }
 }

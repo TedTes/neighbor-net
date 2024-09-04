@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -28,6 +28,7 @@ interface Place {
   location: {
     formatted_address: string;
   };
+  website: string;
 }
 
 const fetchPlaces = async (
@@ -49,8 +50,9 @@ const fetchPlaces = async (
     setPlaces(placesWithData);
   } catch (error) {
     console.error("Error fetching data from Foursquare API:", error);
+  } finally {
+    setLoading(false);
   }
-  setLoading(false);
 };
 const LocationHandler: React.FC<MapComponentProps> = ({ onLocationChange }) => {
   useMapEvents({
@@ -69,17 +71,17 @@ export const Explore = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [location, setLocation] = useState({ lat: 51.505, lng: -0.09 });
-  useEffect(() => {
-    const fetchData = async () => {
-      if (selectedCategory !== "all") {
-        await fetchPlaces(selectedCategory, location, setPlaces, setLoading);
-      } else {
-        setPlaces([]);
-      }
-    };
 
-    fetchData();
+  const fetchData = useCallback(async () => {
+    if (selectedCategory !== "all") {
+      await fetchPlaces(selectedCategory, location, setPlaces, setLoading);
+    } else {
+      setPlaces([]);
+    }
   }, [selectedCategory, location]);
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
@@ -108,7 +110,7 @@ export const Explore = () => {
 
       <Box sx={{ height: "80%", width: "100%" }}>
         <MapContainer
-          center={[51.505, -0.09]}
+          center={[location.lat, location.lng]}
           zoom={13}
           style={{ height: "100%", width: "100%" }}
         >
@@ -118,24 +120,34 @@ export const Explore = () => {
               setLocation({ lat, lng });
             }}
           />
-          {places.map((place) => {
-            return (
-              <React.Fragment key={place.fsq_id}>
-                <Marker
-                  position={[
-                    place.geocodes.main.latitude,
-                    place.geocodes.main.longitude,
-                  ]}
-                >
-                  <Popup>
-                    <h4>{place.name}</h4>
-                    <p>{place.location.formatted_address}</p>
-                    <p>{place.categories[0]?.name}</p>
-                  </Popup>
-                </Marker>
-              </React.Fragment>
-            );
-          })}
+          {places.map(
+            ({ fsq_id, geocodes, name, location, categories, website }) => {
+              return (
+                <React.Fragment key={fsq_id}>
+                  <Marker
+                    position={[geocodes.main.latitude, geocodes.main.longitude]}
+                  >
+                    <Popup>
+                      <h4>{name}</h4>
+                      <p>{location.formatted_address}</p>
+                      <p>{categories[0]?.name}</p>
+                      {website ? (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={website}
+                        >
+                          Link to website
+                        </a>
+                      ) : (
+                        ""
+                      )}
+                    </Popup>
+                  </Marker>
+                </React.Fragment>
+              );
+            }
+          )}
         </MapContainer>
       </Box>
     </Box>

@@ -25,6 +25,7 @@ import CommentIcon from "@mui/icons-material/Comment";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import "./Newsfeed.styles.css";
+import { Events } from "../Events";
 const theme = createTheme({
   palette: {
     primary: {
@@ -190,6 +191,9 @@ export const NewsFeed: React.FC = () => {
           );
         })}
       </List>
+      <div className="right-side">
+        <Events />
+      </div>
     </ThemeProvider>
   );
 };
