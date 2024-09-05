@@ -20,7 +20,7 @@ export const sidebarItems: SidebarItem[] = [
     path: "/explore",
   },
   {
-    name: "Free,Buy & Sale",
+    name: "For Sale & Free",
     icon: (
       <LocalOfferIcon color="action" sx={{ color: "black", fontSize: 25 }} />
     ),

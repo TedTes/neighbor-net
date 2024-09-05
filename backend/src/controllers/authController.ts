@@ -4,18 +4,26 @@ import jwt from "jsonwebtoken";
 import { logger } from "../utils/logger";
 import { expressjwt } from "express-jwt";
 import { jwtConfig } from "../config";
+import { SigninService } from "../services";
+import { responseData } from "../interfaces";
 
 const signin = async (req: Request, res: Response) => {
   try {
-    let user = await User.findOne({ email: req.body.email });
+    let response: responseData | null = await SigninService({
+      email: req.body.email,
+      password: req.body.password,
+    });
+    if (!response) {
+      return res
+        .status(401)
+        .json({ error: "User not found or authentication failed" });
+    }
+    const { token, expirationDate, user } = response;
     if (!user) return res.status(401).json({ error: "User not found" });
     if (!user.authenticate(req.body.password)) {
       return res.status(401).send({ error: "Email and password don't match." });
     }
-    const token = jwt.sign({ _id: user._id }, jwtConfig.jwtSecret, {
-      algorithm: "HS256",
-    });
-    const expirationDate = new Date(Date.now() + 9999 * 1000);
+
     res.cookie("auth_token", token, { expires: expirationDate });
     return res.json({
       token,

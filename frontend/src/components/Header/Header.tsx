@@ -1,30 +1,10 @@
 import React, { useState } from "react";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Box,
-  IconButton,
-  InputBase,
-  Button,
-} from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import ArticleIcon from "@mui/icons-material/Article";
-import CreateIcon from "@mui/icons-material/Create";
-import DescriptionIcon from "@mui/icons-material/Description";
-import NoteAltIcon from "@mui/icons-material/NoteAlt";
-import TextSnippetIcon from "@mui/icons-material/TextSnippet";
-import {
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  TextField,
-  Input,
-} from "@mui/material";
+
+import { TextField, InputAdornment } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
 import "./Header.styles.css";
 
 interface HeaderProps {
@@ -55,12 +35,24 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Search Bar */}
       <div className="search-post">
-        <InputBase placeholder="Search…" />
-
+        {/* <InputBase placeholder="Search…" className="search" /> */}
+        <TextField
+          variant="outlined"
+          placeholder="Search"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon />
+              </InputAdornment>
+            ),
+          }}
+          fullWidth
+        />
         <Button
           color="inherit"
-          startIcon={<NoteAltIcon />}
+          startIcon={<AddIcon />}
           onClick={showPostModal}
+          sx={{ background: "red" }}
         >
           post
         </Button>
