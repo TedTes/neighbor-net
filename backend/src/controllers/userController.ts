@@ -2,7 +2,13 @@ import { Request, Response, NextFunction } from "express";
 import { User } from "../models";
 import _ from "lodash";
 import { getErrorMessage } from "./error.controller";
-
+import {
+  createUserService,
+  listUsersService,
+  findUserByIdService,
+  updateUserService,
+  removeUserService,
+} from "../services";
 const create = async (
   req: Request,
   res: Response,
@@ -10,14 +16,7 @@ const create = async (
 ): Promise<Response | void> => {
   try {
     const { name, email, password } = req.body;
-    const newUser = new User({
-      name,
-      email,
-      password,
-    });
-    newUser._password = password;
-
-    await newUser.save();
+    await createUserService({ name, email, password });
     return res.status(200).json({
       message: "Successfully signed up!",
     });
@@ -29,7 +28,7 @@ const create = async (
 };
 const list = async (req: Request, res: Response) => {
   try {
-    let users = await User.find().select("_id name email updated created");
+    let users = await listUsersService();
     res.json(users);
   } catch (err) {
     return res.status(400).json({
@@ -44,7 +43,7 @@ const userByID = async (
   id: string
 ): Promise<Response | void> => {
   try {
-    let user = await User.findById(id);
+    let user = await findUserByIdService(id);
     if (!user)
       return res.status(400).json({
         error: "User not found",
@@ -58,16 +57,20 @@ const userByID = async (
   }
 };
 const read = (req: Request, res: Response) => {
-  req.profile.hashed_password = undefined;
-  req.profile.salt = undefined;
-  return res.json(req.profile);
+  try {
+    req.profile.hashed_password = undefined;
+    req.profile.salt = undefined;
+    return res.json(req.profile);
+  } catch (error) {
+    return res.status(400).json({
+      error: getErrorMessage(error),
+    });
+  }
 };
 const update = async (req: Request, res: Response, next: NextFunction) => {
   try {
     let user = req.profile;
-    user = _.extend(user, req.body);
-    user.updated = Date.now();
-    await user.save();
+    await updateUserService(user, req.body);
     user.hashed_password = undefined;
     user.salt = undefined;
     res.json(user);
@@ -80,9 +83,11 @@ const update = async (req: Request, res: Response, next: NextFunction) => {
 const remove = async (req: Request, res: Response, next: NextFunction) => {
   try {
     let user = req.profile;
-    let deletedUser = await user.remove();
-    deletedUser.hashed_password = undefined;
-    deletedUser.salt = undefined;
+    const deletedUser = await removeUserService(user);
+    if (deletedUser) {
+      deletedUser.hashed_password = undefined;
+      deletedUser.salt = undefined;
+    }
     res.json(deletedUser);
   } catch (err) {
     return res.status(400).json({
