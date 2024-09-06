@@ -8,3 +8,8 @@ declare global {
     }
   }
 }
+declare module "socket.io" {
+  interface Socket {
+    currentChannel?: string;
+  }
+}

@@ -5,6 +5,9 @@ import compression from "compression";
 import helmet from "helmet";
 import cors from "cors";
 import path from "path";
+import http from "http";
+import { Server } from "socket.io";
+import { MessageController } from "./controllers/";
 import { router, authRouter, mapRouter } from "./routes";
 const app = express();
 
@@ -24,6 +27,17 @@ app.get("/", (req, res) => {
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", router);
 app.use("/api/v1/places", mapRouter);
+
+const server = http.createServer(app);
+
+const io = new Server(server, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"],
+  },
+});
+
+MessageController(io);
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err.name === "UnauthorizedError") {
     res.status(401).json({ error: err.name + ": " + err.message });
