@@ -1,100 +1,91 @@
-import React, { useState, useEffect } from "react";
-import io from "socket.io-client";
-import { MessageType } from "../../interfaces";
+import React, { useEffect, useState } from "react";
 import {
-  Container,
+  Box,
   TextField,
   Button,
   List,
   ListItem,
   ListItemText,
   Typography,
-  Paper,
-  Box,
+  Divider,
 } from "@mui/material";
+import io from "socket.io-client";
 
 const socket = io("http://localhost:3000");
 
-export function MessageWindow() {
-  const [channelName, setChannelName] = useState("");
-  const [currentChannel, setCurrentChannel] = useState("");
-  const [message, setMessage] = useState("");
-  const [messages, setMessages] = useState<MessageType[]>([]);
+interface ChatWindowProps {
+  room: string;
+  username: string;
+}
+
+interface Message {
+  user: string;
+  text: string;
+  timestamp: string;
+}
+
+const MessageWindow: React.FC<ChatWindowProps> = ({ room, username }) => {
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [messageInput, setMessageInput] = useState<string>("");
 
   useEffect(() => {
-    socket.on("receive_message", (data) => {
-      setMessages((prevMessages) => [...prevMessages, data]);
+    socket.emit("join_room", { room, username });
+
+    socket.on("room_data", (messages: Message[]) => {
+      setMessages(messages);
+    });
+
+    socket.on("new_message", (message: Message) => {
+      setMessages((prevMessages) => [...prevMessages, message]);
     });
 
     return () => {
-      socket.off("receive_message");
+      socket.off("room_data");
+      socket.off("new_message");
     };
-  }, []);
+  }, [room, username]);
 
-  const createChannel = () => {
-    if (channelName) {
-      socket.emit("create_channel", channelName);
-      joinChannel(channelName);
-    }
-  };
-
-  const joinChannel = (name: string) => {
-    setCurrentChannel(name);
-    socket.emit("join_channel", name);
-  };
-
-  const sendMessage = () => {
-    if (message && currentChannel) {
-      socket.emit("send_message", { channelName: currentChannel, message });
-      setMessage("");
+  const handleSendMessage = () => {
+    if (messageInput.trim()) {
+      socket.emit("send_message", { room, message: messageInput, username });
+      setMessageInput("");
     }
   };
 
   return (
-    <Container maxWidth="sm">
-      <Typography variant="h4" component="h1" gutterBottom>
-        WebSocket Chat
+    <Box>
+      <Typography variant="h6" gutterBottom>
+        Room: {room}
       </Typography>
-      <Paper sx={{ padding: 2, marginBottom: 2 }}>
-        <TextField
-          fullWidth
-          label="Channel Name"
-          value={channelName}
-          onChange={(e) => setChannelName(e.target.value)}
-          sx={{ marginBottom: 2 }}
-        />
-        <Button
-          variant="contained"
-          onClick={createChannel}
-          sx={{ marginRight: 1 }}
-        >
-          Create Channel
-        </Button>
-        <Button variant="outlined" onClick={() => joinChannel(channelName)}>
-          Join Channel
-        </Button>
-      </Paper>
-      <Box sx={{ marginBottom: 2 }}>
-        <TextField
-          fullWidth
-          label="Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          onKeyPress={(e) => (e.key === "Enter" ? sendMessage() : null)}
-        />
-        <Button variant="contained" onClick={sendMessage} sx={{ marginTop: 1 }}>
-          Send Message
-        </Button>
-      </Box>
-      <List>
+      <Divider />
+      <List sx={{ height: "300px", overflowY: "auto", marginBottom: "10px" }}>
         {messages.map((msg, index) => (
           <ListItem key={index}>
             <ListItemText
-              primary={`[${msg.channelName}] ${msg.sender}: ${msg.message}`}
+              primary={`${msg.user}: ${msg.text}`}
+              secondary={new Date(msg.timestamp).toLocaleTimeString()}
             />
           </ListItem>
         ))}
       </List>
-    </Container>
+      <TextField
+        variant="outlined"
+        placeholder="Type a message..."
+        fullWidth
+        value={messageInput}
+        onChange={(e) => setMessageInput(e.target.value)}
+        onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
+        sx={{ marginBottom: "10px" }}
+      />
+      <Button
+        variant="contained"
+        color="primary"
+        fullWidth
+        onClick={handleSendMessage}
+      >
+        Send
+      </Button>
+    </Box>
   );
-}
+};
+export default MessageWindow;

@@ -3,7 +3,7 @@ import { useAuth } from "../hooks";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { NewsFeed } from "../components/Dashboard";
 import { Events } from "../components/Events";
-import { Messaging } from "../components/Messaging";
+import { ChatWindow } from "../components/Messaging";
 import { PrivateRoute, SignIn, SignUp } from "../components/Authentication/";
 import { Explore } from "../components/Dashboard";
 import { Marketplace } from "../components/Marketplace";
@@ -67,16 +67,16 @@ export const AppRoutes = () => {
         }
       />
       <Route
-        path="/messages"
+        path="/chat"
         element={
-          <PrivateRoute isAuthenticated={isAuthenticated}>
-            <Messaging
-              currentUser="You"
-              messages={messages}
-              onSendMessage={handleSendMessage}
-              typingIndicator={true}
-            />
-          </PrivateRoute>
+          // <PrivateRoute isAuthenticated={isAuthenticated}>
+          <ChatWindow
+          // // currentUser="You"
+          // messages={messages}
+          // onSendMessage={handleSendMessage}
+          // typingIndicator={true}
+          />
+          // </PrivateRoute>
         }
       />
 
