@@ -3,9 +3,10 @@ import {
   List,
   ListItem,
   ListItemText,
-  TextField,
-  Button,
   Box,
+  Avatar,
+  Typography,
+  Divider,
 } from "@mui/material";
 
 interface ChatListProps {
@@ -16,39 +17,44 @@ const ConversationList: React.FC<ChatListProps> = ({ onSelectRoom }) => {
   const [rooms, setRooms] = useState<string[]>(["general", "random"]);
   const [newRoom, setNewRoom] = useState<string>("");
 
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
   const handleAddRoom = () => {
     if (newRoom.trim() && !rooms.includes(newRoom)) {
       setRooms([...rooms, newRoom]);
       setNewRoom("");
     }
+    //setIsModalOpen(false);
   };
-
+  const handleSearch = () => {
+    // Implement search logic here if needed
+    alert(`Searching for: ${searchQuery}`);
+  };
   return (
     <Box>
-      <List>
+      <Typography variant="h6" gutterBottom>
+        {"test"}
+      </Typography>
+      <Divider />
+      <List sx={{ marginTop: "1em" }}>
         {rooms.map((room, index) => (
-          <ListItem button key={index} onClick={() => onSelectRoom(room)}>
-            <ListItemText primary={room} />
+          <ListItem key={index} onClick={() => onSelectRoom(room)}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "0 .2em",
+                width: "120px",
+              }}
+            >
+              <Avatar />
+              <ListItemText primary={room} />
+            </div>
           </ListItem>
         ))}
       </List>
-      <TextField
-        variant="outlined"
-        placeholder="Add new chat"
-        fullWidth
-        value={newRoom}
-        onChange={(e) => setNewRoom(e.target.value)}
-        sx={{ marginTop: "10px" }}
-      />
-      <Button
-        variant="contained"
-        color="primary"
-        fullWidth
-        onClick={handleAddRoom}
-        sx={{ marginTop: "10px" }}
-      >
-        Add Chat
-      </Button>
     </Box>
   );
 };

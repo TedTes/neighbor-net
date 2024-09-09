@@ -5,7 +5,7 @@
   width: 100vw;
   top: 0;
   right: 0;
-  height: 70px;
+  height: 90px;
   justify-content: space-between;
   align-items: center;
   background-color: #fbfbfb;
@@ -24,7 +24,7 @@
   justify-content: space-between;
   width: 52%;
   margin: auto;
-  margin-left: 10%;
+  margin-left: 15%;
   height: 3em;
   border-radius: 5;
   padding: 0.7em;
@@ -39,7 +39,7 @@
   padding-left: 1.8em;
   height: 40px;
   background: #e0e0e0;
-  margin-left: 0.4em;
+  /* margin-left: 0.4em; */
 }
 
 .search-post .MuiButton-root {
@@ -54,7 +54,7 @@
   margin-right: 0;
 }
 .search-post .MuiButton-root:hover {
-  background-color: #155a9f; /* Darker shade on hover */
+  background-color: #155a9f;
 }
 .header-container .signInOut {
 }

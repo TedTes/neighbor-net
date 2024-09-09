@@ -8,7 +8,11 @@ import {
   ListItemText,
   Typography,
   Divider,
+  InputAdornment,
+  IconButton,
 } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
+
 import io from "socket.io-client";
 
 const socket = io("http://localhost:3000");
@@ -27,6 +31,7 @@ interface Message {
 const MessageWindow: React.FC<ChatWindowProps> = ({ room, username }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [messageInput, setMessageInput] = useState<string>("");
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   useEffect(() => {
     socket.emit("join_room", { room, username });
@@ -53,12 +58,19 @@ const MessageWindow: React.FC<ChatWindowProps> = ({ room, username }) => {
   };
 
   return (
-    <Box>
+    <Box
+      sx={{
+        // border: 2,
+        // borderColor: "black",
+        height: "100%",
+        position: "relative",
+      }}
+    >
       <Typography variant="h6" gutterBottom>
-        Room: {room}
+        {room}
       </Typography>
       <Divider />
-      <List sx={{ height: "300px", overflowY: "auto", marginBottom: "10px" }}>
+      <List>
         {messages.map((msg, index) => (
           <ListItem key={index}>
             <ListItemText
@@ -69,22 +81,29 @@ const MessageWindow: React.FC<ChatWindowProps> = ({ room, username }) => {
         ))}
       </List>
       <TextField
+        sx={{ bottom: ".2em", position: "absolute" }}
+        fullWidth
         variant="outlined"
-        placeholder="Type a message..."
-        fullWidth
-        value={messageInput}
-        onChange={(e) => setMessageInput(e.target.value)}
-        onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
-        sx={{ marginBottom: "10px" }}
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyPress={(e) => {
+          if (e.key === "Enter") handleSendMessage();
+        }}
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <IconButton
+                color="primary"
+                onClick={handleSendMessage}
+                aria-label="search"
+              >
+                <SendIcon />
+              </IconButton>
+            </InputAdornment>
+          ),
+        }}
       />
-      <Button
-        variant="contained"
-        color="primary"
-        fullWidth
-        onClick={handleSendMessage}
-      >
-        Send
-      </Button>
     </Box>
   );
 };

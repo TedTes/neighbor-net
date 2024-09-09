@@ -29,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <div className="header-container">
       {/* Logo */}
-      <Typography variant="h6" className="logo">
+      <Typography variant="h6" className="logo" sx={{ paddingLeft: 2 }}>
         Neighbour-Net
       </Typography>
 

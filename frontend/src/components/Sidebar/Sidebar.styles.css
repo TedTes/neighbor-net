@@ -1,10 +1,10 @@
 .sidebar-container {
   height: 100vh;
   position: fixed;
-  top: 80px;
+  top: 90px;
   z-index: 100000000;
-  width: 16%;
-  /* border: solid 2px black; */
+  left: 1.5em;
+  max-width: 400px;
 }
 
 .sidebar-nav {
@@ -20,6 +20,9 @@
   color: #333;
   font-weight: 500;
   transition: background-color 0.2s;
+  max-height: 1em;
+  margin-bottom: 0.7em;
+  border-radius: 30px;
 }
 
 .sidebar-item:hover {

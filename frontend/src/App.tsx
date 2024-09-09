@@ -9,23 +9,48 @@ import { AppRoutes } from "./config";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import "./App.styles.css";
+const theme = createTheme({
+  typography: {
+    allVariants: {
+      textTransform: "capitalize",
+    },
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "capitalize",
+        },
+      },
+    },
+    MuiDialogTitle: {
+      styleOverrides: {
+        root: {
+          textTransform: "capitalize",
+        },
+      },
+    },
+  },
+});
 const App: React.FC = () => {
   const { isAuthenticated } = useAuth();
 
   return (
-    <Router>
-      <Container disableGutters>
-        <Header
-          isAuthenticated={isAuthenticated}
-          onSignIn={() => {}}
-          onSignOut={() => {}}
-        />
-        <div className="main-container">
-          <Sidebar />
-          <AppRoutes />
-        </div>
-      </Container>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Container disableGutters>
+          <Header
+            isAuthenticated={isAuthenticated}
+            onSignIn={() => {}}
+            onSignOut={() => {}}
+          />
+          <div className="main-container">
+            <Sidebar />
+            <AppRoutes />
+          </div>
+        </Container>
+      </Router>
+    </ThemeProvider>
   );
 };
 
