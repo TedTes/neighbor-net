@@ -1,55 +1,50 @@
 .header-container {
-  display: flex;
   position: fixed;
-  z-index: 1000000;
+  z-index: 50;
   width: 100vw;
   top: 0;
   right: 0;
   height: 90px;
-  justify-content: space-between;
-  align-items: center;
   background-color: #fbfbfb;
-  padding: 0 1em;
   overflow: hidden;
 }
 
 .header-container .logo {
-  border: solid 1.6px black;
-  position: relative;
-  left: 62px;
+  border: solid 1.6px #388e3c;
+  font-size: 1.3em;
+  padding: 0.2em;
+  /* background: red; */
+  /* position: relative;
+  left: 62px; */
 }
-.header-container .search-post {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 52%;
-  margin: auto;
-  margin-left: 15%;
+/* .header-container .search {
+  border: solid 2px black;
+  width: 600px;
   height: 3em;
   border-radius: 5;
   padding: 0.7em;
-}
+} */
 
-.search-post .MuiInputBase-root {
+.search .MuiInputBase-root {
   border: solid 1px #388e3c;
   padding: 0.5em;
   border-radius: 8em;
   margin-right: 1em;
-  width: 80%;
+  /* width: 80%; */
   padding-left: 1.8em;
   height: 40px;
   background: #e0e0e0;
   /* margin-left: 0.4em; */
 }
 
-.search-post .MuiButton-root {
+/* .search-post .MuiButton-root {
   background-color: #388e3c;
   color: #fff;
   padding: 0.5em 1em;
   border-radius: 1em;
   text-transform: none;
   height: 40px;
-}
+} */
 .search-post .MuiButton-icon {
   margin-right: 0;
 }

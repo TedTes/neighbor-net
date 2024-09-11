@@ -1,7 +1,7 @@
 .sidebar-container {
   height: 100vh;
   position: fixed;
-  top: 90px;
+  top: 150px;
   z-index: 100000000;
   left: 1.5em;
   max-width: 400px;
@@ -16,7 +16,7 @@
 .sidebar-item {
   display: flex;
   align-items: center;
-  padding: 15px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -24,6 +24,7 @@
   max-height: 1em;
   margin-bottom: 0.7em;
   border-radius: 30px;
+  border: solid 2px #388e3c;
 }
 
 .sidebar-item:hover {
@@ -31,7 +32,8 @@
 }
 
 .sidebar-item.active {
-  background-color: #e0e0e0;
+  background-color: #388e3c;
+  color: #fafafa;
   font-weight: bold;
 }
 

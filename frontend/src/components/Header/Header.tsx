@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Typography, Box, Button } from "@mui/material";
+import { Typography, Box, Button, Container } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
@@ -28,57 +28,47 @@ export const Header: React.FC<HeaderProps> = ({
   const handleImageChange = () => {};
   return (
     <div className="header-container">
-      {/* Logo */}
-      <Typography variant="h6" className="logo" sx={{ paddingLeft: 2 }}>
-        Neighbour-Net
-      </Typography>
-
-      {/* Search Bar */}
-      <div className="search-post">
-        {/* <InputBase placeholder="Search…" className="search" /> */}
-        <TextField
-          variant="outlined"
-          placeholder="Search"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            ),
-          }}
-          fullWidth
-        />
-        <Button
-          color="inherit"
-          startIcon={<AddIcon />}
-          onClick={showPostModal}
-          sx={{ color: "#388e3c" }}
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+        }}
+      >
+        <Typography
+          variant="h6"
+          className="logo"
+          sx={{ position: "absolute", left: "2em", top: "1em" }}
         >
-          post
-        </Button>
-      </div>
-
-      {/* Sign In/Sign Out Button */}
-      <Box>
-        {isAuthenticated ? (
-          <Button
-            color="inherit"
-            startIcon={<AccountCircleIcon />}
-            onClick={onSignOut}
-            className="signInOut"
-          >
-            Sign Out
-          </Button>
-        ) : (
-          <Button
-            color="inherit"
-            startIcon={<AccountCircleIcon />}
-            onClick={onSignIn}
-            className="signInOut"
-          >
-            Sign In
-          </Button>
-        )}
+          Neighbor-Net
+        </Typography>
+        <Box
+          sx={{
+            border: "solid #388e3c 1px",
+            position: "absolute",
+            right: "2.8em",
+            top: "1em",
+          }}
+        >
+          {isAuthenticated ? (
+            <Button
+              color="inherit"
+              startIcon={<AccountCircleIcon />}
+              onClick={onSignOut}
+              className="signInOut"
+            >
+              Sign Out
+            </Button>
+          ) : (
+            <Button
+              color="inherit"
+              // startIcon={<AccountCircleIcon />}
+              onClick={onSignIn}
+              className="signInOut"
+            >
+              Sign In
+            </Button>
+          )}
+        </Box>
       </Box>
     </div>
   );

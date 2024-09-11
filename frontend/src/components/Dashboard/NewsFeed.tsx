@@ -15,6 +15,7 @@ import {
   CardActions,
   Avatar,
   IconButton,
+  Button,
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -98,6 +99,101 @@ export const NewsFeed: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <List className="news-feed">
+        <Box
+          sx={{
+            width: "96%",
+            height: "30px",
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <Box
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "flex-start",
+              gap: 6,
+              height: "26px",
+            }}
+          >
+            <Button
+              color="inherit"
+              onClick={() => alert("hello")}
+              sx={{
+                backgroundColor: "#e0e0e0",
+                color: "black",
+                width: "80px",
+                height: "25px",
+                borderRadius: "40px",
+                display: "flex",
+                justifyContent: "center",
+                textTransform: "capitalize",
+                "& .MuiButton-startIcon": {
+                  margin: 0,
+                },
+                "&:hover": {
+                  //  backgroundColor: "#388e3c",
+                  backgroundColor: "#e0e0e0",
+                  // transform: "scale(1.05)",
+                  // transition: "background-color 0.3s, transform 0.3s",
+                },
+              }}
+            >
+              near by
+            </Button>
+            <Button
+              color="inherit"
+              onClick={() => alert("hello")}
+              sx={{
+                backgroundColor: "#e0e0e0",
+                color: "black",
+                width: "80px",
+                height: "25px",
+                borderRadius: "40px",
+                display: "flex",
+                justifyContent: "center",
+                textTransform: "capitalize",
+                "& .MuiButton-startIcon": {
+                  margin: 0,
+                },
+                "&:hover": {
+                  // backgroundColor: "#388e3c",
+                  backgroundColor: "#e0e0e0",
+                  // transform: "scale(1.05)",
+                  // transition: "background-color 0.3s, transform 0.3s",
+                },
+              }}
+            >
+              trending
+            </Button>
+          </Box>
+          <Button
+            color="inherit"
+            startIcon={<AddIcon sx={{}} />}
+            onClick={() => alert("hello")}
+            sx={{
+              backgroundColor: "#388e3c",
+              width: "100px",
+              borderRadius: "40px",
+              color: "#fafafa",
+              display: "flex",
+              justifyContent: "center",
+
+              textTransform: "capitalize",
+              "& .MuiButton-startIcon": {
+                margin: 0,
+              },
+              "&:hover": {
+                backgroundColor: "#388e3c",
+                transform: "scale(1.05)",
+                transition: "background-color 0.3s, transform 0.3s",
+              },
+            }}
+          >
+            <span>Post</span>
+          </Button>
+        </Box>
         {posts?.map((post, index) => {
           return (
             <ListItem>

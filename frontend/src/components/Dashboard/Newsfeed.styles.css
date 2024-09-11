@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  left: 16%;
+  left: 17%;
   padding: 0;
 }
 .news-feed-card {
@@ -25,10 +25,10 @@
 }
 .explore {
   position: relative;
-  width: 89%;
-  height: 85vh;
+  width: 80%;
+  height: 84vh;
   top: 110px;
-  left: 16%;
+  left: 18%;
 }
 
 .right-side {
