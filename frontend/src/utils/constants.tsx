@@ -11,29 +11,24 @@ type SidebarItem = {
 export const sidebarItems: SidebarItem[] = [
   {
     name: "Home",
-    icon: <HomeIcon sx={{ color: "black", fontSize: 25 }} />,
+    icon: <HomeIcon sx={{ color: "#388e3c", fontSize: 25 }} />,
     path: "/feed",
   },
   {
     name: "Explore",
-    icon: <ExploreIcon sx={{ color: "black", fontSize: 25 }} />,
+    icon: <ExploreIcon sx={{ color: "#388e3c", fontSize: 25 }} />,
     path: "/explore",
   },
   {
     name: "For Sale & Free",
     icon: (
-      <LocalOfferIcon color="action" sx={{ color: "black", fontSize: 25 }} />
+      <LocalOfferIcon color="action" sx={{ color: "#388e3c", fontSize: 25 }} />
     ),
     path: "/marketplace",
   },
   {
     name: "Chats",
-    icon: <ForumIcon color="action" sx={{ color: "black", fontSize: 25 }} />,
+    icon: <ForumIcon color="action" sx={{ color: "#388e3c", fontSize: 25 }} />,
     path: "/chat",
-  },
-  {
-    name: "Add Neighbor",
-    icon: <PersonAddIcon sx={{ color: "black", fontSize: 25 }} />,
-    path: "/add-neighbour",
   },
 ];

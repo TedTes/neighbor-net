@@ -52,7 +52,7 @@ export const Header: React.FC<HeaderProps> = ({
           color="inherit"
           startIcon={<AddIcon />}
           onClick={showPostModal}
-          sx={{ background: "red" }}
+          sx={{ color: "#388e3c" }}
         >
           post
         </Button>

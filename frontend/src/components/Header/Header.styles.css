@@ -31,7 +31,7 @@
 }
 
 .search-post .MuiInputBase-root {
-  border: solid 1px #ccc;
+  border: solid 1px #388e3c;
   padding: 0.5em;
   border-radius: 8em;
   margin-right: 1em;
@@ -43,7 +43,7 @@
 }
 
 .search-post .MuiButton-root {
-  background-color: #333333;
+  background-color: #388e3c;
   color: #fff;
   padding: 0.5em 1em;
   border-radius: 1em;
@@ -54,7 +54,8 @@
   margin-right: 0;
 }
 .search-post .MuiButton-root:hover {
-  background-color: #155a9f;
+  background-color: #388e3c;
 }
-.header-container .signInOut {
+.search-post .MuiInputBase-root:hover {
+  border-color: solid 1px #388e3c;
 }

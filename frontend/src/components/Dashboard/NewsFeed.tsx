@@ -98,10 +98,10 @@ export const NewsFeed: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <List className="news-feed">
-        {posts?.map((post) => {
+        {posts?.map((post, index) => {
           return (
             <ListItem>
-              <Card className="news-feed-card" sx={{ padding: 1 }}>
+              <Card key={index} className="news-feed-card" sx={{ padding: 1 }}>
                 <CardHeader
                   sx={{ padding: 0.5, color: "black" }}
                   avatar={<Avatar src={post.user.avatar} />}

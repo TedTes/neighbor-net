@@ -18,7 +18,7 @@ import io from "socket.io-client";
 const socket = io("http://localhost:3000");
 
 interface ChatWindowProps {
-  room: string;
+  channel: string;
   username: string;
 }
 
@@ -28,15 +28,15 @@ interface Message {
   timestamp: string;
 }
 
-const MessageWindow: React.FC<ChatWindowProps> = ({ room, username }) => {
+const MessageWindow: React.FC<ChatWindowProps> = ({ channel, username }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [messageInput, setMessageInput] = useState<string>("");
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   useEffect(() => {
-    socket.emit("join_room", { room, username });
+    socket.emit("join_channel", { channel, username });
 
-    socket.on("room_data", (messages: Message[]) => {
+    socket.on("channel_data", (messages: Message[]) => {
       setMessages(messages);
     });
 
@@ -48,11 +48,11 @@ const MessageWindow: React.FC<ChatWindowProps> = ({ room, username }) => {
       socket.off("room_data");
       socket.off("new_message");
     };
-  }, [room, username]);
+  }, [channel, username]);
 
   const handleSendMessage = () => {
     if (messageInput.trim()) {
-      socket.emit("send_message", { room, message: messageInput, username });
+      socket.emit("send_message", { channel, message: messageInput, username });
       setMessageInput("");
     }
   };
@@ -67,7 +67,7 @@ const MessageWindow: React.FC<ChatWindowProps> = ({ room, username }) => {
       }}
     >
       <Typography variant="h6" gutterBottom>
-        {room}
+        {channel}
       </Typography>
       <Divider />
       <List>

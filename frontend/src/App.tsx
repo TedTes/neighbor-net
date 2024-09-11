@@ -44,10 +44,8 @@ const App: React.FC = () => {
             onSignIn={() => {}}
             onSignOut={() => {}}
           />
-          <div className="main-container">
-            <Sidebar />
-            <AppRoutes />
-          </div>
+          <Sidebar />
+          <AppRoutes />
         </Container>
       </Router>
     </ThemeProvider>

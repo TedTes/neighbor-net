@@ -11,7 +11,10 @@ import axios from "axios";
 import { Button, ButtonGroup, CircularProgress, Box } from "@mui/material";
 import "../../utils/index";
 import { environmentVariables } from "../../config/index";
-
+import RestaurantIcon from "@mui/icons-material/Restaurant";
+import EventIcon from "@mui/icons-material/Event";
+import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import NaturePeopleIcon from "@mui/icons-material/NaturePeople";
 interface MapComponentProps {
   onLocationChange: (lat: number, lng: number) => void;
 }
@@ -93,63 +96,91 @@ export const Explore = () => {
         variant="contained"
         sx={{
           position: "absolute",
-
           zIndex: 100000,
-          top: "4em",
+          right: 3,
+          borderRadius: "90px",
+          backgroundColor: "#fafafa",
         }}
       >
-        <Button onClick={() => handleCategoryChange("restaurant")}>
+        <Button
+          sx={{
+            backgroundColor: "#fafafa",
+            color: "black",
+          }}
+          onClick={() => handleCategoryChange("restaurant")}
+        >
+          <RestaurantIcon sx={{ color: "#388e3c" }} />
           Restaurants
         </Button>
-        <Button onClick={() => handleCategoryChange("event")}>Events</Button>
-        <Button onClick={() => handleCategoryChange("shop")}>Shops</Button>
-        <Button onClick={() => handleCategoryChange("park")}>Parks</Button>
+        <Button
+          sx={{ backgroundColor: "#fafafa", color: "black" }}
+          onClick={() => handleCategoryChange("event")}
+        >
+          <EventIcon sx={{ color: "#388e3c" }} />
+          Events
+        </Button>
+        <Button
+          sx={{ backgroundColor: "#fafafa", color: "black" }}
+          onClick={() => handleCategoryChange("shop")}
+        >
+          <ShoppingBasketIcon sx={{ color: "#388e3c" }} />
+          Shops
+        </Button>
+        <Button
+          sx={{ backgroundColor: "#fafafa", color: "black" }}
+          onClick={() => handleCategoryChange("park")}
+        >
+          <NaturePeopleIcon sx={{ color: "#388e3c" }} />
+          Parks
+        </Button>
       </ButtonGroup>
 
       {loading && <CircularProgress color="primary" />}
 
-      <Box sx={{ height: "80%", width: "100%" }}>
-        <MapContainer
-          center={[location.lat, location.lng]}
-          zoom={13}
-          style={{ height: "100%", width: "100%" }}
-        >
-          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-          <LocationHandler
-            onLocationChange={(lat, lng) => {
-              setLocation({ lat, lng });
-            }}
-          />
-          {places.map(
-            ({ fsq_id, geocodes, name, location, categories, website }) => {
-              return (
-                <React.Fragment key={fsq_id}>
-                  <Marker
-                    position={[geocodes.main.latitude, geocodes.main.longitude]}
-                  >
-                    <Popup>
-                      <h4>{name}</h4>
-                      <p>{location.formatted_address}</p>
-                      <p>{categories[0]?.name}</p>
-                      {website ? (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href={website}
-                        >
-                          Link to website
-                        </a>
-                      ) : (
-                        ""
-                      )}
-                    </Popup>
-                  </Marker>
-                </React.Fragment>
-              );
-            }
-          )}
-        </MapContainer>
-      </Box>
+      <MapContainer
+        center={[location.lat, location.lng]}
+        zoom={13}
+        style={{
+          height: "100%",
+          width: "100%",
+        }}
+        minZoom={2}
+      >
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <LocationHandler
+          onLocationChange={(lat, lng) => {
+            setLocation({ lat, lng });
+          }}
+        />
+        {places.map(
+          ({ fsq_id, geocodes, name, location, categories, website }) => {
+            return (
+              <React.Fragment key={fsq_id}>
+                <Marker
+                  position={[geocodes.main.latitude, geocodes.main.longitude]}
+                >
+                  <Popup>
+                    <h4>{name}</h4>
+                    <p>{location.formatted_address}</p>
+                    <p>{categories[0]?.name}</p>
+                    {website ? (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={website}
+                      >
+                        Link to website
+                      </a>
+                    ) : (
+                      ""
+                    )}
+                  </Popup>
+                </Marker>
+              </React.Fragment>
+            );
+          }
+        )}
+      </MapContainer>
     </Box>
   );
 };

@@ -5,6 +5,7 @@
   z-index: 100000000;
   left: 1.5em;
   max-width: 400px;
+  flex-grow: 40%;
 }
 
 .sidebar-nav {

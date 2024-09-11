@@ -24,26 +24,17 @@
   margin-right: 6px !important;
 }
 .explore {
-  width: 60%;
-  height: 98vh;
   position: relative;
-  top: 6px;
-  left: 12%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 9%;
+  width: 89%;
+  height: 85vh;
+  top: 110px;
+  left: 16%;
 }
+
 .right-side {
   height: 100vh;
   position: fixed;
   top: 80px;
-  /* z-index: 100000000; */
   width: 25%;
-  /* border: solid 2px black; */
-  /* margin-top: 60px; */
   right: 0;
 }
-/* @media screen {
-  
-} */
