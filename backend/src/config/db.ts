@@ -3,5 +3,5 @@ export const db = {
   mongoUri:
     process.env.MONGODB_URI ||
     process.env.MONGO_HOST ||
-    `mongodb://localhost:27017/neighbors-net`,
+    "mongodb://root:123@mongodb:27017/neighbor-net?directConnection=true&serverSelectionTimeoutMS=10000",
 };

@@ -24,7 +24,7 @@
   max-height: 1em;
   margin-bottom: 0.7em;
   border-radius: 30px;
-  border: solid 2px #388e3c;
+  border: solid 0.1px #388e3c;
 }
 
 .sidebar-item:hover {
@@ -32,9 +32,10 @@
 }
 
 .sidebar-item.active {
-  background-color: #388e3c;
-  color: #fafafa;
+  /* background-color: #388e3c; */
+  /* color: #fafafa; */
   font-weight: bold;
+  border: solid 2.7px #388e3c;
 }
 
 .sidebar-icon {

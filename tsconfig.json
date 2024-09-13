@@ -2,7 +2,7 @@
   "include": [
     "frontend/**/*",
     "backend/**/*",
-    "./config/webpack.config.server.js",
+    "config/webpack.config.backend.js",
     "./config/webpack.config.common.js"
   ],
   "exclude": ["node_modules", "dist"],

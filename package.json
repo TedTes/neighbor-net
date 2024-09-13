@@ -5,13 +5,15 @@
   "main": "server.ts",
   "proxy": "https://api.foursquare.com",
   "scripts": {
-    "dev": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:frontend": "webpack --config config/webpack.frontend.js",
-    "build:backend": "webpack --config config/webpack.backend.js",
+    "dev:backend": "webpack  --mode development --config ./config/webpack.config.backend.js && nodemon --watch dist --exec node dist/server.bundle.js",
+    "dev:frontend": "webpack serve --mode development --config ./config/webpack.config.frontend.js",
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "build:frontend": "webpack --mode production --config ./config/webpack.config.frontend.js",
+    "build:backend": "webpack --mode production --config ./config/webpack.config.backend.js",
     "build": "npm run build:frontend && npm run build:backend",
-    "start:frontend": "webpack serve --mode development --config ./config/webpack.config.client.js",
-    "start:backend": "nodemon dist/server.bundle.js"
+    "start:backend": "node dist/server.bundle.js",
+    "start": "npm run build && npm run start:backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tedros Tesfu",
   "license": "ISC",
