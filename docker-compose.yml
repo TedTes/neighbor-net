@@ -7,12 +7,15 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./neighbor-net:/neighbor-net
+      - .:/neighbor-net
+      - /neighbor-net/node_modules
     environment:
       NODE_ENV: development
     depends_on:
       mongodb:
         condition: service_healthy
+    networks:
+      - neighbor-net
   mongodb:
     image: mongo:latest
     container_name: mongodb
@@ -37,5 +40,10 @@ services:
       apt-get update &&
       apt-get install -y mongodb-mongosh &&
       mongod --bind_ip_all"
+    networks:
+      - neighbor-net
 volumes:
   mongo-data:
+networks:
+  neighbor-net:
+    driver: bridge
