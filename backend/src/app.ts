@@ -8,7 +8,16 @@ import path from "path";
 import http from "http";
 import { Server } from "socket.io";
 import { MessageController } from "./controllers/";
-import { router, authRouter, mapRouter } from "./routes";
+import {
+  router,
+  authRouter,
+  mapRouter,
+  postRouter,
+  commentRouter,
+  likeRouter,
+  chatRouter,
+} from "./routes";
+
 const app = express();
 
 app.use(express.static(path.resolve(__dirname)));
@@ -24,6 +33,10 @@ app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "index.html"));
 });
 
+app.use("/api/v1/posts", postRouter);
+app.use("/api/v1/comments", commentRouter);
+app.use("/api/v1/likes", likeRouter);
+app.use("/api/v1/chats", chatRouter);
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", router);
 app.use("/api/v1/places", mapRouter);

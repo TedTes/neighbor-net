@@ -2,19 +2,35 @@ import mongoose, { Schema, Document } from "mongoose";
 import bcrypt from "bcrypt";
 import { logger } from "../utils/logger";
 interface userTemplate extends Document {
-  name: string;
+  username: string;
   email: string;
-  created: Date;
-  updated: Date;
-  hashed_password: string;
+  createdAt: Date;
+  updatedAt: Date;
+  passwordHash: string;
   _plain_password: string;
   _password: string;
   password: string;
+  profile: {
+    firstName: String;
+    lastName: String;
+    bio: String;
+    avatarUrl: String;
+  };
+  location: {
+    city: String;
+    country: String;
+    coordinates: {
+      type: "Point";
+      coordinates: [number, number];
+    };
+  };
+  contacts: [string];
+  isVerified: Boolean;
   passwordManager(password: string): Promise<string>;
   authenticate(password: string): boolean;
 }
 const userSchema: Schema<userTemplate> = new Schema({
-  name: {
+  username: {
     type: String,
     trim: true,
     required: [true, "Name is required"],
@@ -26,14 +42,14 @@ const userSchema: Schema<userTemplate> = new Schema({
     match: [/.+\@.+\..+/, "Please fill a valid email address"],
     required: [true, "Email is required"],
   },
-  created: {
+  createdAt: {
     type: Date,
     default: Date.now,
   },
-  hashed_password: {
+  passwordHash: {
     type: String,
   },
-  updated: Date,
+  updatedAt: Date,
 });
 userSchema
   .virtual("_password")
@@ -42,16 +58,16 @@ userSchema
       this.invalidate("password", "Password must be at least 6 characters.");
     }
     this._plain_password = password;
-    this.markModified("hashed_password");
+    this.markModified("passwordHash");
   })
   .get(function () {
     return this._plain_password;
   });
 
 userSchema.pre("save", async function (this: userTemplate, next) {
-  if (this.isModified("hashed_password")) {
+  if (this.isModified("passwordHash")) {
     try {
-      this.hashed_password = await this.passwordManager(this._password!);
+      this.passwordHash = await this.passwordManager(this._password!);
     } catch (err: unknown) {
       if (err instanceof Error) {
         return next(err);
@@ -64,7 +80,7 @@ userSchema.pre("save", async function (this: userTemplate, next) {
 });
 userSchema.methods = {
   authenticate: async function (password: string) {
-    return await bcrypt.compare(password, this.hashed_password);
+    return await bcrypt.compare(password, this.passwordHash);
   },
   passwordManager: async function (password: string): Promise<string> {
     if (!password) return "";

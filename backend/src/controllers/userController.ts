@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { User } from "../models";
 import _ from "lodash";
-import { getErrorMessage } from "./error.controller";
+
 import {
   createUserService,
   listUsersService,
@@ -22,7 +22,7 @@ const create = async (
     });
   } catch (err) {
     return res.status(400).json({
-      error: getErrorMessage(err),
+      error: err,
     });
   }
 };
@@ -32,7 +32,7 @@ const list = async (req: Request, res: Response) => {
     res.json(users);
   } catch (err) {
     return res.status(400).json({
-      error: getErrorMessage(err),
+      error: err,
     });
   }
 };
@@ -63,7 +63,7 @@ const read = (req: Request, res: Response) => {
     return res.json(req.profile);
   } catch (error) {
     return res.status(400).json({
-      error: getErrorMessage(error),
+      error: error,
     });
   }
 };
@@ -76,7 +76,7 @@ const update = async (req: Request, res: Response, next: NextFunction) => {
     res.json(user);
   } catch (err) {
     return res.status(400).json({
-      error: getErrorMessage(err),
+      error: err,
     });
   }
 };
@@ -91,7 +91,7 @@ const remove = async (req: Request, res: Response, next: NextFunction) => {
     res.json(deletedUser);
   } catch (err) {
     return res.status(400).json({
-      error: getErrorMessage(err),
+      error: err,
     });
   }
 };
