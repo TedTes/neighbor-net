@@ -1,49 +1,65 @@
-version: "3.8"
+version: "3"
+
 services:
-  web:
-    build:
-      context: .
-      dockerfile: neighbor-net-dockerfile
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "80:80" # Expose NGINX on port 80
+    depends_on:
+      - authentication-service
+      - chat-service
+      - inventory-service
+      - news-feed-service
+      - search-service
+      - frontend
+    networks:
+      - neighbor-network
+
+  authentication-service:
+    build: ./auth-service
     ports:
       - "3000:3000"
-    volumes:
-      - .:/neighbor-net
-      - /neighbor-net/node_modules
-    environment:
-      NODE_ENV: development
-    depends_on:
-      mongodb:
-        condition: service_healthy
     networks:
-      - neighbor-net
-  mongodb:
-    image: mongo:latest
-    container_name: mongodb
+      - neighbor-network
+
+  chat-service:
+    build: ./chat-service
     ports:
-      - "27017:27017"
-    restart: always
-    volumes:
-      - mongo-data:/data/db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: 123
-    healthcheck:
-      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
-      interval: 10s
-      timeout: 10s
-      retries: 3
-    command: >
-      /bin/sh -c "apt-get update &&
-      apt-get install -y wget gnupg &&
-      wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add - &&
-      echo 'deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse' | tee /etc/apt/sources.list.d/mongodb-org-4.4.list &&
-      apt-get update &&
-      apt-get install -y mongodb-mongosh &&
-      mongod --bind_ip_all"
+      - "3001:3001"
     networks:
-      - neighbor-net
-volumes:
-  mongo-data:
+      - neighbor-network
+
+  inventory-service:
+    build: ./inventory-service
+    ports:
+      - "3002:3002"
+    networks:
+      - neighbor-network
+    environment:
+      - MYSQL_URI=mysql+pymysql://root:password@mysql:3306/inventory_db
+    depends_on:
+      - mysql
+  news-feed-service:
+    build: ./news-feed-service
+    ports:
+      - "3003:3003"
+    networks:
+      - neighbor-network
+
+  search-service:
+    build: ./search-service
+    ports:
+      - "3004:3004"
+    networks:
+      - neighbor-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3005:3005"
+    networks:
+      - neighbor-network
+
 networks:
-  neighbor-net:
+  neighbor-network:
     driver: bridge
