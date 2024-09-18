@@ -1,0 +1,12 @@
+FROM openjdk:17-jdk-slim
+
+WORKDIR /search-service
+
+
+COPY target/search-service-0.0.1-SNAPSHOT.jar /search-service/search-service.jar
+
+
+EXPOSE 3004
+
+
+CMD ["java", "-jar", "/search-service/search-service.jar"]

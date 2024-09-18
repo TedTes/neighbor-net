@@ -34,20 +34,102 @@ export class AuthController {
       return res.status(401).json({ error: `Could not sign in:${err}` });
     }
   };
-  static async register(req: Request, res: Response) {
+  static logout = async (req: Request, res: Response) => {
     try {
-      const user = await AuthService.register(req.body);
-      res.status(201).json(user);
-    } catch (error: any) {
-      res.status(400).json({ error: error.message });
+      // let { isValid, user } = await AuthService.login({
+      //   email: req.body.email,
+      //   password: req.body.password,
+      // });
+      // if (!isValid) throw new Error("Invalid credentials");
+      // const token = jwt.sign({ _id: user?._id }, jwtConfig.jwtSecret, {
+      //   algorithm: "HS256",
+      //   expiresIn: "1h",
+      // });
+      // const expirationDate = new Date(Date.now() + 9999 * 1000);
+      // res.cookie("auth_token", token, { expires: expirationDate });
+      // return {
+      //   user: {
+      //     _id: user?._id as string,
+      //     email: user?.email,
+      //   },
+      //   token,
+      //   expirationDate,
+      // };
+      res.clearCookie("auth_token");
+      return res.status(200).json({
+        message: "signed out",
+      });
+    } catch (err) {
+      logger.error(JSON.stringify(err));
+      return res.status(401).json({ error: `Could not sign in:${err}` });
     }
-  }
-  signout = (req: Request, res: Response) => {
-    res.clearCookie("auth_token");
-    return res.status(200).json({
-      message: "signed out",
-    });
   };
+  static refreshToken = async (req: Request, res: Response) => {
+    try {
+      // let { isValid, user } = await AuthService.login({
+      //   email: req.body.email,
+      //   password: req.body.password,
+      // });
+      // if (!isValid) throw new Error("Invalid credentials");
+      // const token = jwt.sign({ _id: user?._id }, jwtConfig.jwtSecret, {
+      //   algorithm: "HS256",
+      //   expiresIn: "1h",
+      // });
+      // const expirationDate = new Date(Date.now() + 9999 * 1000);
+      // res.cookie("auth_token", token, { expires: expirationDate });
+      // return {
+      //   user: {
+      //     _id: user?._id as string,
+      //     email: user?.email,
+      //   },
+      //   token,
+      //   expirationDate,
+      // };
+    } catch (err) {
+      logger.error(JSON.stringify(err));
+      return res.status(401).json({ error: `Could not sign in:${err}` });
+    }
+  };
+  static verifyToken = async (req: Request, res: Response) => {
+    try {
+      // let { isValid, user } = await AuthService.login({
+      //   email: req.body.email,
+      //   password: req.body.password,
+      // });
+      // if (!isValid) throw new Error("Invalid credentials");
+      // const token = jwt.sign({ _id: user?._id }, jwtConfig.jwtSecret, {
+      //   algorithm: "HS256",
+      //   expiresIn: "1h",
+      // });
+      // const expirationDate = new Date(Date.now() + 9999 * 1000);
+      // res.cookie("auth_token", token, { expires: expirationDate });
+      // return {
+      //   user: {
+      //     _id: user?._id as string,
+      //     email: user?.email,
+      //   },
+      //   token,
+      //   expirationDate,
+      // };
+    } catch (err) {
+      logger.error(JSON.stringify(err));
+      return res.status(401).json({ error: `Could not sign in:${err}` });
+    }
+  };
+  // static async register(req: Request, res: Response) {
+  //   try {
+  //     const user = await AuthService.register(req.body);
+  //     res.status(201).json(user);
+  //   } catch (error: any) {
+  //     res.status(400).json({ error: error.message });
+  //   }
+  // }
+  // signout = (req: Request, res: Response) => {
+  //   res.clearCookie("auth_token");
+  //   return res.status(200).json({
+  //     message: "signed out",
+  //   });
+  // };
   hasAuthorization = async (
     req: Request,
     res: Response,

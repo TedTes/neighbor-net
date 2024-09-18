@@ -12,10 +12,11 @@ services:
       - news-feed-service
       - search-service
       - frontend
+      - user-service
     networks:
-      - neighbor-network
+      - neighbor-net
 
-  authentication-service:
+  auth-service:
     build: ./auth-service
     ports:
       - "3000:3000"
@@ -27,39 +28,126 @@ services:
     ports:
       - "3001:3001"
     networks:
-      - neighbor-network
+      - neighbor-net
 
   inventory-service:
     build: ./inventory-service
     ports:
       - "3002:3002"
     networks:
-      - neighbor-network
+      - neighbor-net
     environment:
       - MYSQL_URI=mysql+pymysql://root:password@mysql:3306/inventory_db
     depends_on:
-      - mysql
+      - inventoryMySqlDb
   news-feed-service:
     build: ./news-feed-service
     ports:
       - "3003:3003"
     networks:
-      - neighbor-network
-
+      - neighbor-net
+    depends_on:
+      - newsFeedMongoDb
+    volumes:
+      - ./news-feed-service:/news-feed-service
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/newsFeedDB
   search-service:
     build: ./search-service
     ports:
       - "3004:3004"
+    depends_on:
+      - searchServiceElasticsearch
+    environment:
+      - SPRING_DATA_ELASTICSEARCH_CLIENT_REACTIVE_ENDPOINT=elasticsearch
     networks:
-      - neighbor-network
+      - neighbor-net
+  user-service:
+    build: "./user-service"
+    ports:
+      - 3003:3003
+    depends_on:
+      - userServicePostgresDb
+    volumes:
+      - ./user-service:/user-service
+    networks:
+      - neighbor-net
+    environmet:
+      - NODE_ENV=development
+      - PORT=3003
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_HOST=db
+  notification-service:
+    build: ./notification-service
+    ports:
+      - "3005:3005"
+    depends_on:
+      - notificationServiceRedis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    voludmes:
+      - ./notification-service:/notification-service
 
   frontend:
     build: ./frontend
     ports:
       - "3005:3005"
     networks:
-      - neighbor-network
-
+      - neighbor-net
+  inventoryMySqlDb:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: inventory
+      MYSQL_USER: inventoryuser
+      MYSQL_PASSWORD: inventorypassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - neighbor-net
+  userServicePostgresDb:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - neighbor-net
+  newsFeedMongoDb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - neighbor-net
+  notificationServiceRedis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+  searchServiceElasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    networks:
+      - neighbor-net
 networks:
-  neighbor-network:
+  neighbor-net:
     driver: bridge
+volumes:
+  mongo-data:
+  redis-data:

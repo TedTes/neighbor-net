@@ -1,0 +1,6 @@
+FROM python:3.10-slim
+WORKDIR /notification-service
+COPY ./notification-service/requirements.txt ./notification-service/requirements.txt
+RUN pip install --no-cache-dir -r ./notification-service/requirements.txt
+EXPOSE 3005
+CMD ["uvicorn","src.main:app", "--host","0.0.0.0", "--port", "3005"]
