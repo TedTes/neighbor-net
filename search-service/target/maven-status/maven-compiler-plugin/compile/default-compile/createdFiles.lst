@@ -1,0 +1,6 @@
+com/searchservice/repository/ElasticsearchRepository.class
+com/searchservice/controller/SearchController.class
+com/searchservice/service/SearchService.class
+com/searchservice/model/SearchResult.class
+com/searchservice/SearchServiceApplication.class
+com/searchservice/config/ElasticsearchConfig.class

@@ -1,11 +1,13 @@
-package com.example.searchservice.controller;
+package com.searchservice.controller;
 
-import com.example.searchservice.model.SearchItem;
-import com.example.searchservice.service.SearchService;
+import com.searchservice.model.SearchResult;
+import com.searchservice.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/search")
@@ -14,8 +16,17 @@ public class SearchController {
     @Autowired
     private SearchService searchService;
 
-    @GetMapping("/{query}")
-    public List<SearchItem> search(@PathVariable String query) {
-        return searchService.search(query);
+    @GetMapping
+    public List<SearchResult> search(@RequestParam String query) {
+        try {
+          return searchService.search(query);
+        } catch(IOException error) {
+             error.printStackTrace();
+             List<SearchResult> errorResult = new ArrayList<>();
+            errorResult.add(new SearchResult("Error", "An error occurred during search: " + error.getMessage()));
+            return errorResult;
+            
+        }
+        
     }
 }

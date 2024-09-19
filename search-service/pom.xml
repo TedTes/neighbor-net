@@ -4,28 +4,44 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
+    <groupId>com.search</groupId>
     <artifactId>search-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.15</version> 
+        <relativePath/>
+   </parent>
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+    
     <dependencies>
         <!-- Spring Boot dependencies -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+       <dependency>
+             <groupId>co.elastic.clients</groupId>
+             <artifactId>elasticsearch-java</artifactId>
+             <version>8.10.2</version>
+         </dependency>
+
+         <dependency>
+           <groupId>org.glassfish</groupId>
+           <artifactId>jakarta.json</artifactId>
+           <version>2.0.1</version>
+         </dependency>
+         <dependency>
+            <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
+            <version>2.0.1</version> 
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Elasticsearch dependency -->
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>elasticsearch-rest-high-level-client</artifactId>
-            <version>7.17.0</version>
-        </dependency>
 
         <!-- Test dependencies -->
         <dependency>
