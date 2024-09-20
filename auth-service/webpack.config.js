@@ -4,13 +4,13 @@ module.exports = (env, argv) => {
   const isProduction = argv.mode === "production";
   return {
     mode: isProduction ? "production" : "development",
-    name: "server",
-    entry: path.resolve(__dirname, "./src/server.ts"),
+    name: "auth-service",
+    entry: path.resolve(__dirname, "./src/index.ts"),
     target: "node",
     devtool: isProduction ? "source-map" : "inline-source-map",
     output: {
       path: path.resolve(__dirname, "./dist"),
-      filename: "server.bundle.js",
+      filename: "auth-service.bundle.js",
     },
     externals: {
       mongodb: "commonjs mongodb",

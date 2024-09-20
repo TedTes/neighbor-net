@@ -1,4 +1,5 @@
 node_modules
 project-structure.txt
 large_posts.json
+.env
 # generate-posts.py

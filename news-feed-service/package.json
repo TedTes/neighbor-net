@@ -8,7 +8,7 @@
     "dev:build": "webpack --mode development --config ./webpack.config.js",
     "dev:start": "npm run dev:build && node ./dist/news-feed-service.bundle.js",
     "prod:build": "webpack --mode production --config ./webpack.config.js",
-    "prod:start": "npm run prod:build && node news-feed-service.bundle.js"
+    "prod:start": "npm run prod:build && node ./dist/news-feed-service.bundle.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "express": "^4.19.2",
     "helmet": "^7.1.0",
     "html-loader": "^5.1.0",
+    "mongoose": "^8.5.3",
     "sequelize": "^6.37.3",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.4",

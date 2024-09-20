@@ -1,16 +1,21 @@
+import dotenv from "dotenv";
+dotenv.config({ path: "./config/.env" });
+
 import express, { Request, Response, NextFunction } from "express";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import compression from "compression";
 import helmet from "helmet";
 import cors from "cors";
-import path from "path";
 import { connectDB } from "./config";
 import { PostRouter } from "./routes";
+import { logger } from "./utils";
 
 const app = express();
 
-app.use(express.static(path.resolve(__dirname)));
+app.listen(process.env.PORT, async () => {
+  logger.info(`server running on port:${process.env.PORT}`);
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

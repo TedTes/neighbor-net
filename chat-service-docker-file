@@ -1,10 +1,10 @@
 
 FROM node:20
 WORKDIR /chat-service
-COPY package*.json ./
+COPY ./chat-service/package*.json ./
 RUN npm install
-COPY . .
-EXPOSE 3000
+COPY ./chat-service .
+EXPOSE 3001
 RUN apt-get update && apt-get install -y wget gnupg lsb-release curl
 
 # MongoDB GPG key to the keyrings directory
@@ -16,4 +16,4 @@ RUN echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-archive-k
 
 RUN apt-get update && apt-get install -y mongodb-mongosh
 
-CMD ["npm", "start"]
+CMD ["npm", "run" , "prod:start"]

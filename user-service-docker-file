@@ -2,7 +2,7 @@ FROM node:20
 WORKDIR /user-service
 COPY ./user-service/package*.json ./
 RUN npm install
-COPY . .
-EXPOSE 3003
-CMD ["npm", "start"]
+COPY ./user-service ./
+EXPOSE 3005
+CMD ["npm", "run","prod:start"]
 

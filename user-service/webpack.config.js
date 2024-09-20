@@ -12,9 +12,7 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, "./dist"),
       filename: "user-service.bundle.js",
     },
-    externals: {
-      sequelize: [],
-    },
+
     resolve: {
       extensions: [".js", ".jsx", ".ts", ".tsx"],
     },

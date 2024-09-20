@@ -1,5 +1,5 @@
 export const db = {
-  port: process.env.PORT || 3002,
+  port: process.env.PORT || 3000,
   mongoUri:
     process.env.MONGODB_URI ||
     process.env.MONGO_HOST ||

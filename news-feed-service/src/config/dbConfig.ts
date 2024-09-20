@@ -1,20 +1,16 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-
+import { logger } from "../utils";
 dotenv.config();
 
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      process.env.MONGO_URI || "mongodb://localhost:27017/newsFeedDB"
-      // {
-      //   // useNewUrlParser: true,
-      //   useUnifiedTopology: true,
-      // }
+      process.env.MONGO_URI || "mongodb://root:123@mongodb:27017/newsFeedDB"
     );
-    console.log("MongoDB connected");
+    logger.info("newsFeedDB connected");
   } catch (error: any) {
-    console.error("MongoDB connection failed:", error.message);
+    console.error("newsFeedDB connection failed:", error.message);
     process.exit(1);
   }
 };

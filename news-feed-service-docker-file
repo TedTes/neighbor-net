@@ -2,8 +2,17 @@ FROM node:20
 WORKDIR /news-feed-service 
 COPY ./news-feed-service/package*.json ./
 RUN npm install
-COPY . .
-# RUN npm run build
+COPY ./news-feed-service .
 
+
+RUN apt-get update && apt-get install -y wget gnupg lsb-release curl
+
+# MongoDB GPG key to the keyrings directory
+RUN curl -fsSL https://www.mongodb.org/static/pgp/server-5.0.asc | gpg --dearmor -o /usr/share/keyrings/mongodb-archive-keyring.gpg
+
+# MongoDB repository using signed-by option
+RUN echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-archive-keyring.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+
+RUN apt-get update && apt-get install -y mongodb-mongosh
 EXPOSE 3003
-CMD ["npm", "start"]
+CMD ["npm", "run", "prod:start"]
