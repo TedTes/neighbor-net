@@ -1,30 +1,22 @@
-import { timeStamp } from "console";
-import mongoose, { Schema, Document } from "mongoose";
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { IsEmail, Length } from "class-validator";
 
-interface IUser extends Document {
+@Entity()
+export class User {
+  @PrimaryGeneratedColumn()
+  id: number;
+
+  @Column()
+  username: string;
+
+  @Column({ unique: true })
+  @IsEmail({}, { message: "Invalid email format" })
   email: string;
+
+  @Column()
+  @Length(4, 100, { message: "Password must be between 4 and 100 characters" })
   password: string;
-  updatedAt: Date;
-  createdAt: Date;
+
+  @Column({ default: "user" })
+  role: string;
 }
-
-const UserSchema: Schema = new Schema(
-  {
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
-  },
-  { timestamps: true }
-);
-UserSchema.virtual("_password")
-  .set(function (this: IUser, password: string) {
-    if (password && password.length < 6) {
-      this.invalidate("password", "Password must be at least 6 characters.");
-    }
-    this.markModified("passwordHash");
-  })
-  .get(function () {
-    return this.password;
-  });
-const User = mongoose.model<IUser>("User", UserSchema);
-
-export { User, IUser };

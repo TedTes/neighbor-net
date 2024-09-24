@@ -1,6 +1,6 @@
 // src/leafletIconFix.ts
 
-import L from "leaflet";
+import * as L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 // Fix for default marker icon issues in Leaflet

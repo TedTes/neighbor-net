@@ -1,21 +1,27 @@
-import dotenv from "dotenv";
-dotenv.config({ path: "./config/.env" });
-
 import express, { Request, Response, NextFunction } from "express";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import compression from "compression";
 import helmet from "helmet";
 import cors from "cors";
-import { connectDB } from "./config";
+import { connectDB } from "./utils";
 import { PostRouter } from "./routes";
 import { logger } from "./utils";
+import { config } from "./config";
 
+const { appServerPort, mongoDBConnectionString } = config;
 const app = express();
 
-app.listen(process.env.PORT, async () => {
-  logger.info(`server running on port:${process.env.PORT}`);
-});
+connectDB()
+  .then(() => {
+    logger.info(`connected to mongodb ${mongoDBConnectionString}`);
+    app.listen(appServerPort, () => {
+      logger.info(`server listening on port:${appServerPort}`);
+    });
+  })
+  .catch((error) => {
+    logger.debug(`Error:${error}`);
+  });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,8 +31,6 @@ app.use(helmet());
 app.use(cors());
 
 app.use("/api/v1/posts", PostRouter);
-
-connectDB();
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err.name === "UnauthorizedError") {

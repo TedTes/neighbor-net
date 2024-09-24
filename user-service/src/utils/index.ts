@@ -1,2 +1,2 @@
 export * from "./logger";
-export * from "./dbConfig";
+export * from "./database";

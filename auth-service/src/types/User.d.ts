@@ -18,11 +18,12 @@ export interface responseData {
 }
 
 export interface UserType {
-  _id?: string;
+  id?: string;
   username?: string;
   email: string;
   updatedAt: Date;
   createdAt: Date;
+  role?: string;
 }
 export interface UserDocument extends Document {
   name: string;

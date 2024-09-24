@@ -4,33 +4,25 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import helmet from "helmet";
 import cors from "cors";
-import path from "path";
 import http from "http";
 import { Server } from "socket.io";
 import { ChatSocketHandler } from "./sockets/ChatSocketHandler";
 import { chatRouter } from "./routes";
-import mongoose from "mongoose";
-import { db } from "./config/db";
 import { logger } from "./utils/logger";
-
+import { config } from "./config";
+import { connectDB } from "./utils";
+const { appServerPort } = config;
 const app = express();
 
-app.listen(db.port, async () => {
-  logger.info(`server running on port:${db.port}`);
-  try {
-    mongoose.Promise = global.Promise;
-    await mongoose
-      .connect(db.mongoUri)
-      .then(() => {
-        logger.info(`connected to mongodb`);
-      })
-      .catch((error) => {
-        logger.debug(JSON.stringify(error));
-      });
-  } catch (error) {
-    logger.debug(JSON.stringify(error));
-  }
-});
+connectDB()
+  .then(() => {
+    app.listen(appServerPort, async () => {
+      logger.info(`server running on port:${appServerPort}`);
+    });
+  })
+  .catch((error) => {
+    logger.debug(`Error :${error}`);
+  });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

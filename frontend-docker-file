@@ -1,4 +1,4 @@
-FROM node:20 as build
+FROM node:20
 
 WORKDIR /frontend
 
@@ -10,4 +10,4 @@ RUN npm install
 COPY ./frontend .
 
 
-RUN npm run prod:build
+CMD ["npm", "run", "prod:build"]

@@ -1,6 +1,4 @@
 import express, { Request, Response, NextFunction } from "express";
-import mongoose from "mongoose";
-import { db } from "./config/db";
 import { logger } from "./utils/logger";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
@@ -9,25 +7,24 @@ import helmet from "helmet";
 import cors from "cors";
 import path from "path";
 import { AuthRouter } from "./routes";
-
+import { connectDB } from "./utils";
+import { config } from "./config";
 const app = express();
 
-app.listen(db.port, async () => {
-  try {
-    mongoose.Promise = global.Promise;
-    await mongoose
-      .connect(db.mongoUri)
-      .then(() => {
-        logger.info(`connected to mongodb`);
-      })
-      .catch((error) => {
-        logger.debug(JSON.stringify(error));
-      });
-  } catch (error) {
-    logger.debug(JSON.stringify(error));
-  }
-  logger.info(`server running on port:${db.port}`);
-});
+const { appServerPort, databaseConfig } = config;
+connectDB()
+  .then(() => {
+    logger.info(
+      `auth server connected to postgres database:${databaseConfig.host}`
+    );
+    app.listen(appServerPort, async () => {
+      logger.info(`server listening on port:${appServerPort}`);
+    });
+  })
+  .catch((error) => {
+    logger.debug(`Error:${error}`);
+  });
+
 app.use(express.static(path.resolve(__dirname)));
 
 app.use(bodyParser.json());
