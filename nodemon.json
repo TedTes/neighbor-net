@@ -1,7 +1,0 @@
-{
-  "verbose": true,
-  "watch": ["./backend/*", "./frontend/*", "./config"],
-  "ext": "js,ts,jsx,tsx",
-  "ignore": ["node_modules"],
-  "exec": "webpack --mode=development --config ./config/webpack.config.backend.js && webpack --mode=development --config ./config/webpack.config.frontend.js && node ./dist/server.bundle.js"
-}
