@@ -35,7 +35,7 @@ app.use(compression());
 app.use(helmet());
 app.use(cors());
 
-app.use("/api/v1/users", UserRouter);
+app.use("/api/v1/user", UserRouter);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err.name === "UnauthorizedError") {

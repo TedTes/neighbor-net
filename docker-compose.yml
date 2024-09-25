@@ -2,7 +2,9 @@ version: "3"
 
 services:
   api-gateway:
-    build: ./api-gateway
+    build:
+      context: ./
+      dockerfile: api-gateway-docker-file
     ports:
       - "80:80" # Exposed NGINX on port 80
     depends_on:
@@ -13,13 +15,16 @@ services:
       - search-service
       - frontend
       - user-service
+      - notification-service
     networks:
       - neighbor-net
     volumes:
-      - shared-assets:/usr/src/app/dist
+      - shared-assets:/usr/share/nginx/html
 
   auth-service:
-    build: ./auth-service
+    build:
+      context: ./
+      dockerfile: auth-service-docker-file
     ports:
       - "3000:3000"
     networks:
@@ -29,7 +34,9 @@ services:
     env_file:
       - ./auth-service/.env
   chat-service:
-    build: ./chat-service
+    build:
+      context: ./
+      dockerfile: chat-service-docker-file
     ports:
       - "3001:3001"
     networks:
@@ -39,31 +46,37 @@ services:
     env_file:
       - ./chat-service/.env
   inventory-service:
-    build: ./inventory-service
+    build:
+      context: ./
+      dockerfile: inventory-service-docker-file
     ports:
       - "3002:3002"
     networks:
       - neighbor-net
-    environment:
-      - MYSQL_URI=mysql+pymysql://root:password@inventory-service-MySqlDB:3306/inventory_db
+    # environment:
+    #   - MYSQL_URI=mysql+pymysql://root:password@inventory-service-MySqlDB:3306/inventory_db
     depends_on:
       - inventory-service-MySqlDB
     env_file:
       - ./inventory-service/.env
   news-feed-service:
-    build: ./news-feed-service
+    build:
+      context: ./
+      dockerfile: news-feed-service-docker-file
     ports:
       - "3003:3003"
     networks:
       - neighbor-net
     depends_on:
       - news-feed-service-mongoDB
-    volumes:
-      - ./news-feed-service:/news-feed-service
+    # volumes:
+    #   - ./news-feed-service:/news-feed-service
     env_file:
       - ./news-feed-service/.env
   search-service:
-    build: ./search-service
+    build:
+      context: ./
+      dockerfile: search-service-docker-file
     ports:
       - "3004:3004"
     depends_on:
@@ -74,7 +87,9 @@ services:
       - neighbor-net
 
   user-service:
-    build: "./user-service"
+    build:
+      context: ./
+      dockerfile: user-service-docker-file
     ports:
       - "3005:3005"
     depends_on:
@@ -83,12 +98,14 @@ services:
       - neighbor-net
     environment:
       - NODE_ENV=development
-    volumes:
-      - ./user-service:/user-service
+    # volumes:
+    #   - ./user-service:/user-service
     env_file:
       - ./user-service/.env
   notification-service:
-    build: ./notification-service
+    build:
+      context: ./
+      dockerfile: notification-service-docker-file
     ports:
       - "3006:3006"
     depends_on:
@@ -96,24 +113,27 @@ services:
     environment:
       - REDIS_HOST=notification-service-redis
       - REDIS_PORT=6379
-    volumes:
-      - ./notification-service:/notification-service
+    # volumes:
+    #   - ./notification-service:/notification-service
     env_file:
       - ./notification-service/.env
   frontend:
-    build: ./frontend
+    build:
+      context: ./
+      dockerfile: frontend-docker-file
     ports:
       - "3007:3007"
     networks:
       - neighbor-net
     volumes:
-      - shared-assets:/usr/src/app/dist
+      - shared-assets:/frontend/dist
+
   # Databases and other services
 
   inventory-service-MySqlDB:
-    image: mysql:5.7
+    image: mysql:8.0
     ports:
-      - "3306:3306"
+      - "3310:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     networks:
@@ -142,7 +162,16 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongo-data:/data/db
+      - newsfeed-mongo-data:/data/db
+    networks:
+      - neighbor-net
+
+  chat-service-mongoDB:
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    volumes:
+      - chat-mongo-data:/data/db
     networks:
       - neighbor-net
 
@@ -171,8 +200,9 @@ networks:
 # Volumes
 volumes:
   shared-assets:
-  mongo-data:
   redis-data:
   mysql_data:
   auth_pgdata:
   user_pgdata:
+  chat-mongo-data:
+  newsfeed-mongo-data:

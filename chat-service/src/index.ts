@@ -31,7 +31,7 @@ app.use(compression());
 app.use(helmet());
 app.use(cors());
 
-app.use("/api/v1/chats", chatRouter);
+app.use("/api/v1/chat", chatRouter);
 
 const server = http.createServer(app);
 

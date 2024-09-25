@@ -14,6 +14,6 @@ export const config = {
   appServerPort: process.env.APP_SERVER_PORT || 3000,
   jwtSecret: process.env.JWT_SECRET || "secret_key",
   environment: process.env.NODE_ENV || "developement",
-  isSecure: process.env.NODE_ENV === "developement",
+  isSecure: process.env.NODE_ENV === "production",
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || "1h",
 };
