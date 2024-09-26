@@ -10,7 +10,7 @@ import java.util.List;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("/api/search")
+@RequestMapping("/api/v1/search")
 public class SearchController {
 
     @Autowired
