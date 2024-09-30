@@ -8,7 +8,7 @@
     "dev:build": "webpack --mode development --config ./webpack.config.js",
     "dev:start": "npm run dev:build && node ./dist/auth-service.bundle.js",
     "prod:build": "webpack --mode production --config ./webpack.config.js",
-    "prod:start": "npm run prod:build && node ./dist/auth-service.bundle.js"
+    "prod:start": "npm run prod:build && node  ./dist/auth-service.bundle.js"
   },
   "repository": {
     "type": "git",
@@ -61,6 +61,7 @@
     "http-proxy-middleware": "^3.0.1",
     "node-polyfill-webpack-plugin": "^4.0.0",
     "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
     "webpack-dev-server": "^5.0.4",
     "webpack-node-externals": "^3.0.0"
   }

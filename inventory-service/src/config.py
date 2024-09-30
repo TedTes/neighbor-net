@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 username = os.getenv('MYSQL_USER', 'root')
-password = os.getenv('MYSQL_PASSWORD', 'password')
-host = os.getenv('MYSQL_HOST', 'mysql')
+password = os.getenv('MYSQL_PASSWORD', 'root_test')
+host = os.getenv('MYSQL_HOST', 'inventory-service-MySqlDB')
 port = os.getenv('MYSQL_PORT', '3306')  
 dbname = os.getenv('MYSQL_DB_NAME', 'inventory_db') 
 

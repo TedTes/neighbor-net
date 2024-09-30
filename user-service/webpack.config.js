@@ -1,4 +1,5 @@
 const path = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === "production";
@@ -7,7 +8,7 @@ module.exports = (env, argv) => {
     name: "user-service",
     entry: path.resolve(__dirname, "./src/index.ts"),
     target: "node",
-    devtool: isProduction ? "source-map" : "inline-source-map",
+    // devtool: isProduction ? "source-map" : "inline-source-map",
     output: {
       path: path.resolve(__dirname, "./dist"),
       filename: "user-service.bundle.js",
@@ -27,6 +28,14 @@ module.exports = (env, argv) => {
           test: /\.html$/,
           use: "html-loader",
         },
+      ],
+    },
+    optimization: {
+      minimize: true,
+      minimizer: [
+        new TerserPlugin({
+          parallel: true,
+        }),
       ],
     },
   };

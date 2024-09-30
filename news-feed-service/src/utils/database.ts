@@ -5,7 +5,7 @@ const { mongoDBConnectionString } = config;
 const connectDB = async () => {
   try {
     await mongoose.connect(mongoDBConnectionString);
-    logger.info("newsFeedDB connected");
+    logger.info("connected to newsfeed_db");
   } catch (error: any) {
     console.error("newsFeedDB connection failed:", error.message);
     process.exit(1);

@@ -6,9 +6,13 @@ db = SQLAlchemy()
 
 
 def create_app():
+  try:
     app = Flask(__name__)
     app.config.from_object(Config)
-    db.init_app(app)
+    result = db.init_app(app)
+    print(f'inventory_db connection status: {result}')
     from src.routes import inventory_blueprint
     app.register_blueprint(inventory_blueprint)
     return app
+  except Exception as e :
+     print(e)

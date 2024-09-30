@@ -1,7 +1,7 @@
 
 FROM node:20
 WORKDIR /chat-service
-COPY ./chat-service/package*.json ./
+COPY ./chat-service/package*.json .
 RUN npm install
 COPY ./chat-service .
 EXPOSE 3001

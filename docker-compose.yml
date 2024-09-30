@@ -34,6 +34,7 @@ services:
       - auth-service-postgresDB
     env_file:
       - ./auth-service/.env
+
   chat-service:
     build:
       context: ./
@@ -54,8 +55,6 @@ services:
       - "3002:3002"
     networks:
       - neighbor-net
-    # environment:
-    #   - MYSQL_URI=mysql+pymysql://root:password@inventory-service-MySqlDB:3306/inventory_db
     depends_on:
       - inventory-service-MySqlDB
     env_file:
@@ -74,6 +73,7 @@ services:
     #   - ./news-feed-service:/news-feed-service
     env_file:
       - ./news-feed-service/.env
+
   search-service:
     build:
       context: ./
@@ -103,6 +103,7 @@ services:
     #   - ./user-service:/user-service
     env_file:
       - ./user-service/.env
+
   notification-service:
     build:
       context: ./
@@ -141,6 +142,11 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - neighbor-net
+    environment:
+      MYSQL_ROOT_PASSWORD: root_test
+      MYSQL_DATABASE: inventory_db
+      MYSQL_USER: inventoryuser
+      MYSQL_PASSWORD: test
 
   auth-service-postgresDB:
     image: postgres:14
@@ -150,6 +156,10 @@ services:
       - auth_pgdata:/var/lib/postgresql/data
     networks:
       - neighbor-net
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: auth_db
 
   user-service-postgresDB:
     image: postgres:14
@@ -159,25 +169,34 @@ services:
       - user_pgdata:/var/lib/postgresql/data
     networks:
       - neighbor-net
-
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: user_db
   news-feed-service-mongoDB:
-    image: mongo:latest
+    image: mongo:5.0
     ports:
-      - "27017:27017"
+      - "27021:27017"
     volumes:
       - newsfeed-mongo-data:/data/db
     networks:
       - neighbor-net
-
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: test
+      MONGO_INITDB_DATABASE: newsfeed_db
   chat-service-mongoDB:
-    image: mongo:latest
+    image: mongo:5.0
     ports:
-      - "27018:27017"
+      - "27017:27017"
     volumes:
       - chat-mongo-data:/data/db
     networks:
       - neighbor-net
-
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: test
+      MONGO_INITDB_DATABASE: chat_db
   notification-service-redis:
     image: redis:alpine
     ports:

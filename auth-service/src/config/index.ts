@@ -8,7 +8,9 @@ export const config = {
     port: parseInt(process.env.POSTGRES_PORT || "5432", 10),
     username: process.env.POSTGRES_USER || "postgres",
     password: process.env.POSTGRES_PASSWORD || "",
-    database: process.env.POSTGRES_DB ? String(process.env.DB_NAME) : undefined,
+    database: process.env.POSTGRES_DB
+      ? String(process.env.POSTGRES_DB)
+      : "auth_db",
   },
 
   appServerPort: process.env.APP_SERVER_PORT || 3000,
