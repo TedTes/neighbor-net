@@ -1,20 +1,27 @@
 import { Request, Response } from "express";
-
+import { logger } from "../utils";
 export class UserController {
   static getAllUsers = async (req: Request, res: Response) => {
-    const roomId = req.params.roomId;
     try {
-      res.status(200).json(history);
+      res.status(200).json({ user: "tedi", value: "test" });
     } catch (error) {
-      res.status(500).json({ message: "Failed to fetch chat history" });
+      logger.error({
+        methodName: "getAllUsers",
+        errorDescription: error,
+      });
+      res.status(500).json({ message: "Failed to fetch users" });
     }
   };
   static createUser = async (req: Request, res: Response) => {
     const { content, sender, roomId } = req.body;
     try {
-      res.status(201).json();
+      res.status(201).json({ status: "success", createdUser: "user" });
     } catch (error) {
-      res.status(500).json({ message: "Failed to create message" });
+      logger.error({
+        methodName: "createUser",
+        errorDescription: error,
+      });
+      res.status(500).json({ message: "Failed to create user" });
     }
   };
 }
