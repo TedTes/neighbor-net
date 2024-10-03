@@ -6,7 +6,7 @@ declare module "news-feed-service-type-extension" {
 
 declare namespace Express {
   interface Request {
-    user?: { userId: string };
+    user: { userId: string };
   }
 }
 interface IPost {

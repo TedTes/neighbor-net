@@ -30,7 +30,7 @@ app.use(compression());
 app.use(helmet());
 app.use(cors());
 
-app.use("/api/v1/post", PostRouter);
+app.use("/api/v1/posts", PostRouter);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err.name === "UnauthorizedError") {

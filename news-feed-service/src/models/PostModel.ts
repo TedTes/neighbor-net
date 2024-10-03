@@ -1,9 +1,11 @@
-import { Schema, model } from "mongoose";
+import { Schema, Model } from "mongoose";
 
-const mongoose = require("mongoose");
-
-const postSchema = new mongoose.Schema({
+const postSchema = new Schema({
   userId: {
+    type: String,
+    required: true,
+  },
+  username: {
     type: String,
     required: true,
   },
@@ -11,26 +13,28 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  imageUrl: {
-    type: String,
-  },
+  mediaUrl: [
+    {
+      type: String,
+      default: null,
+    },
+  ],
   createdAt: {
     type: Date,
     default: Date.now,
   },
   likes: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+      type: String,
     },
   ],
   comments: [
     {
       userId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
+        type: String,
+        required: true,
       },
-      content: String,
+      content: { type: String, required: true },
       createdAt: {
         type: Date,
         default: Date.now,
@@ -39,5 +43,5 @@ const postSchema = new mongoose.Schema({
   ],
 });
 
-const Post = mongoose.model("Post", postSchema);
+const Post = new Model("Post", postSchema);
 export { Post };
