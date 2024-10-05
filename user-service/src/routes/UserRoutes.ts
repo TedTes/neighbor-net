@@ -1,7 +1,17 @@
-import express from "express";
-import { UserController } from "../controllers";
-const UserRouter = express.Router();
+import { Router } from "express";
+import { userController } from "../controllers/UserController";
+import { authMiddleware } from "../middleware/AuthMiddleware";
+import multer from "multer";
 
-UserRouter.get("/", UserController.getAllUsers);
-UserRouter.post("/", UserController.createUser);
+const UserRouter = Router();
+const upload = multer({ dest: "uploads/" }); // Configure multer for multipart file uploads
+
+UserRouter.post("/", userController.createUser);
+UserRouter.put(
+  "/:userId/profile-photo",
+  authMiddleware.authenticate,
+  upload.single("photo"),
+  userController.updateProfilePhoto
+);
+
 export { UserRouter };
