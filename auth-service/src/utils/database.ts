@@ -1,24 +1,19 @@
-import { DataSource } from "typeorm";
 import { logger } from "./logger";
 import { User } from "../models";
 import { config } from "../config";
+import { Sequelize } from "sequelize";
+import pg from "pg";
 const { databaseConfig } = config;
-export const AuthDataSource = new DataSource({
+export const sequelize = new Sequelize({
   ...databaseConfig,
-  type: "postgres",
-  synchronize: true,
-  logging: false,
-  entities: [User],
-  migrations: ["src/migration/**/*.ts"],
-  subscribers: ["src/subscriber/**/*.ts"],
+  dialect: "postgres",
+  dialectModule: pg,
 });
-
 export const connectDB = async () => {
   try {
-    await AuthDataSource.initialize();
-    logger.info("PostgreSQL connected...");
+    await sequelize.authenticate();
+    logger.info("Connection has been established successfully.");
   } catch (error) {
-    logger.error("Error connecting to database:", error);
-    process.exit(1);
+    logger.error("Unable to connect to the database:", error);
   }
 };

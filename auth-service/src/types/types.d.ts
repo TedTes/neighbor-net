@@ -5,3 +5,11 @@ declare module "socket.io" {
     currentChannel?: string;
   }
 }
+
+declare global {
+  namespace Express {
+    interface Request {
+      user: User;
+    }
+  }
+}

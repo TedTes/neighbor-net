@@ -1,40 +1,27 @@
-import { User } from "../models";
-import { AuthDataSource } from "../utils/database";
-
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { config } from "../config";
+import { User } from "../models";
 
-const { jwtExpiresIn, jwtSecret } = config;
 export class AuthService {
-  static async login({ email, password }: { email: string; password: string }) {
-    const user = await AuthDataSource.getRepository(User).findOne({
-      where: { email },
-    });
-    if (!user) {
-      return { isValid: false, user: null };
-    }
+  static async loginUser(email: string, password: string) {
+    const user = await User.findOne({ where: { email } });
+    if (!user) throw new Error("User not found");
 
-    const isPasswordValid = await bcrypt.compare(password, user.password);
-    if (!isPasswordValid) {
-      return { isValid: false, user: null };
-    }
+    const validPassword = await bcrypt.compare(password, user.password);
+    if (!validPassword) throw new Error("Invalid credentials");
 
-    return { isValid: true, user };
+    const token = jwt.sign(
+      { id: user.id, email: user.email },
+      process.env.JWT_SECRET || "secret",
+      {
+        expiresIn: "1h",
+      }
+    );
+
+    return { user, token };
   }
 
-  static async findUserById(id: number) {
-    const user = await AuthDataSource.getRepository(User).findOne({
-      where: { id },
-    });
-
-    return user;
-  }
-
-  static generateToken(user: User) {
-    return jwt.sign({ id: user.id }, jwtSecret, {
-      algorithm: "HS256",
-      expiresIn: jwtExpiresIn, // Set expiration time for the token
-    });
+  static verifyToken(token: string) {
+    return jwt.verify(token, process.env.JWT_SECRET || "secret");
   }
 }

@@ -12,18 +12,21 @@ import { config } from "./config";
 const app = express();
 
 const { appServerPort, databaseConfig } = config;
-connectDB()
-  .then(() => {
+
+(async () => {
+  try {
+    await connectDB(); // Connect to PostgreSQL
     logger.info(
       `auth server connected to postgres database:${databaseConfig.host}`
     );
+
     app.listen(appServerPort, async () => {
       logger.info(`server listening on port:${appServerPort}`);
     });
-  })
-  .catch((error) => {
-    logger.debug(`Error:${error}`);
-  });
+  } catch (error) {
+    logger.error("Unable to connect to the database:", error);
+  }
+})();
 
 app.use(express.static(path.resolve(__dirname)));
 

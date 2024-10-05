@@ -1,22 +1,41 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
-import { IsEmail, Length } from "class-validator";
+import { DataTypes, Model } from "sequelize";
+import { sequelize } from "../utils";
 
-@Entity()
-export class User {
-  @PrimaryGeneratedColumn()
-  id: number;
-
-  @Column()
-  username: string;
-
-  @Column({ unique: true })
-  @IsEmail({}, { message: "Invalid email format" })
-  email: string;
-
-  @Column()
-  @Length(4, 100, { message: "Password must be between 4 and 100 characters" })
-  password: string;
-
-  @Column({ default: "user" })
-  role: string;
+class User extends Model {
+  public id!: number;
+  public email!: string;
+  public password!: string;
+  public username!: string;
+  public readonly createdAt!: Date;
+  public readonly updatedAt!: Date;
 }
+
+User.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  },
+  {
+    sequelize,
+    modelName: "User",
+    tableName: "users",
+  }
+);
+
+export { User };

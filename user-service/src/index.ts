@@ -6,28 +6,28 @@ import helmet from "helmet";
 import cors from "cors";
 
 import { logger } from "./utils";
-import { sequelize } from "./utils";
+import { connectDB } from "./utils";
 
 import { UserRouter } from "./routes";
 import { config } from "./config";
 
-const { appServerPort } = config;
+const { appServerPort, dbConfig } = config;
 const app = express();
 
-sequelize
-  .authenticate()
-  .then(() => {
+(async () => {
+  try {
+    await connectDB();
     logger.info(
-      "Connection to postgress database has been established successfully."
+      `user-service server connected to postgres database:${dbConfig.host}`
     );
-    app.listen(appServerPort, () => {
-      logger.info(`server running on port ${appServerPort}`);
-    });
-  })
-  .catch((err: Error) => {
-    logger.debug("Unable to connect to the database:", err);
-  });
 
+    app.listen(appServerPort, async () => {
+      logger.info(`server listening on port:${appServerPort}`);
+    });
+  } catch (error) {
+    logger.error("Unable to connect to the database:", error);
+  }
+})();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
