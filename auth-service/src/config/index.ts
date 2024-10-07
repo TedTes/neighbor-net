@@ -18,4 +18,6 @@ export const config = {
   environment: process.env.NODE_ENV || "developement",
   isSecure: process.env.NODE_ENV === "production",
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || "1h",
+  gRPCHostServer: process.env.GRPC_HOST_SERVER || "localhost",
+  gRPCHostPort: process.env.GRPC_HOST_PORT || 50051,
 };

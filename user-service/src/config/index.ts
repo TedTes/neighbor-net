@@ -11,4 +11,6 @@ export const config = {
     port: parseInt(process.env.POSTGRES_PORT || "5432", 10),
   },
   appServerPort: process.env.APP_SERVER_PORT || 3005,
+  gRPCHostServer: process.env.GRPC_HOST_SERVER || "localhost",
+  gRPCHostPort: process.env.GRPC_HOST_PORT || 50051,
 };

@@ -1,18 +1,23 @@
 import { User } from "../models/UserModel";
 import { s3Service } from "../services/S3Service"; // A service to handle file uploads
-import axios from "axios";
+import { client, logger } from "../utils";
 
 class UserService {
   async createUser(userData: any) {
     try {
       const { username, email, profilePhotoUrl, password } = userData;
       const newUser = await User.create({ username, email, profilePhotoUrl });
-      //TODO:
-      await axios.post("http://auth-service/v1/auth/register", {
-        email,
-        password,
-        username,
-      });
+
+      client.RegisterUser(
+        { username, email, password },
+        (error: any, response: any) => {
+          if (error) {
+            logger.error(error);
+          } else {
+            logger.log("User registered:", response);
+          }
+        }
+      );
       return newUser;
     } catch (error) {
       throw {
