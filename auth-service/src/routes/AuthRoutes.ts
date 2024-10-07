@@ -2,10 +2,13 @@ import { Router } from "express";
 import { AuthController } from "../controllers";
 const AuthRouter = Router();
 
-AuthRouter.post("/login", AuthController.login);
-// AuthRouter.post("/logout", AuthController.logout);
-// AuthRouter.post("/refresh-token", AuthController.login);
-// AuthRouter.post("/authorized", AuthController.login);
+AuthRouter.post("/login", AuthController.login)
+  .post("/logout", AuthController.logout)
+  .post("/register", AuthController.register)
+  .post("/refresh-token", AuthController.refreshAccessToken)
+  .get("/validate-token", AuthController.validateToken)
+  .post("/request-reset-password", AuthController.requestPasswordReset)
+  .post("/reset-password", AuthController.resetPassword);
 
 export { AuthRouter };
 

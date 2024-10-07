@@ -6,7 +6,7 @@ import multer from "multer";
 const UserRouter = Router();
 const upload = multer({ dest: "uploads/" }); // Configure multer for multipart file uploads
 
-UserRouter.post("/", userController.createUser);
+UserRouter.post("/register", userController.createUser);
 UserRouter.put(
   "/:userId/profile-photo",
   authMiddleware.authenticate,

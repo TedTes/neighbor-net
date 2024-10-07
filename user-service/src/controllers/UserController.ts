@@ -1,20 +1,49 @@
 import { Request, Response } from "express";
-import { userService } from "../services/UserService"; // Import the service
-
+import { userService, s3Service } from "../services";
+import axios from "axios";
+import { User } from "../models";
+import * as bcrypt from "bcrypt";
 class UserController {
-  // Create a new user
-  async createUser(req: Request, res: Response): Promise<void> {
+  private _profilePhotoUrl = "";
+
+  async createUser(req: Request, res: Response): Promise<Object | void> {
     try {
-      const user = await userService.createUser(req.body);
-      res.status(201).json(user);
+      const { username, email, password } = req.body;
+      const file = req.file;
+      if (!username || !email || !password) {
+        return res.status(400).json({
+          error: "All fields (username, email, password) are required",
+        });
+      }
+
+      const existingUser = await User.findOne({ where: { email } });
+      if (existingUser) {
+        return res.status(400).json({ error: "Email is already registered" });
+      }
+
+      const existingUsername = await User.findOne({ where: { username } });
+      if (existingUsername) {
+        return res.status(400).json({ error: "Username is already taken" });
+      }
+      if (file) {
+        this._profilePhotoUrl = await s3Service.upload(file);
+      }
+
+      const token = await userService.createUser({
+        username,
+        email,
+        password,
+        profilePhotoUrl: this._profilePhotoUrl,
+      });
+
+      res.status(201).json(token);
     } catch (error) {
       if (error instanceof Error) {
-        res.status(400).json({ error: error.message });
+        res.status(500).json({ error: error.message });
       }
     }
   }
 
-  // Update user profile photo
   async updateProfilePhoto(req: Request, res: Response): Promise<void> {
     try {
       const { userId } = req.params;
