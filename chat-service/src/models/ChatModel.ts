@@ -1,6 +1,7 @@
 import { Schema, model } from "mongoose";
 
-interface IMessage {
+export interface IMessage {
+  _id?: string;
   sender: string;
   message: string;
   messageType: string;
