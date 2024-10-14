@@ -5,15 +5,6 @@ import { Token } from "../models";
 import { AuthServiceError } from "../utils";
 
 export class AuthService {
-  static async register(email: string, password: string, username: string) {
-    const hashedPassword = await bcrypt.hash(password, 10);
-    const user = await User.create({
-      email,
-      password: hashedPassword,
-      username,
-    });
-    return;
-  }
   static async login(email: string, password: string) {
     const user = await User.findOne({ where: { email } });
     if (!user) throw new Error("User not found");

@@ -4,18 +4,6 @@ import { Token } from "../models";
 import { AuthServiceError } from "../utils";
 
 export class AuthController {
-  static async register(req: Request, res: Response) {
-    try {
-      const { username, password, email } = req.body;
-      await AuthService.register(email, password, username);
-      res.json(200).json("success");
-    } catch (error) {
-      const statusCode =
-        error instanceof AuthServiceError ? error.statusCode : 400;
-      const message = error instanceof Error ? error.message : error;
-      res.status(statusCode).json({ error: message });
-    }
-  }
   static async login(req: Request, res: Response) {
     try {
       const { email, password } = req.body;
