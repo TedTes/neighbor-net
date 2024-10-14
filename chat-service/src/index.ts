@@ -40,9 +40,7 @@ const io = new Server(server, {
     methods: ["GET", "POST"],
   },
 });
-io.on("connection", (socket) => {
-  ChatSocketHandler(io, socket);
-});
+ChatSocketHandler(io);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err.name === "UnauthorizedError") {
