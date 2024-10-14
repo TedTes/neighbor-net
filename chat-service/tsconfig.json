@@ -13,6 +13,5 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
     "jsx": "react-jsx"
-    // "types": ["jest"]
   }
 }

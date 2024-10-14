@@ -9,7 +9,7 @@ export class AuthMiddleware {
     }
 
     try {
-      const decoded = AuthService.verifyToken(token.split(" ")[1]);
+      const decoded = AuthService.validateToken(token.split(" ")[1]);
       req.user = decoded;
       next();
     } catch (error) {

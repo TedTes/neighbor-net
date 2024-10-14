@@ -11,4 +11,6 @@ export const config = {
       process.env.MONGODB_NAME
     }?authSource=admin&serverSelectionTimeoutMS=10000` ||
     `mongodb://root:test@chat-service-mongoDB:27017/chat_db?authSource=admin`,
+  authServiceAPI:
+    process.env.AUTH_SERVICE_API || "http://auth-service/auth/validate-token",
 };

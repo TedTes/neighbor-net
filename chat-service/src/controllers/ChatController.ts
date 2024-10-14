@@ -2,14 +2,15 @@ import { Request, Response } from "express";
 import { ChatService } from "../services";
 
 export class ChatController {
-  private chatService;
-  constructor() {
-    this.chatService = new ChatService();
-  }
+  private chatService = new ChatService();
+
   getChatHistory = async (req: Request, res: Response) => {
     const roomId = req.params.roomId;
     try {
       const history = await this.chatService.getChatHistory(roomId);
+      if (!history) {
+        return res.status(404).json({ message: "Chat room not found" });
+      }
       res.status(200).json(history);
     } catch (error) {
       res.status(500).json({ message: "Failed to fetch chat history" });

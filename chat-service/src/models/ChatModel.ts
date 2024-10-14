@@ -1,19 +1,20 @@
 import { Schema, model } from "mongoose";
 
-interface chatSchemaType extends Document {
+interface IMessage {
+  sender: string;
+  message: string;
+  messageType: string;
+  timestamp: Date;
+}
+interface IChat extends Document {
   _id: string;
   participants: string[];
   isGroupChat: boolean;
-  messages: {
-    sender: string;
-    message: string;
-    messageType: string;
-    timestamp: Date;
-  }[];
+  messages: IMessage[];
   createdAt: Date;
   updatedAt: Date;
 }
-const chatSchema: Schema<chatSchemaType> = new Schema(
+const chatSchema: Schema = new Schema(
   {
     participants: [{ type: String, required: true }],
     isGroupChat: { type: Boolean, required: true },
@@ -31,4 +32,4 @@ const chatSchema: Schema<chatSchemaType> = new Schema(
   { timestamps: true }
 );
 
-export const MessageModel = model<chatSchemaType>("Chats", chatSchema);
+export const ChatModel = model<IChat>("Chats", chatSchema);
