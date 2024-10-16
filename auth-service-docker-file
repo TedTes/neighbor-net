@@ -1,9 +1,13 @@
 
 FROM node:20
-WORKDIR /auth-service
-COPY ./auth-service/package*.json ./
-RUN npm install
-COPY ./auth-service .
+WORKDIR /neighbor-net
+COPY package.json package-lock.json tsconfig.json ./
+RUN npm install --frozen-lockfile
+COPY common ./common
+WORKDIR /neighbor-net/auth-service
+COPY auth-service/package.json auth-service/package-lock.json auth-service/tsconfig.json auth-service/webpack.config.js ./
+RUN npm install --frozen-lockfile
+COPY auth-service/. ./
 EXPOSE 3000
 
 RUN apt-get update && apt-get install -y postgresql-client

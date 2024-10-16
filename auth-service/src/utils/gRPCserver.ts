@@ -10,7 +10,7 @@ gRPCserver.bindAsync(
   grpc.ServerCredentials.createInsecure(),
   (error, port) => {
     if (error) {
-      console.error(`Error: ${error}`);
+      logger.error(`Error: ${error}`);
       return;
     }
     logger.info("gRPC server running on port 50051");

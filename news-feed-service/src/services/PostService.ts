@@ -27,7 +27,7 @@ export class PostService {
     (IPost & { username: string })[] | undefined
   > {
     try {
-      const posts = await Post.find({}).exec();
+      const posts = (await Post.find({}).exec()) as IPost[];
 
       if (posts.length === 0) {
         logger.info("No posts found");
@@ -102,7 +102,7 @@ export class PostService {
   static async likePostService(post_id: string, user_id: string) {
     try {
       const post = await Post.findById(post_id);
-      if (!post.likes.includes(user_id)) {
+      if (post && !post.likes.includes(user_id)) {
         post.likes.push(user_id);
         await post.save();
       }
@@ -116,8 +116,11 @@ export class PostService {
   static async unlikePostService(post_id: string, user_id: string) {
     try {
       const post = await Post.findById(post_id);
-      post.likes = post.likes.filter((userId: string) => userId !== user_id);
-      await post.save();
+      if (post) {
+        post.likes = post.likes.filter((userId: string) => userId !== user_id);
+        await post.save();
+      }
+      return;
     } catch (error) {
       throw {
         methodName: "unlikePostService",
@@ -128,7 +131,7 @@ export class PostService {
   static async getPostLikesService(post_id: string) {
     try {
       const post = await Post.findById(post_id).populate("likes");
-      return post.likes;
+      return post!.likes;
     } catch (error) {
       throw {
         methodName: "getPostLikesService",
@@ -144,9 +147,11 @@ export class PostService {
   ) {
     try {
       const post = await Post.findById(post_id);
-      post.comments.push({ userId: user_id, content });
-      await post.save();
-      return post.comments;
+      if (post) {
+        post.comments.push({ userId: user_id, content });
+        await post.save();
+      }
+      return post?.comments || [];
     } catch (error) {
       throw {
         methodName: "addCommentService",
@@ -162,7 +167,7 @@ export class PostService {
   ) {
     try {
       const post = await Post.findById(post_id);
-      const comment = post.comments.id(comment_id);
+      const comment = post && post.comments.id(comment_id);
       if (comment) {
         comment.replies = comment.replies || [];
         comment.replies.push({ userId: user_id, content });
@@ -184,7 +189,7 @@ export class PostService {
         "comments.userId",
         "username"
       );
-      return post.comments;
+      return post?.comments || [];
     } catch (error) {
       throw {
         methodName: "getPostCommentsService",

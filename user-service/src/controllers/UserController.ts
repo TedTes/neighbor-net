@@ -1,8 +1,7 @@
 import { Request, Response } from "express";
 import { userService, s3Service } from "../services";
-import axios from "axios";
 import { User } from "../models";
-import * as bcrypt from "bcrypt";
+
 class UserController {
   private _profilePhotoUrl = "";
 

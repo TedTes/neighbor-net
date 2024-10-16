@@ -2,7 +2,7 @@ import { logger } from "../utils";
 import * as grpc from "@grpc/grpc-js";
 import * as bcrypt from "bcrypt";
 import { User } from "../models";
-import { packageDefinition } from "../../../common/gRPC";
+import { packageDefinition } from "@common/grpc";
 import { gRPCserver } from "../utils";
 
 const authPackage = grpc.loadPackageDefinition(packageDefinition) as any;

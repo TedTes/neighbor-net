@@ -1,8 +1,14 @@
 FROM node:20
-WORKDIR /user-service
-COPY ./user-service/package*.json ./
-RUN npm install
-COPY ./user-service ./
+WORKDIR /neighbor-net
+COPY package.json package-lock.json tsconfig.json ./
+RUN npm install --frozen-lockfile
+COPY common ./common
+
+WORKDIR /neighbor-net/user-service
+COPY user-service/package.json user-service/package-lock.json user-service/tsconfig.json user-service/webpack.config.js ./
+RUN npm install --frozen-lockfile
+COPY user-service/. ./
+
 EXPOSE 3005
 CMD ["npm", "run","prod:start"]
 

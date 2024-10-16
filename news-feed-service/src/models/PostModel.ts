@@ -1,4 +1,4 @@
-import { Schema, Model } from "mongoose";
+import { Schema, model } from "mongoose";
 
 const postSchema = new Schema({
   userId: {
@@ -39,9 +39,22 @@ const postSchema = new Schema({
         type: Date,
         default: Date.now,
       },
+      replies: [
+        {
+          userId: {
+            type: String,
+            required: true,
+          },
+          content: { type: String, required: true },
+          createdAt: {
+            type: Date,
+            default: Date.now,
+          },
+        },
+      ],
     },
   ],
 });
 
-const Post = new Model("Post", postSchema);
+const Post = model("Post", postSchema);
 export { Post };

@@ -1,5 +1,6 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = (env, argv) => {
   const isProduction = argv.mode === "production";
   return {
@@ -18,6 +19,9 @@ module.exports = (env, argv) => {
     },
     resolve: {
       extensions: [".js", ".jsx", ".ts", ".tsx"],
+      alias: {
+        "@common": path.resolve(__dirname, "../common"),
+      },
     },
     module: {
       rules: [
@@ -32,6 +36,11 @@ module.exports = (env, argv) => {
         },
       ],
     },
+    plugins: [
+      new CopyWebpackPlugin({
+        patterns: [{ from: "../common/grpc/auth.proto", to: "./auth.proto" }],
+      }),
+    ],
     optimization: {
       minimize: true,
       minimizer: [
